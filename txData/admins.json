@@ -1,0 +1,28 @@
+[
+  {
+    "master": true,
+    "name": "admin",
+    "password_hash": "$2b$12$1CAY3rr2up1zOIozp/TdD.qbtY9KhvWmeUjKEost2cBshVPaAAMfG",
+    "permissions": [],
+    "providers": {
+      "discord": {
+        "data": {},
+        "id": "352517594349043733",
+        "identifier": "discord:352517594349043733"
+      }
+    },
+    "$schema": 1
+  },
+  {
+    "master": false,
+    "name": "installer",
+    "password_hash": "$2b$12$PIxnXYPhgJJiUvVtUbtejuGzfvsOHmFrJPqqGfv6.6fNedW6AVrUO",
+    "permissions": [
+      "console.view",
+      "console.write",
+      "server.log.view"
+    ],
+    "providers": {},
+    "$schema": 1
+  }
+]

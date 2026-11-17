@@ -1,0 +1,2040 @@
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [3216] FXServer Starting - 11/8/2026, 4:33:32 PM       
+║             TXADMIN║ ================================================================
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Scanning resources.
+[           resources] Found 146 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.1.2 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Started resource K9addon
+[           resources] Started resource cayo-perico-ultimate
+[           resources] Started resource dealer_map
+[           resources] Started resource fhstrawberrylegionv2
+[           resources] Started resource gordela_petshop
+[           resources] Started resource gordela_props
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_03.ydr uses 24.8 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_04.ydr uses 30.2 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shells_favela.ytd uses 96.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[           resources] Started resource gordela_shells_free (3 warnings)
+[           resources] Started resource hospital_map
+[           resources] Started resource metro_texture_fix
+[           resources] Started resource mri_newage_hospital_map
+[           resources] Started resource mri_props
+[           resources] Started resource prison_canteen
+[resources:prison_mai] Asset prison_main/desertos_prison.ytd uses 30.5 MiB of physical memory.
+[           resources] Started resource prison_main (1 warning)
+[           resources] Started resource prison_meeting
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for baseevents
+[           resources] Started resource baseevents
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for qbx_core
+[           resources] Started resource qbx_core
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for ox_doorlock
+[           resources] Started resource ox_doorlock
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for qbx_bankrobbery
+[           resources] Started resource qbx_bankrobbery
+[    c-scripting-core] Creating script environments for qbx_binoculars
+[           resources] Started resource qbx_binoculars
+[    c-scripting-core] Creating script environments for qbx_cityhall
+[           resources] Started resource qbx_cityhall
+[    c-scripting-core] Creating script environments for qbx_customs
+[           resources] Started resource qbx_customs
+[    c-scripting-core] Creating script environments for qbx_fireworks
+[           resources] Started resource qbx_fireworks
+[    c-scripting-core] Creating script environments for qbx_garbagejob
+[           resources] Started resource qbx_garbagejob
+[    c-scripting-core] Creating script environments for qbx_houserobbery
+[           resources] Started resource qbx_houserobbery
+[           resources] Started resource MugShotBase64
+[    c-scripting-core] Creating script environments for qbx_idcard
+[           resources] Started resource qbx_idcard
+[    c-scripting-core] Creating script environments for qbx_interior
+[           resources] Started resource qbx_interior
+[    c-scripting-core] Creating script environments for qbx_jewelery
+[           resources] Started resource qbx_jewelery
+[           resources] Started resource qbx_lockpick
+[    c-scripting-core] Creating script environments for qbx_management
+[           resources] Started resource qbx_management
+[    c-scripting-core] Creating script environments for qbx_mechanicjob
+[           resources] Started resource qbx_mechanicjob
+[    c-scripting-core] Creating script environments for qbx_pawnshop
+[           resources] Started resource qbx_pawnshop
+[    c-scripting-core] Creating script environments for qbx_photomode
+[           resources] Started resource qbx_photomode
+[    c-scripting-core] Creating script environments for qbx_radialmenu
+[           resources] Started resource qbx_radialmenu
+[    c-scripting-core] Creating script environments for qbx_recyclejob
+[           resources] Started resource qbx_recyclejob
+[    c-scripting-core] Creating script environments for qbx_scrapyard
+[           resources] Started resource qbx_scrapyard
+[    c-scripting-core] Creating script environments for qbx_seatbelt
+[           resources] Started resource qbx_seatbelt
+[    c-scripting-core] Creating script environments for qbx_towjob
+[           resources] Started resource qbx_towjob
+[    c-scripting-core] Creating script environments for qbx_truckrobbery
+[           resources] Started resource qbx_truckrobbery
+[    c-scripting-core] Creating script environments for qbx_vehicles
+[           resources] Started resource qbx_vehicles
+[    c-scripting-core] Creating script environments for qbx_vehiclesales
+[           resources] Started resource qbx_vehiclesales
+[    c-scripting-core] Creating script environments for qbx_vehicleshop
+[           resources] Started resource qbx_vehicleshop
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for Renewed-Sirensync
+[           resources] Started resource Renewed-Sirensync
+[    c-scripting-core] Creating script environments for Renewed-Weathersync
+[           resources] Started resource Renewed-Weathersync
+[           resources] Started resource bob74_ipl
+[           resources] Started resource fivem-freecam
+[    c-scripting-core] Creating script environments for illenium-appearance
+[           resources] Started resource illenium-appearance
+[    c-scripting-core] Creating script environments for interact-sound
+[           resources] Started resource interact-sound
+[           resources] Started resource mhacking
+[    c-scripting-core] Creating script environments for rpemotes-reborn
+[script:rpemotes-rebo] [rpemotes] Loading and caching emote data...
+[script:rpemotes-rebo] [rpemotes] Loaded custom emotes
+[script:rpemotes-rebo] [rpemotes] Cached 1628 emotes, 94 shared, 38 expressions, 139 walks
+[           resources] Started resource rpemotes-reborn
+[           resources] Started resource safecracker
+[    c-scripting-core] Creating script environments for screencapture
+[           resources] Started resource screencapture
+[    c-scripting-core] Creating script environments for ultra-voltlab
+[           resources] Started resource ultra-voltlab
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for mm_radio
+[           resources] Started resource mm_radio
+[    c-scripting-core] Creating script environments for sd-computers
+[ script:sd-computers] [SD-COMPUTERS] Framework detected: qb (qbox)
+[ script:sd-computers] [SD-COMPUTERS] Bridge initialised — Framework: qb, Inventory: ox_inventory
+[           resources] Started resource sd-computers
+[    c-scripting-core] Creating script environments for sd-phone
+[     script:sd-phone] [SD-PHONE] Framework detected: qbx
+[     script:sd-phone] [sd-phone:crypto] no `sd_phone_secret` convar set, so a server secret was generated into sd-phone/.secret. Back this file up: losing it makes saved Passwords unreadable and forces every account through a password reset.
+[     script:sd-phone] [sd-phone] roadphone compat: /TogglePhone is already provided by the qs-smartphone shim, so it was not registered twice.
+[           resources] Started resource sd-phone
+[           resources] Started resource sd-phone-props
+[    c-scripting-core] Creating script environments for sd-tablet
+[           resources] Started resource sd-tablet
+[           resources] Started resource sd-tablet-props
+[    c-scripting-core] Creating script environments for ND_Police
+[           resources] Started resource ND_Police
+[    c-scripting-core] Creating script environments for Syn_Sit
+[           resources] Started resource Syn_Sit
+[    c-scripting-core] Creating script environments for angelicxs-CivilianJobs
+[           resources] Started resource angelicxs-CivilianJobs
+[    c-scripting-core] Creating script environments for ars_ambulancejob
+[           resources] Started resource ars_ambulancejob
+[    c-scripting-core] Creating script environments for ars_hunting
+[           resources] Started resource ars_hunting
+[           resources] Started resource cdn-fool
+[    c-scripting-core] Creating script environments for cdn-fuel
+[           resources] Started resource cdn-fuel
+[    c-scripting-core] Creating script environments for cw-rep
+[           resources] Started resource cw-rep
+[    c-scripting-core] Creating script environments for dom_trucking
+[           resources] Started resource dom_trucking
+[    c-scripting-core] Creating script environments for it-drugs
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[           resources] Started resource it-drugs
+[    c-scripting-core] Creating script environments for jim_bridge
+[   script:jim_bridge] Bridge: 'qb-core' detected
+[   script:jim_bridge] Bridge: 'qb-target' detected
+[   script:jim_bridge] Bridge: 'ox_lib' detected
+[   script:jim_bridge] Bridge: 'ox_target' detected
+[   script:jim_bridge] Bridge: 'qbx_core' detected
+[   script:jim_bridge] Bridge: 'ox_inventory' detected
+[           resources] Started resource jim_bridge
+[    c-scripting-core] Creating script environments for jim-mining
+[           resources] Started resource jim-mining
+[    c-scripting-core] Creating script environments for jim-trains
+[           resources] Started resource jim-trains
+[    c-scripting-core] Creating script environments for lunar_fishing
+[           resources] Started resource lunar_fishing
+[    c-scripting-core] Creating script environments for maji-gasdelivery
+[           resources] Started resource maji-gasdelivery
+[    c-scripting-core] Creating script environments for mri_Qadmin
+[   script:mri_Qadmin] [mri_Qadmin] Resource FS bridge carregado.
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[           resources] Started resource mri_Qadmin
+[    c-scripting-core] Creating script environments for mri_Qbackpack
+[           resources] Started resource mri_Qbackpack
+[    c-scripting-core] Creating script environments for mri_Qblackout
+[           resources] Started resource mri_Qblackout
+[    c-scripting-core] Creating script environments for mri_Qblips
+[           resources] Started resource mri_Qblips
+[    c-scripting-core] Creating script environments for mri_Qbox
+[  resources:mri_Qbox] Warning: could not find file `data/popgroups*.xml` (defined in fxmanifest.lua:34)
+[           resources] Started resource mri_Qbox (1 warning)
+[    c-scripting-core] Creating script environments for mri_Qcarkeys
+[           resources] Started resource mri_Qcarkeys
+[    c-scripting-core] Creating script environments for mri_Qcarwash
+[           resources] Started resource mri_Qcarwash
+[    c-scripting-core] Creating script environments for mri_Qchat
+[           resources] Started resource mri_Qchat
+[    c-scripting-core] Creating script environments for mri_Qcrafting
+[           resources] Started resource mri_Qcrafting
+[    c-scripting-core] Creating script environments for mri_Qdraw
+[           resources] Started resource mri_Qdraw
+[    c-scripting-core] Creating script environments for mri_Qelevators
+[           resources] Started resource mri_Qelevators
+[    c-scripting-core] Creating script environments for mri_Qemotes
+[           resources] Started resource mri_Qemotes
+[    c-scripting-core] Creating script environments for mri_Qfarm
+[    script:mri_Qfarm] Recurso mri_Qfarm iniciado. Verificando/criando tabelas...
+[           resources] Started resource mri_Qfarm
+[    c-scripting-core] Creating script environments for mri_Qfleecaheist
+[           resources] Started resource mri_Qfleecaheist
+[    c-scripting-core] Creating script environments for mri_Qfps
+[           resources] Started resource mri_Qfps
+[    c-scripting-core] Creating script environments for mri_Qhud
+[           resources] Started resource mri_Qhud
+[    c-scripting-core] Creating script environments for mri_Qjobsystem
+[           resources] Started resource mri_Qjobsystem
+[    c-scripting-core] Creating script environments for mri_Qloadscreen
+[           resources] Started resource mri_Qloadscreen
+[    c-scripting-core] Creating script environments for mri_Qmarkerplacer
+[           resources] Started resource mri_Qmarkerplacer
+[           resources] Started resource mri_Qminigames
+[    c-scripting-core] Creating script environments for mri_Qmultichar
+[           resources] Started resource mri_Qmultichar
+[    c-scripting-core] Creating script environments for mri_Qnitro
+[           resources] Started resource mri_Qnitro
+[    c-scripting-core] Creating script environments for mri_Qobjects
+[           resources] Started resource mri_Qobjects
+[    c-scripting-core] Creating script environments for mri_Qpets
+[           resources] Started resource mri_Qpets
+[    c-scripting-core] Creating script environments for mri_Qrobnpcs
+[           resources] Started resource mri_Qrobnpcs
+[    c-scripting-core] Creating script environments for mri_Qsafezones
+[           resources] Started resource mri_Qsafezones
+[    c-scripting-core] Creating script environments for mri_Qspawn
+[           resources] Started resource mri_Qspawn
+[    c-scripting-core] Creating script environments for mri_Qstashes
+[           resources] Started resource mri_Qstashes
+[    c-scripting-core] Creating script environments for mri_Qstorerobbery
+[           resources] Started resource mri_Qstorerobbery
+[    c-scripting-core] Creating script environments for mri_Qvehcontrol
+[           resources] Started resource mri_Qvehcontrol
+[    c-scripting-core] Creating script environments for mri_Qvinewood
+[script:mri_Qvinewood] [mri_Qvinewood] Framework found: qbcore
+[           resources] Started resource mri_Qvinewood
+[    c-scripting-core] Creating script environments for object_gizmo
+[           resources] Started resource object_gizmo
+[    c-scripting-core] Creating script environments for pickle_prisons
+[ citizen-server-impl] sync thread hitch warning: timer interval of 119 milliseconds
+[           resources] Started resource pickle_prisons
+[    c-scripting-core] Creating script environments for pickle_waypoints
+[           resources] Started resource pickle_waypoints
+[    c-scripting-core] Creating script environments for ps-banking
+[           resources] Started resource ps-banking
+[    c-scripting-core] Creating script environments for ps-dispatch
+[           resources] Started resource ps-dispatch
+[    c-scripting-core] Creating script environments for ps-housing
+[           resources] Started resource ps-housing
+[    c-scripting-core] Creating script environments for ps-realtor
+[           resources] Started resource ps-realtor
+[    c-scripting-core] Creating script environments for randol_cargo
+[           resources] Started resource randol_cargo
+[    c-scripting-core] Creating script environments for randol_carheist
+[           resources] Started resource randol_carheist
+[    c-scripting-core] Creating script environments for randol_cityworker
+[           resources] Started resource randol_cityworker
+[    c-scripting-core] Creating script environments for randol_combatlog
+[ citizen-server-impl] sync thread hitch warning: timer interval of 213 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 213 milliseconds
+[           resources] Started resource randol_combatlog
+[    c-scripting-core] Creating script environments for randol_exporting
+[ citizen-server-impl] sync thread hitch warning: timer interval of 160 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 261 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 123 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 224 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 172 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 135 milliseconds
+[           resources] Started resource randol_exporting
+[    c-scripting-core] Creating script environments for randol_ghosthunting
+[           resources] Started resource randol_ghosthunting
+[    c-scripting-core] Creating script environments for randol_notes
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[           resources] Started resource randol_notes
+[    c-scripting-core] Creating script environments for rep-talkNPC
+[           resources] Started resource rep-talkNPC
+[    c-scripting-core] Creating script environments for rhd_garage
+[           resources] Started resource rhd_garage
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventoryWeight: 85000 (85.0kg) (0.036s)
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventorySlots: 50 (0.036s)
+[   script:jim_bridge] FrameworkCache: ox_inventory Loaded 538 Items (0.01s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 901 Vehicles (0.034s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 18 Jobs (0.035s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 7 Gangs (0.035s)
+[   script:jim_bridge] FrameworkCache: Cache Ready (81.531s)
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 1754 milliseconds
+[     script:sd-phone] [SD-PHONE] Loaded locale: pt-br
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim-mining] Jim-Mining v3.0.12 - Mining Script by Jimathy
+[   script:jim-trains] Jim-Trains v1.5 - Train Script by Jimathy
+[ citizen-server-impl] server thread hitch warning: timer interval of 499 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 459 items
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] Database server connection established!
+[ citizen-server-impl] server thread hitch warning: timer interval of 194 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] qbx_core took 213.4984ms to execute a query!
+[      script:oxmysql] CREATE INDEX IF NOT EXISTS `idx_users_license` ON `users` (`license`) []
+[       script:ox_lib] An update is available for qbx_management (current version: 1.1.0)
+[       script:ox_lib] https://github.com/Qbox-project/qbx_management/releases/tag/v1.4.0
+[       script:ox_lib] An update is available for illenium-appearance (current version: 5.6.1)
+[       script:ox_lib] https://github.com/iLLeniumStudios/illenium-appearance/releases/tag/v5.7.0
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[    script:mri_Qfarm] Tabela verificada/criada: 1
+[    script:mri_Qfarm] Todas as tabelas foram verificadas/criadas.
+[   script:ps-housing] Tabela `properties` carregada com sucesso!
+[     script:cdn-fuel] 
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:cdn-fuel] cdn-fuel (cdn-fuel)'s latest version is: 2.1.9!
+[     script:cdn-fuel] Your current version: 2.1.9!
+[     script:cdn-fuel] If needed, update from https://github.com/CodineDev/cdn-fuel
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 225.7989ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `darkchat_rooms` (
+[      script:oxmysql]             `id`         VARCHAR(40)  NOT NULL,
+[      script:oxmysql]             `code`       VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             `name`       VARCHAR(60)  NOT NULL,
+[      script:oxmysql]             `owner`      VARCHAR(60)  NOT NULL,
+[      script:oxmysql]             `created_at` BIGINT       NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`id`),
+[      script:oxmysql]             UNIQUE KEY `code` (`code`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 222.1378ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `phone_bank_transactions` (
+[      script:oxmysql]             `id`           INT AUTO_INCREMENT PRIMARY KEY,
+[      script:oxmysql]             `citizenid`    VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `label`        VARCHAR(120) NOT NULL,
+[      script:oxmysql]             `amount`       BIGINT       NOT NULL,
+[      script:oxmysql]             `category`     VARCHAR(32)  NOT NULL DEFAULT 'transfer',
+[      script:oxmysql]             `counterparty` VARCHAR(64)  NULL,
+[      script:oxmysql]             `created_at`   BIGINT       NOT NULL,
+[      script:oxmysql]             KEY `citizenid` (`citizenid`),
+[      script:oxmysql]             KEY `created_at` (`created_at`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 231.2685ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_service_prefs (
+[      script:oxmysql]             citizenid    VARCHAR(64) NOT NULL,
+[      script:oxmysql]             job          VARCHAR(64) NOT NULL,
+[      script:oxmysql]             duty         TINYINT(1)  NOT NULL DEFAULT 1,
+[      script:oxmysql]             job_calls    TINYINT(1)  NOT NULL DEFAULT 1,
+[      script:oxmysql]             job_messages TINYINT(1)  NOT NULL DEFAULT 1,
+[      script:oxmysql]             updated_at   TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (citizenid, job)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[ citizen-server-impl] server thread hitch warning: timer interval of 236 milliseconds
+[       script:ox_lib] An update is available for ox_doorlock (current version: 1.22.1)
+[       script:ox_lib] https://github.com/overextended/ox_doorlock/releases/tag/v1.23.0
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 248.7619ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `marketplace_listings` (
+[      script:oxmysql]             `id`         INT AUTO_INCREMENT PRIMARY KEY,
+[      script:oxmysql]             `citizenid`  VARCHAR(60)  NOT NULL,
+[      script:oxmysql]             `title`      VARCHAR(80)  NOT NULL,
+[      script:oxmysql]             `body`       TEXT         NOT NULL,
+[      script:oxmysql]             `price`      BIGINT       NULL,
+[      script:oxmysql]             `image`      VARCHAR(512) NULL,
+[      script:oxmysql]             `images`     TEXT         NULL,
+[      script:oxmysql]             `number`     VARCHAR(20)  NOT NULL,
+[      script:oxmysql]             `email`      VARCHAR(128) NULL,
+[      script:oxmysql]             `status`     VARCHAR(12)  NOT NULL DEFAULT 'published',
+[      script:oxmysql]             `publish_at` BIGINT       NULL,
+[      script:oxmysql]             `created_at` BIGINT       NOT NULL,
+[      script:oxmysql]             KEY `citizenid` (`citizenid`),
+[      script:oxmysql]             KEY `created_at` (`created_at`),
+[      script:oxmysql]             KEY `status_publish_at` (`status`, `publish_at`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 247.2524ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `phone_weazel_articles` (
+[      script:oxmysql]             `id`         INT AUTO_INCREMENT PRIMARY KEY,
+[      script:oxmysql]             `category`   VARCHAR(24)  NOT NULL,
+[      script:oxmysql]             `headline`   VARCHAR(160) NOT NULL,
+[      script:oxmysql]             `dek`        VARCHAR(255) NOT NULL,
+[      script:oxmysql]             `body`       TEXT         NOT NULL,
+[      script:oxmysql]             `author`     VARCHAR(80)  NOT NULL,
+[      script:oxmysql]             `author_cid` VARCHAR(60)  NOT NULL,
+[      script:oxmysql]             `image`      VARCHAR(512) NULL,
+[      script:oxmysql]             `featured`   TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             `views`      INT          NOT NULL DEFAULT 0,
+[      script:oxmysql]             `status`     VARCHAR(12)  NOT NULL DEFAULT 'published',
+[      script:oxmysql]             `publish_at` BIGINT       NULL,
+[      script:oxmysql]             `created_at` BIGINT       NOT NULL,
+[      script:oxmysql]             `updated_at` BIGINT       NOT NULL,
+[      script:oxmysql]             KEY `created_at` (`created_at`),
+[      script:oxmysql]             KEY `featured` (`featured`),
+[      script:oxmysql]             KEY `status_publish_at` (`status`, `publish_at`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[ citizen-server-impl] -- [server notice: server_metadata_portal]
+[ citizen-server-impl] SERVER METADATA HAS MOVED TO THE CFX PORTAL: sv_projectName, sv_projectDesc, tags, locale, banner_detail and banner_connecting are no longer read from your server config for the server list.
+[ citizen-server-impl] Your server name, description, tags (max 5), language, banner/profile images and Discord link are now managed at https://portal.cfx.re/ - if these are left blank, your server will be listed as 'Missing server data (must be configured in Portal)'.
+[ citizen-server-impl] Read more: https://forum.cfx.re/t/5431315
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:mri_Qelevator] [INFO] Criando tabela mri_qelevators
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:pickle_prison] [pickle_prisons] Database table verified/created successfully
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qmultichar took 297.7625ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `mri_qmultichar_slots`
+[      script:oxmysql]         ADD COLUMN IF NOT EXISTS `last_citizenid` VARCHAR(50) DEFAULT NULL
+[      script:oxmysql]      []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 244.9482ms to execute a query!
+[      script:oxmysql] DELETE FROM phone_health_daily WHERE day < (CURDATE() - INTERVAL ? DAY) [30]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 238.3714ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `phone_alarms` (
+[      script:oxmysql]             `citizenid` VARCHAR(60)      NOT NULL,
+[      script:oxmysql]             `id`        VARCHAR(40)      NOT NULL,
+[      script:oxmysql]             `hour`      TINYINT UNSIGNED NOT NULL,
+[      script:oxmysql]             `minute`    TINYINT UNSIGNED NOT NULL,
+[      script:oxmysql]             `label`       VARCHAR(60)    NOT NULL DEFAULT '',
+[      script:oxmysql]             `days`        VARCHAR(40)    NOT NULL DEFAULT '',
+[      script:oxmysql]             `enabled`     TINYINT(1)     NOT NULL DEFAULT 1,
+[      script:oxmysql]             `sound`       TINYINT(1)     NOT NULL DEFAULT 1,
+[      script:oxmysql]             `snooze`      TINYINT(1)     NOT NULL DEFAULT 0,
+[      script:oxmysql]             `snooze_secs` INT            NOT NULL DEFAULT 60,
+[      script:oxmysql]             PRIMARY KEY (`citizenid`, `id`),
+[      script:oxmysql]             KEY `bytime` (`citizenid`, `hour`, `minute`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 256.6935ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_mdt_profiles (
+[      script:oxmysql]             `citizenid`   VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `fullname`    VARCHAR(96)  NOT NULL,
+[      script:oxmysql]             `callsign`    VARCHAR(16)  NULL,
+[      script:oxmysql]             `badge`       VARCHAR(16)  NULL,
+[      script:oxmysql]             `radio`       VARCHAR(16)  NULL,
+[      script:oxmysql]             `department`  VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             `rank_label`  VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             `grade_level` INT          NOT NULL DEFAULT 0,
+[      script:oxmysql]             `avatar`      VARCHAR(512) NULL,
+[      script:oxmysql]             `notes`       TEXT         NULL,
+[      script:oxmysql]             `created_at`  INT          NOT NULL,
+[      script:oxmysql]             `updated_at`  INT          NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`citizenid`),
+[      script:oxmysql]             UNIQUE KEY uniq_callsign (`callsign`),
+[      script:oxmysql]             KEY idx_department (`department`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 211.3655ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `phone_radio_saved` (
+[      script:oxmysql]             `id`         INT AUTO_INCREMENT PRIMARY KEY,
+[      script:oxmysql]             `citizenid`  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `label`      VARCHAR(40)  NOT NULL,
+[      script:oxmysql]             `frequency`  DECIMAL(5,1) NOT NULL,
+[      script:oxmysql]             `created_at` BIGINT       NOT NULL,
+[      script:oxmysql]             KEY `citizenid` (`citizenid`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 265.3049ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_vibez_posts (
+[      script:oxmysql]             id          VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             author      VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             video       VARCHAR(512) NOT NULL,
+[      script:oxmysql]             thumb       VARCHAR(512) NULL,
+[      script:oxmysql]             caption     VARCHAR(300) NOT NULL DEFAULT '',
+[      script:oxmysql]             sound       VARCHAR(120) NOT NULL DEFAULT '',
+[      script:oxmysql]             views       INT UNSIGNED NOT NULL DEFAULT 0,
+[      script:oxmysql]             created_at  BIGINT       NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_vibez_posts_author (author, created_at),
+[      script:oxmysql]             INDEX idx_vibez_posts_created (created_at),
+[      script:oxmysql]             INDEX idx_vibez_posts_views (views)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 217.3948ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_ryde_rides (
+[      script:oxmysql]             id              VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             rider_username  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             rider_name      VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             driver_username VARCHAR(64)  NULL,
+[      script:oxmysql]             driver_name     VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             pickup_label    VARCHAR(96)  NOT NULL DEFAULT '',
+[      script:oxmysql]             pickup_x        FLOAT        NOT NULL DEFAULT 0,
+[      script:oxmysql]             pickup_y        FLOAT        NOT NULL DEFAULT 0,
+[      script:oxmysql]             dropoff_label   VARCHAR(96)  NOT NULL DEFAULT '',
+[      script:oxmysql]             dropoff_x       FLOAT        NOT NULL DEFAULT 0,
+[      script:oxmysql]             dropoff_y       FLOAT        NOT NULL DEFAULT 0,
+[      script:oxmysql]             distance        FLOAT        NOT NULL DEFAULT 0,
+[      script:oxmysql]             fare            DECIMAL(10,2) NOT NULL DEFAULT 0,
+[      script:oxmysql]             payment         VARCHAR(8)   NOT NULL DEFAULT 'cash',
+[      script:oxmysql]             paid            TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             status          VARCHAR(16)  NOT NULL DEFAULT 'completed',
+[      script:oxmysql]             rating          TINYINT      NULL,
+[      script:oxmysql]             created_at      TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             completed_at    TIMESTAMP    NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_ryde_rides_rider  (rider_username),
+[      script:oxmysql]             INDEX idx_ryde_rides_driver (driver_username)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 272.8275ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_photogram_posts (
+[      script:oxmysql]             id          VARCHAR(16)   NOT NULL,
+[      script:oxmysql]             author      VARCHAR(64)   NOT NULL,
+[      script:oxmysql]             images      JSON          NULL,
+[      script:oxmysql]             caption     VARCHAR(2200) NOT NULL DEFAULT '',
+[      script:oxmysql]             location    VARCHAR(120)  NULL,
+[      script:oxmysql]             created_at  BIGINT        NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_photogram_posts_author (author, created_at),
+[      script:oxmysql]             INDEX idx_photogram_posts_created (created_at)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 109 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 210.0069ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS `phone_stock_holdings` (
+[      script:oxmysql]             `citizenid`  VARCHAR(64)   NOT NULL,
+[      script:oxmysql]             `symbol`     VARCHAR(16)   NOT NULL,
+[      script:oxmysql]             `quantity`   DECIMAL(24,8) NOT NULL,
+[      script:oxmysql]             `avg_cost`   DECIMAL(18,6) NOT NULL,
+[      script:oxmysql]             `updated_at` BIGINT        NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`citizenid`, `symbol`),
+[      script:oxmysql]             KEY `citizenid` (`citizenid`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+[      script:oxmysql]      []
+[ citizen-server-impl] server thread hitch warning: timer interval of 220 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:mri_Qelevator] [SUCCESS] Tabela mri_qelevators criada com sucesso!
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 200.0211ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"hideb\":false,\"scale\":6,\"bflash\":false,\"ftimer\":50000,\"coords\":{\"x\":343.0681457519531,\"y\":-1298.2021484375,\"z\":32.4981689453125},\"sColor\":0,\"tickb\":false,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_pickup_repair.png\",\"outline\":false,\"sRange\":true,\"items\":0,\"scImg\":\"\",\"alpha\":255,\"Sprite\":544}",1]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 275.2812ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_plants ADD IF NOT EXISTS owner LONGTEXT DEFAULT NULL;
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qjobsystem took 223.6495ms to execute a query!
+[      script:oxmysql] INSERT INTO mri_qjobsystem (jobs) VALUES (?) ["[{\"stashes\":[{\"label\":\"Baú da Polícia\",\"slots\":50,\"coords\":{\"y\":-972.8811645507813,\"z\":30.63170433044433,\"x\":452.0380554199219},\"id\":\"police0_9123\",\"job\":true,\"weight\":500000}],\"defaultDuty\":true,\"bossmenu\":{\"y\":-974.0276489257813,\"z\":30.43862152099609,\"x\":447.3981018066406},\"job\":\"police\",\"grades\":{\"1\":{\"name\":\"Soldado\",\"payment\":200},\"2\":{\"name\":\"Tenente\",\"payment\":500},\"3\":{\"name\":\"Chefe\",\"bankAuth\":true,\"payment\":555,\"isboss\":true},\"0\":{\"name\":\"Recruta\",\"payment\":500}},\"alarm\":{\"y\":-1036.444091796875,\"z\":29.49523544311523,\"x\":148.6542510986328},\"jobtype\":\"leo\",\"balance\":2001,\"label\":\"Polícia\",\"coords\":{\"y\":-979.2796020507813,\"z\":30.68960189819336,\"x\":447.1144104003906},\"craftings\":[],\"duty\":{\"y\":-976.2214965820313,\"z\":30.10904884338379,\"x\":452.6276550292969},\"type\":\"job\"},{\"stashes\":[],\"label\":\"Hospital\",\"grades\":{\"1\":{\"name\":\"Médico\",\"payment\":200},\"2\":{\"payment\":300,\"bankAuth\":true,\"name\":\"Diretor\",\"isboss\":true},\"0\":{\"name\":\"Paramédico\",\"payment\":100}},\"jobtype\":\"ems\",\"typejob\":\"\",\"craftings\":[],\"coords\":{\"y\":-967.9647827148438,\"z\":29.46170234680175,\"x\":413.5118713378906},\"job\":\"ambulance\",\"defaultDuty\":true,\"type\":\"job\"},{\"stashes\":[],\"label\":\"Los Customs\",\"grades\":{\"1\":{\"name\":\"Mecânico\",\"payment\":200},\"2\":{\"payment\":300,\"bankAuth\":true,\"name\":\"Gerente\",\"isboss\":true},\"0\":{\"name\":\"Aprendiz de Mecãnico\",\"payment\":100}},\"jobtype\":\"mechanic\",\"typejob\":\"\",\"craftings\":[],\"coords\":{\"y\":-967.9647827148438,\"z\":29.46170234680175,\"x\":413.5118713378906},\"job\":\"mechanic\",\"defaultDuty\":true,\"type\":\"job\"},{\"stashes\":[],\"label\":\"Ballas\",\"grades\":{\"1\":{\"name\":\"Membro\"},\"2\":{\"bankAuth\":true,\"name\":\"Líder\",\"isboss\":true},\"0\":{\"name\":\"Recruta\"}},\"jobtype\":\"mechanic\",\"typejob\":\"\",\"coords\":{\"y\":-967.9647827148438,\"z\":29.46170234680175,\"x\":413.5118713378906},\"craftings\":[],\"job\":\"ballas\",\"type\":\"gang\"},{\"stashes\":[],\"label\":\"Vaggos\",\"grades\":{\"1\":{\"name\":\"Membro\"},\"2\":{\"bankAuth\":true,\"name\":\"Líder\",\"isboss\":true},\"0\":{\"name\":\"Recruta\"}},\"jobtype\":\"mechanic\",\"typejob\":\"\",\"coords\":{\"y\":-967.9647827148438,\"z\":29.46170234680175,\"x\":413.5118713378906},\"craftings\":[],\"job\":\"vaggos\",\"type\":\"gang\"},{\"stashes\":[],\"label\":\"Imobiliária\",\"grades\":{\"1\":{\"name\":\"Gerente\",\"payment\":200},\"2\":{\"name\":\"Dono\",\"bankAuth\":true,\"payment\":300,\"isboss\":true},\"0\":{\"name\":\"Corretor de Imóveis\",\"bankAuth\":true,\"payment\":100,\"isboss\":true}},\"jobtype\":\"realestate\",\"craftings\":[],\"coords\":{\"y\":-967.9647827148438,\"z\":29.46170234680175,\"x\":413.5118713378906},\"job\":\"realestate\",\"typejob\":\"\",\"type\":\"job\"}]"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 204.9857ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_group_invites (
+[      script:oxmysql]             id           VARCHAR(16) NOT NULL,
+[      script:oxmysql]             group_id     VARCHAR(16) NOT NULL,
+[      script:oxmysql]             target_cid   VARCHAR(64) NOT NULL,
+[      script:oxmysql]             invited_by   VARCHAR(64) NOT NULL,
+[      script:oxmysql]             invited_name VARCHAR(64) NULL,
+[      script:oxmysql]             sent_at      BIGINT      NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_group_invites_target (target_cid),
+[      script:oxmysql]             INDEX idx_group_invites_group (group_id)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qcrafting took 231.0934ms to execute a query!
+[      script:oxmysql] SHOW COLUMNS FROM `qt-crafting-items` LIKE 'model'; []
+[      script:oxmysql] [11.4.1-MariaDB] sd-computers took 242.2595ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS computers_mail_accounts (
+[      script:oxmysql]             email         VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             password_hash VARCHAR(255) NOT NULL,
+[      script:oxmysql]             display_name  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             created_by    VARCHAR(64)  NULL,
+[      script:oxmysql]             created_at    TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (email),
+[      script:oxmysql]             KEY idx_created_by (created_by)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 173 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 174 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 303.4354ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_messages (
+[      script:oxmysql]             id            VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             mid           VARCHAR(16)  NULL,
+[      script:oxmysql]             citizenid     VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             conversation  VARCHAR(48)  NOT NULL,
+[      script:oxmysql]             sender        VARCHAR(32)  NOT NULL DEFAULT '',
+[      script:oxmysql]             direction     VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             kind          VARCHAR(16)  NOT NULL DEFAULT 'text',
+[      script:oxmysql]             body          TEXT         NULL,
+[      script:oxmysql]             meta          JSON         NULL,
+[      script:oxmysql]             is_read       TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             withheld      TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             created_at    BIGINT       NOT NULL,
+[      script:oxmysql]             seen_at       BIGINT       NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_phone_messages_thread (citizenid, conversation, created_at),
+[      script:oxmysql]             INDEX idx_phone_messages_mid (mid)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] ox_inventory took 352.4627ms to execute a query!
+[      script:oxmysql] ALTER TABLE `player_vehicles` ADD COLUMN `glovebox` LONGTEXT NULL []
+[ citizen-server-impl] server thread hitch warning: timer interval of 354 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] ox_inventory took 361.2378ms to execute a query!
+[      script:oxmysql] ALTER TABLE `player_vehicles` ADD COLUMN `trunk` LONGTEXT NULL []
+[      script:oxmysql] [11.4.1-MariaDB] rhd_garage took 376.9799ms to execute a query!
+[      script:oxmysql] ALTER TABLE player_vehicles ADD INDEX fakeplate (fakeplate); []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 226.4565ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_contacts","idx_phone_contacts_cid_name"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 216.1108ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_bank_transactions` ADD COLUMN src_id VARCHAR(32) NULL []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 207.4180ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_calendar_attendees","idx_attendee_status"]
+[ citizen-server-impl] server thread hitch warning: timer interval of 155 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qelevators took 209.4062ms to execute a query!
+[      script:oxmysql] SELECT * FROM mri_qelevators []
+[script:mri_Qelevator] [SUCCESS] Elevadores carregados com sucesso!
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qspawn took 209.6516ms to execute a query!
+[      script:oxmysql] SELECT 1 FROM `mri_qspawn_settings` WHERE `key` = ? ["__imported"]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 267.0218ms to execute a query!
+[      script:oxmysql]         ALTER TABLE phone_service_messages
+[      script:oxmysql]             ADD COLUMN IF NOT EXISTS kind VARCHAR(16) NOT NULL DEFAULT 'text',
+[      script:oxmysql]             ADD COLUMN IF NOT EXISTS meta TEXT NULL
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 427.5643ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_plants ADD IF NOT EXISTS coords LONGTEXT NOT NULL;
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 221.6872ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_voice_memos` ADD COLUMN src_id VARCHAR(32) NULL []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 321.1960ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_messages","idx_phone_messages_unread"]
+[   script:jim_bridge] 'jim_bridge' - You are running the latest version. (2.1.09)
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 218.1973ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_mdt_person_records (
+[      script:oxmysql]             `citizenid`  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `notes`      TEXT         NULL,
+[      script:oxmysql]             `flags`      TEXT         NULL,
+[      script:oxmysql]             `mugshot`    VARCHAR(512) NULL,
+[      script:oxmysql]             `updated_by` VARCHAR(64)  NULL,
+[      script:oxmysql]             `updated_at` INT          NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`citizenid`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 227.2011ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_racing_results (
+[      script:oxmysql]             id          INT          NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             track_id    INT          NOT NULL,
+[      script:oxmysql]             citizenid   VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             name        VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             time_ms     INT          NOT NULL DEFAULT 0,
+[      script:oxmysql]             vehicle     VARCHAR(64)  NULL,
+[      script:oxmysql]             class       VARCHAR(4)   NULL,
+[      script:oxmysql]             position    INT          NULL,
+[      script:oxmysql]             racers      INT          NULL,
+[      script:oxmysql]             mmr_delta   INT          NULL,
+[      script:oxmysql]             mmr_after   INT          NULL,
+[      script:oxmysql]             best_lap_ms INT          NULL,
+[      script:oxmysql]             sectors     VARCHAR(64)  NULL,
+[      script:oxmysql]             dnf         TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             ranked      TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             finished_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_racing_results_board  (track_id, dnf, time_ms),
+[      script:oxmysql]             INDEX idx_racing_results_recent (track_id, dnf, finished_at),
+[      script:oxmysql]             INDEX idx_racing_results_racer  (citizenid, finished_at)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 227.3029ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_admin_mutes (
+[      script:oxmysql]             id         INT UNSIGNED NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             citizenid  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             scope      VARCHAR(24)  NOT NULL,
+[      script:oxmysql]             reason     VARCHAR(200) NOT NULL DEFAULT '',
+[      script:oxmysql]             admin_cid  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             admin_name VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             expires_at BIGINT       NULL,
+[      script:oxmysql]             created_at BIGINT       NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             UNIQUE KEY uq_mute (citizenid, scope)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 261.5546ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_ryde_rides` ADD INDEX idx_ryde_rides_rider_recent (rider_username, created_at) []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 291 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 313.0795ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_birdy_profiles (
+[      script:oxmysql]             handle       VARCHAR(32)  NOT NULL,
+[      script:oxmysql]             citizenid    VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             display_name VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             password     VARCHAR(64)  NOT NULL DEFAULT '',
+[      script:oxmysql]             bio          VARCHAR(200) NOT NULL DEFAULT '',
+[      script:oxmysql]             verified     TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             verified_type VARCHAR(8)   NULL,
+[      script:oxmysql]             logged_in    TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             join_label   VARCHAR(32)  NOT NULL DEFAULT '',
+[      script:oxmysql]             protected    TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             created_at   TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (handle),
+[      script:oxmysql]             INDEX idx_birdy_profiles_creator (citizenid)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 458.6632ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_calendar_attendees` ADD INDEX idx_attendee_status (`citizenid`, `status`) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 351.5787ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_mail_accounts` ADD INDEX idx_phone_mail_accounts_creator (created_by_cid) []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 181 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 175 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 286.1422ms to execute a query!
+[      script:oxmysql]         SELECT table_collation FROM information_schema.tables
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ?
+[      script:oxmysql]      ["phone_app_sessions"]
+[      script:oxmysql] [11.4.1-MariaDB] rhd_garage took 320.0828ms to execute a query!
+[      script:oxmysql] ALTER TABLE player_vehicles ADD financetime int(11) NOT NULL DEFAULT 0; []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 294.8215ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_bank_transactions` ADD UNIQUE INDEX uq_bank_tx_src (src_id) []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 152 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 246 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 263.5155ms to execute a query!
+[      script:oxmysql]         SELECT COLUMN_NAME AS name FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ?
+[      script:oxmysql]      ["phone_documents"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 274.0914ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_service_msg_reads (
+[      script:oxmysql]             viewer         VARCHAR(64) NOT NULL,
+[      script:oxmysql]             job            VARCHAR(64) NOT NULL,
+[      script:oxmysql]             citizen_number VARCHAR(32) NOT NULL,
+[      script:oxmysql]             last_read      INT         NOT NULL DEFAULT 0,
+[      script:oxmysql]             PRIMARY KEY (viewer, job, citizen_number)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 409.1773ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `darkchat_messages`
+[      script:oxmysql]             ADD COLUMN IF NOT EXISTS `kind` VARCHAR(16) NOT NULL DEFAULT 'text',
+[      script:oxmysql]             ADD COLUMN IF NOT EXISTS `meta` TEXT NULL
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 271.5295ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_messages` ADD INDEX idx_phone_messages_unread (citizenid, is_read) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 411.4371ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) AS n FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = 'phone_contacts' AND column_name = 'avatar'
+[      script:oxmysql]      []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 112 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 363.4914ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_voice_memos","uq_voice_memos_src"]
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 126 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 133 milliseconds
+[     script:mri_Qbox] [mri_Qbox] [INFO] [mri_Qbox] veículos: 0 alterados aplicados no qbx_core
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1546.8898ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_voicemails","owner_listened"]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qbox took 1406.1657ms to execute a query!
+[      script:oxmysql] SELECT COUNT(*) FROM information_schema.COLUMNS
+[      script:oxmysql]         WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = ? AND COLUMN_NAME = ? ["mri_qbox_report_messages","media_id"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1394.6743ms to execute a query!
+[      script:oxmysql]         SELECT IS_NULLABLE FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = 'phone_settings'
+[      script:oxmysql]           AND COLUMN_NAME = 'show_app_names'
+[      script:oxmysql]      []
+[ citizen-server-impl] server thread hitch warning: timer interval of 1405 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1444.9473ms to execute a query!
+[      script:oxmysql]         SELECT 1 FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND column_name = ? LIMIT 1
+[      script:oxmysql]      ["phone_alarms","snooze"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1572.2002ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_cherry_messages (
+[      script:oxmysql]             id          VARCHAR(16) NOT NULL,
+[      script:oxmysql]             match_id    VARCHAR(16) NOT NULL,
+[      script:oxmysql]             sender      VARCHAR(64) NOT NULL,
+[      script:oxmysql]             kind        VARCHAR(16) NOT NULL DEFAULT 'text',
+[      script:oxmysql]             body        TEXT        NULL,
+[      script:oxmysql]             meta        JSON        NULL,
+[      script:oxmysql]             reactions   JSON        NULL,
+[      script:oxmysql]             created_at  BIGINT      NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_cherry_msgs_thread (match_id, created_at)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1442.7269ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_game_stats` ADD INDEX idx_game_stats_game_high (game, high_score) []
+[      script:oxmysql] [11.4.1-MariaDB] qbx_core took 1319.7905ms to execute a query!
+[      script:oxmysql] SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_NAME = 'player_vehicles' AND TABLE_SCHEMA in (SELECT DATABASE()) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1319.7147ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_vibez_comments (
+[      script:oxmysql]             id          VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             post_id     VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             author      VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             body        VARCHAR(500) NOT NULL,
+[      script:oxmysql]             gif_url     VARCHAR(512) NULL,
+[      script:oxmysql]             created_at  BIGINT       NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             INDEX idx_vibez_comments_post (post_id, created_at)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 1725.1617ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_plants ADD IF NOT EXISTS time INT(255) NOT NULL;
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 201.6830ms to execute a query!
+[      script:oxmysql]         SELECT table_collation FROM information_schema.tables
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ?
+[      script:oxmysql]      ["phone_passwords"]
+[   script:jim-mining] 'jim-mining' - You are running the latest version. (3.0.12)
+[   script:jim-trains] 'jim-trains' - You are running the latest version. (1.5)
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 204.7290ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_voicemails` ADD INDEX owner_listened (owner_cid, listened) []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 312.7768ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_voice_memos` ADD UNIQUE INDEX uq_voice_memos_src (src_id) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 330.6003ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_streak_likes","idx_fk_streak_likes_post"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 212.0071ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_admin_bin (
+[      script:oxmysql]             id          INT AUTO_INCREMENT PRIMARY KEY,
+[      script:oxmysql]             app         VARCHAR(32)  NOT NULL,
+[      script:oxmysql]             target_id   VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             excerpt     VARCHAR(300) NOT NULL DEFAULT '',
+[      script:oxmysql]             lost        VARCHAR(120) NOT NULL DEFAULT '',
+[      script:oxmysql]             author_cid  VARCHAR(64)  NULL,
+[      script:oxmysql]             payload     MEDIUMTEXT   NOT NULL,
+[      script:oxmysql]             admin_cid   VARCHAR(64)  NULL,
+[      script:oxmysql]             admin_name  VARCHAR(80)  NULL,
+[      script:oxmysql]             restored_at BIGINT       NULL,
+[      script:oxmysql]             restored_by VARCHAR(80)  NULL,
+[      script:oxmysql]             created_at  BIGINT       NOT NULL,
+[      script:oxmysql]             KEY idx_admin_bin_created (created_at)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 613.4972ms to execute a query!
+[      script:oxmysql]         SELECT COLUMN_NAME AS name FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ?
+[      script:oxmysql]      ["phone_racing_results"]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 396.1235ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_cherry_matches","idx_cherry_match_b"]
+[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 246.2292ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_bank_standing_orders","idx_standing_due"]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 525.4905ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_plants ADD IF NOT EXISTS health DOUBLE NOT NULL DEFAULT 100;
+[   script:mri_Qspawn] [mri_Qspawn] 6 locais de spawn importados de data/spawns.default.json.
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 206.5435ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_calendar_attendees` ADD CONSTRAINT `fk_calendar_attendee_event` FOREIGN KEY (`event_id`)
+[      script:oxmysql]         REFERENCES `phone_calendar_events`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 248.1348ms to execute a query!
+[      script:oxmysql] SELECT 1 FROM phone_migrations WHERE name = ? LIMIT 1 ["documents_unlock_player_rows"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 282.7997ms to execute a query!
+[      script:oxmysql]         SELECT IS_NULLABLE FROM information_schema.COLUMNS
+[      script:oxmysql]         WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'phone_service_invoices' AND COLUMN_NAME = 'job'
+[      script:oxmysql]      []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 241.0401ms to execute a query!
+[      script:oxmysql] CREATE TABLE IF NOT EXISTS mri_qadmin_actions (
+[      script:oxmysql]     id VARCHAR(50) PRIMARY KEY,
+[      script:oxmysql]     category VARCHAR(20) NOT NULL,
+[      script:oxmysql]     data LONGTEXT NOT NULL
+[      script:oxmysql] ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 275.7262ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_messages","idx_phone_messages_thread"]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 479.8572ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) AS n FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = 'phone_calls' AND column_name = 'duration'
+[      script:oxmysql]      []
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-computers took 285.3682ms to execute a query!
+[      script:oxmysql] SELECT id, label, prop, x, y, z, heading, world FROM computers_printers ORDER BY id []
+[ script:sd-computers] [sd-computers:auto] props in the world are not computers on their own (the Automatic tab of the admin panel switches that on)
+[ citizen-server-impl] server thread hitch warning: timer interval of 719 milliseconds
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 673.7193ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_vibez_comments","idx_fk_vibez_comments_post"]
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 739.0753ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_processing ADD IF NOT EXISTS type VARCHAR(100) NOT NULL;
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 907.6769ms to execute a query!
+[      script:oxmysql] ALTER TABLE mri_qadmin_logs ADD COLUMN IF NOT EXISTS admin_src INT NULL AFTER admin []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 717.9536ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_message_group_members` ADD INDEX idx_fk_message_group_members_group (`group_id`) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 700.6931ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_mdt_arrests (
+[      script:oxmysql]             `id`               INT          NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             `ref`              VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             `report_id`        INT          NULL,
+[      script:oxmysql]             `report_ref`       VARCHAR(16)  NULL,
+[      script:oxmysql]             `citizenid`        VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `subject_name`     VARCHAR(96)  NOT NULL DEFAULT '',
+[      script:oxmysql]             `officer_cid`      VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `officer_name`     VARCHAR(96)  NOT NULL DEFAULT '',
+[      script:oxmysql]             `officer_callsign` VARCHAR(16)  NULL,
+[      script:oxmysql]             `charges`          TEXT         NULL,
+[      script:oxmysql]             `months`           INT UNSIGNED NOT NULL DEFAULT 0,
+[      script:oxmysql]             `fine`             INT UNSIGNED NOT NULL DEFAULT 0,
+[      script:oxmysql]             `jailed`           TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             `fined`            TINYINT(1)   NOT NULL DEFAULT 0,
+[      script:oxmysql]             `created_at`       INT          NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`id`),
+[      script:oxmysql]             UNIQUE KEY uniq_ref (`ref`),
+[      script:oxmysql]             KEY idx_cid (`citizenid`),
+[      script:oxmysql]             KEY idx_created (`created_at`),
+[      script:oxmysql]             KEY idx_officer (`officer_cid`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 900.1660ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.statistics
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ? AND index_name = ?
+[      script:oxmysql]      ["phone_documents","idx_phone_documents_updated"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 860.9457ms to execute a query!
+[      script:oxmysql] ALTER TABLE `darkchat_bans` ADD INDEX idx_fk_darkchat_bans_room (`room_id`) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 858.4320ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_photo_album_items` ADD CONSTRAINT `fk_photo_album_items_album` FOREIGN KEY (`album_id`)
+[      script:oxmysql]         REFERENCES `phone_photo_albums`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 707.6580ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_app_sessions` ADD INDEX idx_fk_app_sessions_account (`account_id`) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 218.4452ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_document_folders` ADD INDEX idx_phone_document_folders_cid (citizenid) []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 236.0466ms to execute a query!
+[      script:oxmysql] ALTER TABLE phone_birdy_profiles ADD COLUMN avatar VARCHAR(512) NULL []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 240.2317ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_photogram_comments` ADD CONSTRAINT `fk_photogram_comments_post` FOREIGN KEY (`post_id`)
+[      script:oxmysql]         REFERENCES `phone_photogram_posts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 214.9739ms to execute a query!
+[      script:oxmysql]         DELETE c FROM `phone_documents` c
+[      script:oxmysql]         LEFT JOIN `phone_document_folders` p ON p.`id` = c.`folder_id`
+[      script:oxmysql]         WHERE c.`folder_id` IS NOT NULL AND p.`id` IS NULL
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 210.1679ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.TABLE_CONSTRAINTS
+[      script:oxmysql]         WHERE CONSTRAINT_SCHEMA = DATABASE() AND TABLE_NAME = ?
+[      script:oxmysql]           AND CONSTRAINT_NAME = ? AND CONSTRAINT_TYPE = 'FOREIGN KEY'
+[      script:oxmysql]      ["darkchat_reactions","fk_darkchat_reactions_message"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-computers took 240.7208ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS computers_photos (
+[      script:oxmysql]             id         INT          NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             citizenid  VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             url        VARCHAR(400) NOT NULL,
+[      script:oxmysql]             created_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (id),
+[      script:oxmysql]             KEY idx_citizen (citizenid)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 220.3592ms to execute a query!
+[      script:oxmysql] INSERT IGNORE INTO mri_qadmin_group_permissions (group_id, permission) VALUES ("god", ?) ["qadmin.page.staffchat"]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 221.3081ms to execute a query!
+[      script:oxmysql] INSERT INTO mri_qadmin_settings (`name`, `value`, `type`) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE `value` = ?, `type` = ? ["RenewedPhone","false","boolean","false","boolean"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 308.4742ms to execute a query!
+[      script:oxmysql] INSERT IGNORE INTO phone_mdt_protocols (`code`, `label`, `category`, `priority`, `description`, `body`) VALUES (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?) ["TP 101","Primary Survey","assessment","immediate","Airway, breathing, circulation, disability, exposure, in that order.","Establish scene safety before approach. Check responsiveness, then airway patency with cervical spine control where trauma is suspected. Assess breathing rate and effort, then circulation by central and peripheral pulse. Record a baseline set of observations before any intervention that is not immediately life saving.","TP 102","Catastrophic Haemorrhage","trauma","immediate","Control life threatening bleeding before anything else.","Direct pressure first. Escalate to a pressure dressing, then to a tourniquet placed high and tight on the affected limb. Record the time the tourniquet went on and hand that time over verbally; it decides what the receiving team can still save.","TP 103","Airway Obstruction","airway","immediate","Clear and maintain a patent airway.","Encourage coughing while the patient can. On a failing cough, alternate five back blows with five abdominal thrusts. On unresponsiveness, begin chest compressions and inspect the airway on each ventilation attempt.","TP 104","Cardiac Arrest","cardiac","immediate","Compressions, early defibrillation, minimal interruption.","Begin compressions at 100 to 120 per minute to a depth of 5 to 6cm. Apply the defibrillator as soon as it is to hand and follow its rhythm analysis. Rotate the compressor every two minutes. Do not stop to move the patient until there is return of circulation or the resuscitation is called.","TP 105","Chest Pain","cardiac","urgent","Treat as cardiac until it is ruled out.","Sit the patient upright and keep them still. Record observations at first contact and every five minutes. Any pain radiating to jaw or left arm, or accompanied by sweating, nausea or breathlessness, travels as an emergency regardless of how well the patient looks.","TP 106","Anaphylaxis","medical","immediate","Adrenaline first, and early.","Remove the trigger where it can be removed. Give adrenaline into the outer thigh without waiting for the airway to close. Lay the patient flat with legs raised unless breathing is compromised, in which case sit them up. Repeat after five minutes if there is no improvement.","TP 107","Opioid Overdose","medical","immediate","Support ventilation, then reverse.","Respiratory failure is what kills, so ventilate before anything else. Give naloxone once ventilation is supported and titrate to breathing rather than to consciousness. Expect the reversal to wear off before the opioid does, and never leave the patient unattended after it.","TP 108","Major Haemorrhage","trauma","immediate","Stop the bleeding, keep them warm, move early.","Pressure and packing for compressible sites, pelvic binder for a suspected pelvic fracture, splint for long bone fractures. Keep the patient warm; a cold patient stops clotting. This is a load and go, not a stay and play.","TP 109","Spinal Immobilisation","trauma","urgent","Immobilise on mechanism, not on symptoms.","Manual in line stabilisation from first contact. Apply a collar sized to the patient and move with a scoop or long board. A patient who is walking on arrival may still have an unstable spine; the mechanism of injury decides this, not how they present.","TP 110","Burns","trauma","urgent","Cool the burn, warm the patient.","Irrigate with cool running water for twenty minutes and no longer. Remove jewellery and constricting clothing early, before swelling sets in. Cover with a clean non adherent dressing. Estimate the surface area involved and pass that figure on; it decides the receiving unit.","TP 111","Seizure","medical","urgent","Protect from harm, time it, do not restrain.","Clear the space around the patient and cushion the head. Time the seizure from first movement. Never place anything in the mouth. A seizure past five minutes, or a second seizure without recovery in between, is an emergency in its own right.","TP 112","Hypoglycaemia","medical","urgent","Sugar by the safest available route.","Oral glucose for a patient who can protect their own airway. For a patient who cannot, use the parenteral route. Re-test after ten minutes and feed a longer acting carbohydrate once the patient is alert, or they will simply drop again.","TP 113","Drowning","medical","immediate","Ventilate first; this arrest is hypoxic.","Give five rescue breaths before compressions, because the cause is oxygen and not rhythm. Assume spinal injury on any dive or fall. Remove wet clothing and insulate the patient early; hypothermia follows immersion faster than it is expected to.","TP 114","Obstetric Emergency","medical","immediate","Two patients, one of whom cannot be assessed.","Position the mother on her left side to take the weight off the vena cava. If delivery is imminent, prepare for it where you stand rather than moving. Keep the newborn warm and dry and record the time of birth. Any bleeding in pregnancy travels as an emergency.","TP 115","Psychiatric Crisis","medical","routine","Scene safety, then rapport, then assessment.","Do not enter alone where there is a weapon or a threat of one. Keep an exit behind you. Speak plainly and do not argue with a delusion. Rule out the physical causes that mimic a crisis, low blood sugar and hypoxia among them, before recording it as psychiatric.","TP 116","Death on Scene","admin","routine","Recognition of life extinct and what follows it.","Resuscitation is not begun where injuries are incompatible with life or where rigor is established. Record the time of recognition, disturb the scene as little as possible, and hand the location over to police. The report for this carries the Death type.","TP 117","Refusal of Treatment","admin","routine","A competent adult may refuse, and that refusal is recorded.","Establish that the patient has capacity for this decision at this time. Explain the risks in plain language and record that you did. Advise them to call again if anything changes. Document the refusal in a Patient Care report; the report is the protection for both sides.","TP 118","Handover","admin","routine","The structured handover the receiving team expects.","Age and presenting complaint, mechanism or history, the observations recorded and the trend across them, treatment given and the response to it, and anything outstanding. Deliver it once, to the person taking over, and file the report before going back on the road."]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 389.7702ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_vibez_likes` ADD CONSTRAINT `fk_vibez_likes_post` FOREIGN KEY (`post_id`)
+[      script:oxmysql]         REFERENCES `phone_vibez_posts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 297.7179ms to execute a query!
+[      script:oxmysql] ALTER TABLE `phone_birdy_notifications` ADD INDEX idx_birdy_notifs_unseen (recipient, seen) []
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 298.7746ms to execute a query!
+[      script:oxmysql] INSERT IGNORE INTO mri_qadmin_group_permissions (group_id, permission) VALUES ("god", ?) ["qadmin.page.statistics"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 766.4544ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_photogram_likes` ADD CONSTRAINT `fk_photogram_likes_post` FOREIGN KEY (`post_id`)
+[      script:oxmysql]         REFERENCES `phone_photogram_posts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 476.1860ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `darkchat_reactions` ADD CONSTRAINT `fk_darkchat_reactions_message` FOREIGN KEY (`message_id`)
+[      script:oxmysql]         REFERENCES `darkchat_messages`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 484.9560ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_documents` ADD CONSTRAINT `fk_documents_folder` FOREIGN KEY (`folder_id`)
+[      script:oxmysql]         REFERENCES `phone_document_folders`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 373.5225ms to execute a query!
+[      script:oxmysql] DELETE FROM phone_birdy_notifications WHERE kind = 'post' []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 344.2981ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_mdt_court_notes (
+[      script:oxmysql]             `id`          INT         NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             `court_id`    INT         NOT NULL,
+[      script:oxmysql]             `author_cid`  VARCHAR(64) NOT NULL,
+[      script:oxmysql]             `author_name` VARCHAR(96) NOT NULL,
+[      script:oxmysql]             `kind`        VARCHAR(16) NOT NULL DEFAULT 'note',
+[      script:oxmysql]             `body`        TEXT        NOT NULL,
+[      script:oxmysql]             `created_at`  INT         NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`id`),
+[      script:oxmysql]             KEY idx_case (`court_id`, `created_at`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 485.6985ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_vibez_saves` ADD CONSTRAINT `fk_vibez_saves_post` FOREIGN KEY (`post_id`)
+[      script:oxmysql]         REFERENCES `phone_vibez_posts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-computers took 234.2969ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS computers_app_data (
+[      script:oxmysql]             app        VARCHAR(48)  NOT NULL,
+[      script:oxmysql]             owner      VARCHAR(160) NOT NULL,
+[      script:oxmysql]             k          VARCHAR(64)  CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+[      script:oxmysql]             v          MEDIUMTEXT   NOT NULL,
+[      script:oxmysql]             updated_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (app, owner, k)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[ citizen-server-impl] network thread hitch warning: timer interval of 189 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 186 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 149 milliseconds
+[ script:sd-computers] [sd-computers] ready - 4 computers (4 configured, 0 placed)
+[ citizen-server-impl] server thread hitch warning: timer interval of 2237 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 1925.6335ms to execute a query!
+[      script:oxmysql] INSERT IGNORE INTO mri_qadmin_group_permissions (group_id, permission) VALUES ("god", ?) ["qadmin.page.reports"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1923.6601ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.TABLE_CONSTRAINTS
+[      script:oxmysql]         WHERE CONSTRAINT_SCHEMA = DATABASE() AND TABLE_NAME = ?
+[      script:oxmysql]           AND CONSTRAINT_NAME = ? AND CONSTRAINT_TYPE = 'FOREIGN KEY'
+[      script:oxmysql]      ["phone_photogram_saves","fk_photogram_saves_post"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1891.8810ms to execute a query!
+[      script:oxmysql]         SELECT room_id FROM `darkchat_messages` GROUP BY room_id HAVING COUNT(*) > 500
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1882.5600ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.TABLE_CONSTRAINTS
+[      script:oxmysql]         WHERE CONSTRAINT_SCHEMA = DATABASE() AND TABLE_NAME = ?
+[      script:oxmysql]           AND CONSTRAINT_NAME = ? AND CONSTRAINT_TYPE = 'FOREIGN KEY'
+[      script:oxmysql]      ["phone_vibez_notifications","fk_vibez_notifications_post"]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1886.6498ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_mdt_expungements (
+[      script:oxmysql]             `id`           INT          NOT NULL AUTO_INCREMENT,
+[      script:oxmysql]             `ref`          VARCHAR(16)  NOT NULL,
+[      script:oxmysql]             `citizenid`    VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `subject_name` VARCHAR(96)  NOT NULL DEFAULT '',
+[      script:oxmysql]             `scope`        MEDIUMTEXT   NULL,
+[      script:oxmysql]             `reason`       TEXT         NULL,
+[      script:oxmysql]             `status`       VARCHAR(16)  NOT NULL DEFAULT 'pending',
+[      script:oxmysql]             `ruling`       TEXT         NULL,
+[      script:oxmysql]             `filed_cid`    VARCHAR(64)  NOT NULL,
+[      script:oxmysql]             `filed_name`   VARCHAR(96)  NOT NULL,
+[      script:oxmysql]             `ruled_cid`    VARCHAR(64)  NULL,
+[      script:oxmysql]             `ruled_name`   VARCHAR(96)  NULL,
+[      script:oxmysql]             `charges_cleared` INT UNSIGNED NOT NULL DEFAULT 0,
+[      script:oxmysql]             `created_at`   INT          NOT NULL,
+[      script:oxmysql]             `updated_at`   INT          NOT NULL,
+[      script:oxmysql]             PRIMARY KEY (`id`),
+[      script:oxmysql]             UNIQUE KEY uniq_ref (`ref`),
+[      script:oxmysql]             KEY idx_subject (`citizenid`, `created_at`),
+[      script:oxmysql]             KEY idx_status (`status`, `updated_at`)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 1890.7579ms to execute a query!
+[      script:oxmysql]         CREATE TABLE IF NOT EXISTS phone_birdy_polls (
+[      script:oxmysql]             post_id    VARCHAR(16) NOT NULL,
+[      script:oxmysql]             ends_at    TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             created_at TIMESTAMP   NOT NULL DEFAULT CURRENT_TIMESTAMP,
+[      script:oxmysql]             PRIMARY KEY (post_id)
+[      script:oxmysql]         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 2680.9371ms to execute a query!
+[      script:oxmysql]         SELECT TABLE_NAME AS tbl, COLUMN_NAME AS col
+[      script:oxmysql]         FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE()
+[      script:oxmysql]           AND TABLE_NAME LIKE 'phone\_%'
+[      script:oxmysql]           AND TABLE_NAME <> ?
+[      script:oxmysql]           AND DATA_TYPE = 'varchar'
+[      script:oxmysql]           AND CHARACTER_MAXIMUM_LENGTH >= 64
+[      script:oxmysql]      ["phone_media_urls"]
+[ citizen-server-impl] server thread hitch warning: timer interval of 226 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 211.3532ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_photogram_saves` ADD CONSTRAINT `fk_photogram_saves_post` FOREIGN KEY (`post_id`)
+[      script:oxmysql]         REFERENCES `phone_photogram_posts`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 216.5596ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_vibez_comment_likes` ADD CONSTRAINT `fk_vibez_comment_likes_comment` FOREIGN KEY (`comment_id`)
+[      script:oxmysql]         REFERENCES `phone_vibez_comments`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 224.1741ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_mdt_profile_sessions` ADD CONSTRAINT `fk_mdt_sessions_profile` FOREIGN KEY (`citizenid`)
+[      script:oxmysql]         REFERENCES `phone_mdt_profiles`(`citizenid`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[ citizen-server-impl] server thread hitch warning: timer interval of 159 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 257.1155ms to execute a query!
+[      script:oxmysql]         ALTER TABLE `phone_mdt_report_restrictions` ADD CONSTRAINT `fk_mdt_restrictions_report` FOREIGN KEY (`report_id`)
+[      script:oxmysql]         REFERENCES `phone_mdt_reports`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+[      script:oxmysql]      []
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 179 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 202 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 203 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 230 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 235.9075ms to execute a query!
+[      script:oxmysql]         SELECT COUNT(*) FROM information_schema.TABLE_CONSTRAINTS
+[      script:oxmysql]         WHERE CONSTRAINT_SCHEMA = DATABASE() AND TABLE_NAME = ?
+[      script:oxmysql]           AND CONSTRAINT_NAME = ? AND CONSTRAINT_TYPE = 'FOREIGN KEY'
+[      script:oxmysql]      ["phone_mdt_case_reports","fk_mdt_case_reports_case"]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 236.4226ms to execute a query!
+[      script:oxmysql] INSERT IGNORE INTO mri_qadmin_group_permissions (group_id, permission) VALUES ("god", ?) ["qadmin.action.god_mode"]
+[ citizen-server-impl] server thread hitch warning: timer interval of 165 milliseconds
+[     script:sd-phone] [sd-phone] v1.0.7 ready · 42 schemas
+[     script:sd-phone] [sd-phone] no TURN relay set: video calls only connect between players on the same network.
+[     script:sd-phone] [sd-phone] set sd_cf_turn_token_id + sd_cf_turn_api_token (free, see the docs), or WarnAboutTurn = false in configs/phone.lua.
+[     script:sd-phone] [sd-phone] update available: v1.0.10 (running v1.0.7) - https://github.com/Samuels-Development/sd-phone/releases
+[     script:sd-phone] [sd-phone:media] URL ledger ready: 0 known media URLs from 300 columns.
+[  citizen-server-gui] You can reopen the server GUI using the command svgui.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [9000] FXServer Starting - 11/8/2026, 4:39:25 PM       
+║             TXADMIN║ ================================================================
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Scanning resources.
+[           resources] Found 146 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.1.2 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Started resource K9addon
+[           resources] Started resource cayo-perico-ultimate
+[           resources] Started resource dealer_map
+[           resources] Started resource fhstrawberrylegionv2
+[           resources] Started resource gordela_petshop
+[           resources] Started resource gordela_props
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_03.ydr uses 24.8 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_04.ydr uses 30.2 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shells_favela.ytd uses 96.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[           resources] Started resource gordela_shells_free (3 warnings)
+[           resources] Started resource hospital_map
+[           resources] Started resource metro_texture_fix
+[           resources] Started resource mri_newage_hospital_map
+[           resources] Started resource mri_props
+[           resources] Started resource prison_canteen
+[resources:prison_mai] Asset prison_main/desertos_prison.ytd uses 30.5 MiB of physical memory.
+[           resources] Started resource prison_main (1 warning)
+[           resources] Started resource prison_meeting
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for baseevents
+[           resources] Started resource baseevents
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for qbx_core
+[           resources] Started resource qbx_core
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for ox_doorlock
+[           resources] Started resource ox_doorlock
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for qbx_bankrobbery
+[           resources] Started resource qbx_bankrobbery
+[    c-scripting-core] Creating script environments for qbx_binoculars
+[           resources] Started resource qbx_binoculars
+[    c-scripting-core] Creating script environments for qbx_cityhall
+[           resources] Started resource qbx_cityhall
+[    c-scripting-core] Creating script environments for qbx_customs
+[           resources] Started resource qbx_customs
+[    c-scripting-core] Creating script environments for qbx_fireworks
+[           resources] Started resource qbx_fireworks
+[    c-scripting-core] Creating script environments for qbx_garbagejob
+[           resources] Started resource qbx_garbagejob
+[    c-scripting-core] Creating script environments for qbx_houserobbery
+[           resources] Started resource qbx_houserobbery
+[           resources] Started resource MugShotBase64
+[    c-scripting-core] Creating script environments for qbx_idcard
+[           resources] Started resource qbx_idcard
+[    c-scripting-core] Creating script environments for qbx_interior
+[           resources] Started resource qbx_interior
+[    c-scripting-core] Creating script environments for qbx_jewelery
+[           resources] Started resource qbx_jewelery
+[           resources] Started resource qbx_lockpick
+[    c-scripting-core] Creating script environments for qbx_management
+[           resources] Started resource qbx_management
+[    c-scripting-core] Creating script environments for qbx_mechanicjob
+[           resources] Started resource qbx_mechanicjob
+[    c-scripting-core] Creating script environments for qbx_pawnshop
+[           resources] Started resource qbx_pawnshop
+[    c-scripting-core] Creating script environments for qbx_photomode
+[           resources] Started resource qbx_photomode
+[    c-scripting-core] Creating script environments for qbx_radialmenu
+[           resources] Started resource qbx_radialmenu
+[    c-scripting-core] Creating script environments for qbx_recyclejob
+[           resources] Started resource qbx_recyclejob
+[    c-scripting-core] Creating script environments for qbx_scrapyard
+[           resources] Started resource qbx_scrapyard
+[    c-scripting-core] Creating script environments for qbx_seatbelt
+[           resources] Started resource qbx_seatbelt
+[    c-scripting-core] Creating script environments for qbx_towjob
+[           resources] Started resource qbx_towjob
+[    c-scripting-core] Creating script environments for qbx_truckrobbery
+[           resources] Started resource qbx_truckrobbery
+[    c-scripting-core] Creating script environments for qbx_vehicles
+[           resources] Started resource qbx_vehicles
+[    c-scripting-core] Creating script environments for qbx_vehiclesales
+[           resources] Started resource qbx_vehiclesales
+[    c-scripting-core] Creating script environments for qbx_vehicleshop
+[           resources] Started resource qbx_vehicleshop
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for Renewed-Sirensync
+[           resources] Started resource Renewed-Sirensync
+[    c-scripting-core] Creating script environments for Renewed-Weathersync
+[           resources] Started resource Renewed-Weathersync
+[           resources] Started resource bob74_ipl
+[           resources] Started resource fivem-freecam
+[    c-scripting-core] Creating script environments for illenium-appearance
+[           resources] Started resource illenium-appearance
+[    c-scripting-core] Creating script environments for interact-sound
+[           resources] Started resource interact-sound
+[           resources] Started resource mhacking
+[    c-scripting-core] Creating script environments for rpemotes-reborn
+[script:rpemotes-rebo] [rpemotes] Loading and caching emote data...
+[script:rpemotes-rebo] [rpemotes] Loaded custom emotes
+[script:rpemotes-rebo] [rpemotes] Cached 1628 emotes, 94 shared, 38 expressions, 139 walks
+[           resources] Started resource rpemotes-reborn
+[           resources] Started resource safecracker
+[    c-scripting-core] Creating script environments for screencapture
+[           resources] Started resource screencapture
+[    c-scripting-core] Creating script environments for ultra-voltlab
+[           resources] Started resource ultra-voltlab
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for mm_radio
+[           resources] Started resource mm_radio
+[    c-scripting-core] Creating script environments for sd-computers
+[ script:sd-computers] [SD-COMPUTERS] Framework detected: qb (qbox)
+[ script:sd-computers] [SD-COMPUTERS] Bridge initialised — Framework: qb, Inventory: ox_inventory
+[           resources] Started resource sd-computers
+[    c-scripting-core] Creating script environments for sd-phone
+[     script:sd-phone] [SD-PHONE] Framework detected: qbx
+[     script:sd-phone] [sd-phone] roadphone compat: /TogglePhone is already provided by the qs-smartphone shim, so it was not registered twice.
+[           resources] Started resource sd-phone
+[           resources] Started resource sd-phone-props
+[    c-scripting-core] Creating script environments for sd-tablet
+[           resources] Started resource sd-tablet
+[           resources] Started resource sd-tablet-props
+[    c-scripting-core] Creating script environments for ND_Police
+[           resources] Started resource ND_Police
+[    c-scripting-core] Creating script environments for Syn_Sit
+[           resources] Started resource Syn_Sit
+[    c-scripting-core] Creating script environments for angelicxs-CivilianJobs
+[           resources] Started resource angelicxs-CivilianJobs
+[    c-scripting-core] Creating script environments for ars_ambulancejob
+[           resources] Started resource ars_ambulancejob
+[    c-scripting-core] Creating script environments for ars_hunting
+[           resources] Started resource ars_hunting
+[           resources] Started resource cdn-fool
+[    c-scripting-core] Creating script environments for cdn-fuel
+[           resources] Started resource cdn-fuel
+[    c-scripting-core] Creating script environments for cw-rep
+[           resources] Started resource cw-rep
+[    c-scripting-core] Creating script environments for dom_trucking
+[           resources] Started resource dom_trucking
+[    c-scripting-core] Creating script environments for it-drugs
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[           resources] Started resource it-drugs
+[    c-scripting-core] Creating script environments for jim_bridge
+[   script:jim_bridge] Bridge: 'ox_inventory' detected
+[   script:jim_bridge] Bridge: 'ox_lib' detected
+[   script:jim_bridge] Bridge: 'qb-core' detected
+[   script:jim_bridge] Bridge: 'ox_target' detected
+[   script:jim_bridge] Bridge: 'qbx_core' detected
+[   script:jim_bridge] Bridge: 'qb-target' detected
+[           resources] Started resource jim_bridge
+[    c-scripting-core] Creating script environments for jim-mining
+[           resources] Started resource jim-mining
+[    c-scripting-core] Creating script environments for jim-trains
+[           resources] Started resource jim-trains
+[    c-scripting-core] Creating script environments for lunar_fishing
+[           resources] Started resource lunar_fishing
+[    c-scripting-core] Creating script environments for maji-gasdelivery
+[           resources] Started resource maji-gasdelivery
+[    c-scripting-core] Creating script environments for mri_Qadmin
+[   script:mri_Qadmin] [mri_Qadmin] Resource FS bridge carregado.
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[           resources] Started resource mri_Qadmin
+[    c-scripting-core] Creating script environments for mri_Qbackpack
+[           resources] Started resource mri_Qbackpack
+[    c-scripting-core] Creating script environments for mri_Qblackout
+[           resources] Started resource mri_Qblackout
+[    c-scripting-core] Creating script environments for mri_Qblips
+[           resources] Started resource mri_Qblips
+[    c-scripting-core] Creating script environments for mri_Qbox
+[           resources] Started resource mri_Qbox
+[    c-scripting-core] Creating script environments for mri_Qcarkeys
+[           resources] Started resource mri_Qcarkeys
+[    c-scripting-core] Creating script environments for mri_Qcarwash
+[           resources] Started resource mri_Qcarwash
+[    c-scripting-core] Creating script environments for mri_Qchat
+[           resources] Started resource mri_Qchat
+[    c-scripting-core] Creating script environments for mri_Qcrafting
+[           resources] Started resource mri_Qcrafting
+[    c-scripting-core] Creating script environments for mri_Qdraw
+[           resources] Started resource mri_Qdraw
+[    c-scripting-core] Creating script environments for mri_Qelevators
+[           resources] Started resource mri_Qelevators
+[    c-scripting-core] Creating script environments for mri_Qemotes
+[           resources] Started resource mri_Qemotes
+[    c-scripting-core] Creating script environments for mri_Qfarm
+[    script:mri_Qfarm] Recurso mri_Qfarm iniciado. Verificando/criando tabelas...
+[           resources] Started resource mri_Qfarm
+[    c-scripting-core] Creating script environments for mri_Qfleecaheist
+[           resources] Started resource mri_Qfleecaheist
+[    c-scripting-core] Creating script environments for mri_Qfps
+[           resources] Started resource mri_Qfps
+[    c-scripting-core] Creating script environments for mri_Qhud
+[           resources] Started resource mri_Qhud
+[    c-scripting-core] Creating script environments for mri_Qjobsystem
+[           resources] Started resource mri_Qjobsystem
+[    c-scripting-core] Creating script environments for mri_Qloadscreen
+[           resources] Started resource mri_Qloadscreen
+[    c-scripting-core] Creating script environments for mri_Qmarkerplacer
+[           resources] Started resource mri_Qmarkerplacer
+[           resources] Started resource mri_Qminigames
+[    c-scripting-core] Creating script environments for mri_Qmultichar
+[           resources] Started resource mri_Qmultichar
+[    c-scripting-core] Creating script environments for mri_Qnitro
+[           resources] Started resource mri_Qnitro
+[    c-scripting-core] Creating script environments for mri_Qobjects
+[           resources] Started resource mri_Qobjects
+[    c-scripting-core] Creating script environments for mri_Qpets
+[           resources] Started resource mri_Qpets
+[    c-scripting-core] Creating script environments for mri_Qrobnpcs
+[           resources] Started resource mri_Qrobnpcs
+[    c-scripting-core] Creating script environments for mri_Qsafezones
+[           resources] Started resource mri_Qsafezones
+[    c-scripting-core] Creating script environments for mri_Qspawn
+[           resources] Started resource mri_Qspawn
+[    c-scripting-core] Creating script environments for mri_Qstashes
+[           resources] Started resource mri_Qstashes
+[    c-scripting-core] Creating script environments for mri_Qstorerobbery
+[           resources] Started resource mri_Qstorerobbery
+[    c-scripting-core] Creating script environments for mri_Qvehcontrol
+[           resources] Started resource mri_Qvehcontrol
+[    c-scripting-core] Creating script environments for mri_Qvinewood
+[script:mri_Qvinewood] [mri_Qvinewood] Framework found: qbcore
+[           resources] Started resource mri_Qvinewood
+[    c-scripting-core] Creating script environments for object_gizmo
+[           resources] Started resource object_gizmo
+[    c-scripting-core] Creating script environments for pickle_prisons
+[           resources] Started resource pickle_prisons
+[    c-scripting-core] Creating script environments for pickle_waypoints
+[           resources] Started resource pickle_waypoints
+[    c-scripting-core] Creating script environments for ps-banking
+[           resources] Started resource ps-banking
+[    c-scripting-core] Creating script environments for ps-dispatch
+[           resources] Started resource ps-dispatch
+[    c-scripting-core] Creating script environments for ps-housing
+[           resources] Started resource ps-housing
+[    c-scripting-core] Creating script environments for ps-realtor
+[           resources] Started resource ps-realtor
+[    c-scripting-core] Creating script environments for randol_cargo
+[           resources] Started resource randol_cargo
+[    c-scripting-core] Creating script environments for randol_carheist
+[           resources] Started resource randol_carheist
+[    c-scripting-core] Creating script environments for randol_cityworker
+[           resources] Started resource randol_cityworker
+[    c-scripting-core] Creating script environments for randol_combatlog
+[           resources] Started resource randol_combatlog
+[    c-scripting-core] Creating script environments for randol_exporting
+[           resources] Started resource randol_exporting
+[    c-scripting-core] Creating script environments for randol_ghosthunting
+[           resources] Started resource randol_ghosthunting
+[    c-scripting-core] Creating script environments for randol_notes
+[           resources] Started resource randol_notes
+[    c-scripting-core] Creating script environments for rep-talkNPC
+[           resources] Started resource rep-talkNPC
+[    c-scripting-core] Creating script environments for rhd_garage
+[           resources] Started resource rhd_garage
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventoryWeight: 85000 (85.0kg) (0.035s)
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventorySlots: 50 (0.035s)
+[   script:jim_bridge] FrameworkCache: ox_inventory Loaded 544 Items (0.009s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 901 Vehicles (0.034s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 18 Jobs (0.035s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 7 Gangs (0.035s)
+[   script:jim_bridge] FrameworkCache: Cache Ready (8.807s)
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 615 milliseconds
+[     script:sd-phone] [SD-PHONE] Loaded locale: pt-br
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim-mining] Jim-Mining v3.0.12 - Mining Script by Jimathy
+[      script:oxmysql] [11.4.1-MariaDB] Database server connection established!
+[     script:cdn-fuel] 
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:cdn-fuel] cdn-fuel (cdn-fuel)'s latest version is: 2.1.9!
+[     script:cdn-fuel] Your current version: 2.1.9!
+[     script:cdn-fuel] If needed, update from https://github.com/CodineDev/cdn-fuel
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim-trains] Jim-Trains v1.5 - Train Script by Jimathy
+[ citizen-server-impl] server thread hitch warning: timer interval of 163 milliseconds
+[       script:ox_lib] An update is available for illenium-appearance (current version: 5.6.1)
+[       script:ox_lib] https://github.com/iLLeniumStudios/illenium-appearance/releases/tag/v5.7.0
+[       script:ox_lib] An update is available for qbx_management (current version: 1.1.0)
+[       script:ox_lib] https://github.com/Qbox-project/qbx_management/releases/tag/v1.4.0
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[    script:mri_Qfarm] Tabela verificada/criada: 1
+[    script:mri_Qfarm] Todas as tabelas foram verificadas/criadas.
+[   script:ps-housing] Tabela `properties` carregada com sucesso!
+[       script:ox_lib] An update is available for ox_doorlock (current version: 1.22.1)
+[       script:ox_lib] https://github.com/overextended/ox_doorlock/releases/tag/v1.23.0
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:pickle_prison] [pickle_prisons] Database table verified/created successfully
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[ citizen-server-impl] -- [server notice: server_metadata_portal]
+[ citizen-server-impl] SERVER METADATA HAS MOVED TO THE CFX PORTAL: sv_projectName, sv_projectDesc, tags, locale, banner_detail and banner_connecting are no longer read from your server config for the server list.
+[ citizen-server-impl] Your server name, description, tags (max 5), language, banner/profile images and Discord link are now managed at https://portal.cfx.re/ - if these are left blank, your server will be listed as 'Missing server data (must be configured in Portal)'.
+[ citizen-server-impl] Read more: https://forum.cfx.re/t/5431315
+[     script:mri_Qbox] [mri_Qbox] [INFO] [mri_Qbox] veículos: 0 alterados aplicados no qbx_core
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 479.8077ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_pickup_repair.png\",\"Sprite\":544,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":6,\"sRange\":true,\"coords\":{\"x\":2747.393310546875,\"y\":3473.208740234375,\"z\":55.6666259765625},\"tickb\":false}",2]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qelevators took 484.8720ms to execute a query!
+[      script:oxmysql] SHOW COLUMNS FROM mri_qelevators LIKE 'password' []
+[script:mri_Qelevator] [INFO] Tabela mri_qelevators verificada
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 480.6493ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"items\":0,\"bflash\":false,\"scImg\":\"rgb(254, 254, 254)\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_dock.png\",\"Sprite\":356,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":-1492.945068359375,\"y\":-939.7318725585938,\"z\":10.205810546875},\"tickb\":false}",11]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 488.1462ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_pickup_repair.png\",\"Sprite\":544,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":6,\"sRange\":true,\"coords\":{\"x\":343.0681457519531,\"y\":-1298.2021484375,\"z\":32.4981689453125},\"tickb\":false}",1]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 480.3539ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"items\":0,\"bflash\":false,\"scImg\":\"rgb(254, 254, 254)\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_dock.png\",\"Sprite\":356,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":-2081.393310546875,\"y\":2614.31201171875,\"z\":3.078369140625},\"tickb\":false}",12]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 479.3575ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_capture_the_flag.png\",\"Sprite\":408,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":-261.0989074707031,\"y\":-971.8417358398438,\"z\":31.217529296875},\"tickb\":false}",51]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 477.6701ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"Sprite\":52,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":25.70000076293945,\"y\":-1347.300048828125,\"z\":29.48999977111816},\"tickb\":false}",101]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 476.9656ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"Sprite\":52,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":-3038.7099609375,\"y\":585.9000244140625,\"z\":7.90000009536743},\"tickb\":false}",102]
+[ citizen-server-impl] server thread hitch warning: timer interval of 506 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 459 items
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 427.4195ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"colors\":0,\"sColor\":0,\"items\":0,\"bflash\":false,\"scImg\":\"\",\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"Sprite\":52,\"outline\":false,\"alpha\":255,\"hideb\":false,\"scale\":7,\"sRange\":true,\"coords\":{\"x\":-3241.469970703125,\"y\":1001.1400146484375,\"z\":12.82999992370605},\"tickb\":false}",103]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:mri_Qelevator] [SUCCESS] Elevadores carregados com sucesso!
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[ script:sd-computers] [sd-computers:auto] props in the world are not computers on their own (the Automatic tab of the admin panel switches that on)
+[ script:sd-computers] [sd-computers] ready - 4 computers (4 configured, 0 placed)
+[   script:jim_bridge] 'jim_bridge' - You are running the latest version. (2.1.09)
+[   script:jim-mining] 'jim-mining' - You are running the latest version. (3.0.12)
+[   script:jim-trains] 'jim-trains' - You are running the latest version. (1.5)
+[     script:sd-phone] [sd-phone] v1.0.7 ready · 42 schemas
+[     script:sd-phone] [sd-phone] no TURN relay set: video calls only connect between players on the same network.
+[     script:sd-phone] [sd-phone] set sd_cf_turn_token_id + sd_cf_turn_api_token (free, see the docs), or WarnAboutTurn = false in configs/phone.lua.
+[     script:sd-phone] [sd-phone] update available: v1.0.10 (running v1.0.7) - https://github.com/Samuels-Development/sd-phone/releases
+[ citizen-server-impl] server thread hitch warning: timer interval of 208 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 221 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 156 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 156 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 138 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 164 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 152 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 138 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 211 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 137 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 160 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 237.2533ms to execute a query!
+[      script:oxmysql]         SELECT * FROM `phone_weazel_articles`
+[      script:oxmysql]         WHERE status = 'scheduled' AND publish_at <= ?
+[      script:oxmysql]         ORDER BY publish_at ASC LIMIT ?
+[      script:oxmysql]      [1794184816,20]
+[ citizen-server-impl] server thread hitch warning: timer interval of 240 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 164 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 194 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 125 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 163 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 177 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 148 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 191 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 193 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 226 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 122 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 140 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 169 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 169 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 379 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 368 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 401 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 247 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 263 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 249 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 313 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 297 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 288 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 127 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 201 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 206 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 207 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 181 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 263 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 264 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 261 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 207 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 288 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 248 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 387 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 338 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 332 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 174 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 167 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 184 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 184 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 127 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 283 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 288 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 313 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 123 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 133 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 172 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 253 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 152 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 257 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 205 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 204 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 165 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 167 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 173 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 167 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 183 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 177 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 179 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 167 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 104 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 165 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 114 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 153 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 395 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 363 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 238 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 154 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 591 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 636 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 636 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 368 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 366 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 366 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 246 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 217 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 275 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 283 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 283 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 186 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 187 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 188 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 203 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 236 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 241 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 107 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 258 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 249 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 258 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 136 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 157 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 157 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 425 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 560 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 560 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 301 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 238 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 237 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 199 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 187 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 188 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 174 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 130 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 274 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 281 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 383 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 157 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 142 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 129 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 117 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 116 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 181.214.48.190:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] network thread hitch warning: timer interval of 175 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 181.214.48.190:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 113 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 137 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 124 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 200 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 201 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 186 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 110 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 123 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 118 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 161 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 126 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 220 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 161 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 162 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 152 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] Server list query returned an error: Cfx failed to reach the server at 181.214.48.190:30120 - check if the sv_listingIpOverride or sv_listingHostOverride in the server config is correct (https://docs.fivem.net/docs/server-manual/server-commands/#sv_listingipoverride-ip). The server might show as listed but players may not be able to connect.
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [2588] FXServer Starting - 11/8/2026, 4:51:14 PM       
+║             TXADMIN║ ================================================================
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Scanning resources.
+[           resources] Found 146 resources.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.1.2 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[                 cmd] Argument count mismatch (passed 1, wanted 2)
+[           resources] Started resource K9addon
+[           resources] Started resource cayo-perico-ultimate
+[           resources] Started resource dealer_map
+[           resources] Started resource fhstrawberrylegionv2
+[           resources] Started resource gordela_petshop
+[           resources] Started resource gordela_props
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_03.ydr uses 24.8 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shell_04.ydr uses 30.2 MiB of physical memory.
+[resources:gordela_sh] Asset gordela_shells_free/gg_shells_favela.ytd uses 96.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[           resources] Started resource gordela_shells_free (3 warnings)
+[           resources] Started resource hospital_map
+[           resources] Started resource metro_texture_fix
+[           resources] Started resource mri_newage_hospital_map
+[           resources] Started resource mri_props
+[           resources] Started resource prison_canteen
+[resources:prison_mai] Asset prison_main/desertos_prison.ytd uses 30.5 MiB of physical memory.
+[           resources] Started resource prison_main (1 warning)
+[           resources] Started resource prison_meeting
+[    c-scripting-core] Creating script environments for mapmanager
+[           resources] Started resource mapmanager
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for baseevents
+[           resources] Started resource baseevents
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[    c-scripting-core] Creating script environments for oxmysql
+[           resources] Started resource oxmysql
+[    c-scripting-core] Creating script environments for qbx_core
+[           resources] Started resource qbx_core
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for ox_doorlock
+[           resources] Started resource ox_doorlock
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for qbx_bankrobbery
+[           resources] Started resource qbx_bankrobbery
+[    c-scripting-core] Creating script environments for qbx_binoculars
+[           resources] Started resource qbx_binoculars
+[    c-scripting-core] Creating script environments for qbx_cityhall
+[           resources] Started resource qbx_cityhall
+[    c-scripting-core] Creating script environments for qbx_customs
+[           resources] Started resource qbx_customs
+[    c-scripting-core] Creating script environments for qbx_fireworks
+[           resources] Started resource qbx_fireworks
+[    c-scripting-core] Creating script environments for qbx_garbagejob
+[           resources] Started resource qbx_garbagejob
+[    c-scripting-core] Creating script environments for qbx_houserobbery
+[           resources] Started resource qbx_houserobbery
+[           resources] Started resource MugShotBase64
+[    c-scripting-core] Creating script environments for qbx_idcard
+[           resources] Started resource qbx_idcard
+[    c-scripting-core] Creating script environments for qbx_interior
+[           resources] Started resource qbx_interior
+[    c-scripting-core] Creating script environments for qbx_jewelery
+[           resources] Started resource qbx_jewelery
+[           resources] Started resource qbx_lockpick
+[    c-scripting-core] Creating script environments for qbx_management
+[           resources] Started resource qbx_management
+[    c-scripting-core] Creating script environments for qbx_mechanicjob
+[           resources] Started resource qbx_mechanicjob
+[    c-scripting-core] Creating script environments for qbx_pawnshop
+[           resources] Started resource qbx_pawnshop
+[    c-scripting-core] Creating script environments for qbx_photomode
+[           resources] Started resource qbx_photomode
+[    c-scripting-core] Creating script environments for qbx_radialmenu
+[           resources] Started resource qbx_radialmenu
+[    c-scripting-core] Creating script environments for qbx_recyclejob
+[           resources] Started resource qbx_recyclejob
+[    c-scripting-core] Creating script environments for qbx_scrapyard
+[           resources] Started resource qbx_scrapyard
+[    c-scripting-core] Creating script environments for qbx_seatbelt
+[           resources] Started resource qbx_seatbelt
+[    c-scripting-core] Creating script environments for qbx_towjob
+[           resources] Started resource qbx_towjob
+[    c-scripting-core] Creating script environments for qbx_truckrobbery
+[           resources] Started resource qbx_truckrobbery
+[    c-scripting-core] Creating script environments for qbx_vehicles
+[           resources] Started resource qbx_vehicles
+[    c-scripting-core] Creating script environments for qbx_vehiclesales
+[           resources] Started resource qbx_vehiclesales
+[    c-scripting-core] Creating script environments for qbx_vehicleshop
+[           resources] Started resource qbx_vehicleshop
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for Renewed-Sirensync
+[           resources] Started resource Renewed-Sirensync
+[    c-scripting-core] Creating script environments for Renewed-Weathersync
+[           resources] Started resource Renewed-Weathersync
+[           resources] Started resource bob74_ipl
+[           resources] Started resource fivem-freecam
+[    c-scripting-core] Creating script environments for illenium-appearance
+[           resources] Started resource illenium-appearance
+[    c-scripting-core] Creating script environments for interact-sound
+[           resources] Started resource interact-sound
+[           resources] Started resource mhacking
+[    c-scripting-core] Creating script environments for rpemotes-reborn
+[script:rpemotes-rebo] [rpemotes] Loading and caching emote data...
+[script:rpemotes-rebo] [rpemotes] Loaded custom emotes
+[script:rpemotes-rebo] [rpemotes] Cached 1628 emotes, 94 shared, 38 expressions, 139 walks
+[           resources] Started resource rpemotes-reborn
+[           resources] Started resource safecracker
+[    c-scripting-core] Creating script environments for screencapture
+[           resources] Started resource screencapture
+[    c-scripting-core] Creating script environments for ultra-voltlab
+[           resources] Started resource ultra-voltlab
+[    c-scripting-core] Creating script environments for pma-voice
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for mm_radio
+[           resources] Started resource mm_radio
+[    c-scripting-core] Creating script environments for sd-computers
+[ script:sd-computers] [SD-COMPUTERS] Framework detected: qb (qbox)
+[ script:sd-computers] [SD-COMPUTERS] Bridge initialised — Framework: qb, Inventory: ox_inventory
+[           resources] Started resource sd-computers
+[    c-scripting-core] Creating script environments for sd-phone
+[     script:sd-phone] [SD-PHONE] Framework detected: qbx
+[     script:sd-phone] [sd-phone] roadphone compat: /TogglePhone is already provided by the qs-smartphone shim, so it was not registered twice.
+[           resources] Started resource sd-phone
+[           resources] Started resource sd-phone-props
+[    c-scripting-core] Creating script environments for sd-tablet
+[           resources] Started resource sd-tablet
+[           resources] Started resource sd-tablet-props
+[    c-scripting-core] Creating script environments for ND_Police
+[           resources] Started resource ND_Police
+[    c-scripting-core] Creating script environments for Syn_Sit
+[           resources] Started resource Syn_Sit
+[    c-scripting-core] Creating script environments for angelicxs-CivilianJobs
+[           resources] Started resource angelicxs-CivilianJobs
+[    c-scripting-core] Creating script environments for ars_ambulancejob
+[           resources] Started resource ars_ambulancejob
+[    c-scripting-core] Creating script environments for ars_hunting
+[           resources] Started resource ars_hunting
+[           resources] Started resource cdn-fool
+[    c-scripting-core] Creating script environments for cdn-fuel
+[           resources] Started resource cdn-fuel
+[    c-scripting-core] Creating script environments for cw-rep
+[           resources] Started resource cw-rep
+[    c-scripting-core] Creating script environments for dom_trucking
+[           resources] Started resource dom_trucking
+[    c-scripting-core] Creating script environments for it-drugs
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[           resources] Started resource it-drugs
+[    c-scripting-core] Creating script environments for jim_bridge
+[   script:jim_bridge] Bridge: 'ox_lib' detected
+[   script:jim_bridge] Bridge: 'ox_target' detected
+[   script:jim_bridge] Bridge: 'ox_inventory' detected
+[   script:jim_bridge] Bridge: 'qbx_core' detected
+[   script:jim_bridge] Bridge: 'qb-core' detected
+[   script:jim_bridge] Bridge: 'qb-target' detected
+[           resources] Started resource jim_bridge
+[    c-scripting-core] Creating script environments for jim-mining
+[           resources] Started resource jim-mining
+[    c-scripting-core] Creating script environments for jim-trains
+[           resources] Started resource jim-trains
+[    c-scripting-core] Creating script environments for lunar_fishing
+[           resources] Started resource lunar_fishing
+[    c-scripting-core] Creating script environments for maji-gasdelivery
+[           resources] Started resource maji-gasdelivery
+[    c-scripting-core] Creating script environments for mri_Qadmin
+[   script:mri_Qadmin] [mri_Qadmin] Resource FS bridge carregado.
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[           resources] Started resource mri_Qadmin
+[    c-scripting-core] Creating script environments for mri_Qbackpack
+[           resources] Started resource mri_Qbackpack
+[    c-scripting-core] Creating script environments for mri_Qblackout
+[           resources] Started resource mri_Qblackout
+[    c-scripting-core] Creating script environments for mri_Qblips
+[           resources] Started resource mri_Qblips
+[    c-scripting-core] Creating script environments for mri_Qbox
+[           resources] Started resource mri_Qbox
+[    c-scripting-core] Creating script environments for mri_Qcarkeys
+[           resources] Started resource mri_Qcarkeys
+[    c-scripting-core] Creating script environments for mri_Qcarwash
+[           resources] Started resource mri_Qcarwash
+[    c-scripting-core] Creating script environments for mri_Qchat
+[           resources] Started resource mri_Qchat
+[    c-scripting-core] Creating script environments for mri_Qcrafting
+[           resources] Started resource mri_Qcrafting
+[    c-scripting-core] Creating script environments for mri_Qdraw
+[           resources] Started resource mri_Qdraw
+[    c-scripting-core] Creating script environments for mri_Qelevators
+[           resources] Started resource mri_Qelevators
+[    c-scripting-core] Creating script environments for mri_Qemotes
+[           resources] Started resource mri_Qemotes
+[    c-scripting-core] Creating script environments for mri_Qfarm
+[    script:mri_Qfarm] Recurso mri_Qfarm iniciado. Verificando/criando tabelas...
+[           resources] Started resource mri_Qfarm
+[    c-scripting-core] Creating script environments for mri_Qfleecaheist
+[           resources] Started resource mri_Qfleecaheist
+[    c-scripting-core] Creating script environments for mri_Qfps
+[           resources] Started resource mri_Qfps
+[    c-scripting-core] Creating script environments for mri_Qhud
+[           resources] Started resource mri_Qhud
+[    c-scripting-core] Creating script environments for mri_Qjobsystem
+[           resources] Started resource mri_Qjobsystem
+[    c-scripting-core] Creating script environments for mri_Qloadscreen
+[           resources] Started resource mri_Qloadscreen
+[    c-scripting-core] Creating script environments for mri_Qmarkerplacer
+[           resources] Started resource mri_Qmarkerplacer
+[           resources] Started resource mri_Qminigames
+[    c-scripting-core] Creating script environments for mri_Qmultichar
+[           resources] Started resource mri_Qmultichar
+[    c-scripting-core] Creating script environments for mri_Qnitro
+[           resources] Started resource mri_Qnitro
+[    c-scripting-core] Creating script environments for mri_Qobjects
+[           resources] Started resource mri_Qobjects
+[    c-scripting-core] Creating script environments for mri_Qpets
+[           resources] Started resource mri_Qpets
+[    c-scripting-core] Creating script environments for mri_Qrobnpcs
+[           resources] Started resource mri_Qrobnpcs
+[    c-scripting-core] Creating script environments for mri_Qsafezones
+[           resources] Started resource mri_Qsafezones
+[    c-scripting-core] Creating script environments for mri_Qspawn
+[           resources] Started resource mri_Qspawn
+[    c-scripting-core] Creating script environments for mri_Qstashes
+[           resources] Started resource mri_Qstashes
+[    c-scripting-core] Creating script environments for mri_Qstorerobbery
+[           resources] Started resource mri_Qstorerobbery
+[    c-scripting-core] Creating script environments for mri_Qvehcontrol
+[           resources] Started resource mri_Qvehcontrol
+[    c-scripting-core] Creating script environments for mri_Qvinewood
+[script:mri_Qvinewood] [mri_Qvinewood] Framework found: qbcore
+[           resources] Started resource mri_Qvinewood
+[    c-scripting-core] Creating script environments for object_gizmo
+[           resources] Started resource object_gizmo
+[    c-scripting-core] Creating script environments for pickle_prisons
+[           resources] Started resource pickle_prisons
+[    c-scripting-core] Creating script environments for pickle_waypoints
+[           resources] Started resource pickle_waypoints
+[    c-scripting-core] Creating script environments for ps-banking
+[           resources] Started resource ps-banking
+[    c-scripting-core] Creating script environments for ps-dispatch
+[           resources] Started resource ps-dispatch
+[    c-scripting-core] Creating script environments for ps-housing
+[           resources] Started resource ps-housing
+[    c-scripting-core] Creating script environments for ps-realtor
+[           resources] Started resource ps-realtor
+[    c-scripting-core] Creating script environments for randol_cargo
+[           resources] Started resource randol_cargo
+[    c-scripting-core] Creating script environments for randol_carheist
+[           resources] Started resource randol_carheist
+[    c-scripting-core] Creating script environments for randol_cityworker
+[           resources] Started resource randol_cityworker
+[    c-scripting-core] Creating script environments for randol_combatlog
+[           resources] Started resource randol_combatlog
+[    c-scripting-core] Creating script environments for randol_exporting
+[           resources] Started resource randol_exporting
+[    c-scripting-core] Creating script environments for randol_ghosthunting
+[           resources] Started resource randol_ghosthunting
+[    c-scripting-core] Creating script environments for randol_notes
+[           resources] Started resource randol_notes
+[    c-scripting-core] Creating script environments for rep-talkNPC
+[           resources] Started resource rep-talkNPC
+[    c-scripting-core] Creating script environments for rhd_garage
+[           resources] Started resource rhd_garage
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventoryWeight: 85000 (85.0kg) (0.043s)
+[   script:jim_bridge] FrameWorkCache: ox_inventory InventorySlots: 50 (0.043s)
+[   script:jim_bridge] FrameworkCache: ox_inventory Loaded 514 Items (0.011s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 901 Vehicles (0.042s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 18 Jobs (0.043s)
+[   script:jim_bridge] FrameworkCache: qbx_core Loaded 7 Gangs (0.043s)
+[   script:jim_bridge] FrameworkCache: Cache Ready (16.473s)
+[   script:mri_Qadmin] [mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[ citizen-server-impl] server thread hitch warning: timer interval of 639 milliseconds
+[     script:cdn-fuel] 
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:cdn-fuel] cdn-fuel (cdn-fuel)'s latest version is: 2.1.9!
+[     script:cdn-fuel] Your current version: 2.1.9!
+[     script:cdn-fuel] If needed, update from https://github.com/CodineDev/cdn-fuel
+[     script:cdn-fuel] ----------------------------------------------------------------------------------
+[     script:sd-phone] [SD-PHONE] Loaded locale: pt-br
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[   script:jim-mining] Jim-Mining v3.0.12 - Mining Script by Jimathy
+[   script:jim-trains] Jim-Trains v1.5 - Train Script by Jimathy
+[      script:oxmysql] [11.4.1-MariaDB] Database server connection established!
+[ citizen-server-impl] server thread hitch warning: timer interval of 215 milliseconds
+[       script:ox_lib] An update is available for qbx_management (current version: 1.1.0)
+[       script:ox_lib] https://github.com/Qbox-project/qbx_management/releases/tag/v1.4.0
+[       script:ox_lib] An update is available for illenium-appearance (current version: 5.6.1)
+[       script:ox_lib] https://github.com/iLLeniumStudios/illenium-appearance/releases/tag/v5.7.0
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[ citizen-server-impl] -- [server notice: server_metadata_portal]
+[ citizen-server-impl] SERVER METADATA HAS MOVED TO THE CFX PORTAL: sv_projectName, sv_projectDesc, tags, locale, banner_detail and banner_connecting are no longer read from your server config for the server list.
+[ citizen-server-impl] Your server name, description, tags (max 5), language, banner/profile images and Discord link are now managed at https://portal.cfx.re/ - if these are left blank, your server will be listed as 'Missing server data (must be configured in Portal)'.
+[ citizen-server-impl] Read more: https://forum.cfx.re/t/5431315
+[    script:mri_Qfarm] Tabela verificada/criada: 1
+[    script:mri_Qfarm] Todas as tabelas foram verificadas/criadas.
+[   script:ps-housing] Tabela `properties` carregada com sucesso!
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:pickle_prison] [pickle_prisons] Database table verified/created successfully
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:mri_Qbox] [mri_Qbox] [INFO] [mri_Qbox] veículos: 0 alterados aplicados no qbx_core
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 512.1955ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-3038.7099609375,\"y\":585.9000244140625,\"z\":7.90000009536743},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",102]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 515.0182ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":25.70000076293945,\"y\":-1347.300048828125,\"z\":29.48999977111816},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",101]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 518.1683ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":408,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-261.0989074707031,\"y\":-971.8417358398438,\"z\":31.217529296875},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_capture_the_flag.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",51]
+[      script:oxmysql] [11.4.1-MariaDB] sd-phone took 536.4821ms to execute a query!
+[      script:oxmysql]         SELECT COLUMN_NAME AS name FROM information_schema.columns
+[      script:oxmysql]         WHERE table_schema = DATABASE() AND table_name = ?
+[      script:oxmysql]      ["phone_racing_tracks"]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qelevators took 536.3399ms to execute a query!
+[      script:oxmysql] SHOW COLUMNS FROM mri_qelevators LIKE 'password' []
+[script:mri_Qelevator] [INFO] Tabela mri_qelevators verificada
+[ citizen-server-impl] server thread hitch warning: timer interval of 533 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Inventory has loaded 459 items
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 479.0831ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-3241.469970703125,\"y\":1001.1400146484375,\"z\":12.82999992370605},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",103]
+[      script:oxmysql] [11.4.1-MariaDB] it-drugs took 571.8717ms to execute a query!
+[      script:oxmysql] ALTER TABLE drug_plants ADD IF NOT EXISTS owner LONGTEXT DEFAULT NULL;
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 479.9840ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":1728.6600341796876,\"y\":6414.16015625,\"z\":35.02999877929687},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",104]
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qblips took 479.9569ms to execute a query!
+[      script:oxmysql] UPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":1697.989990234375,\"y\":4924.39990234375,\"z\":42.06000137329101},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",105]
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[script:mri_Qelevator] [SUCCESS] Elevadores carregados com sucesso!
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:qbx_core] [qbx_core] [INFO] Removed invalid groups from player_groups table
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[     script:it-drugs] [it-drugs] [INFO] Waiting for Database to be setup
+[ script:sd-computers] [sd-computers:auto] props in the world are not computers on their own (the Automatic tab of the admin panel switches that on)
+[ script:sd-computers] [sd-computers] ready - 4 computers (4 configured, 0 placed)
+[   script:jim_bridge] 'jim_bridge' - You are running the latest version. (2.1.09)
+[   script:jim-mining] 'jim-mining' - You are running the latest version. (3.0.12)
+[   script:jim-trains] 'jim-trains' - You are running the latest version. (1.5)
+[     script:sd-phone] [sd-phone] v1.0.7 ready · 42 schemas
+[     script:sd-phone] [sd-phone] no TURN relay set: video calls only connect between players on the same network.
+[     script:sd-phone] [sd-phone] set sd_cf_turn_token_id + sd_cf_turn_api_token (free, see the docs), or WarnAboutTurn = false in configs/phone.lua.
+[     script:mri_Qbox] Jogador: QuickCrab4741, Identificador #1: license:bb2574aadd89a726edc5aaa455cb399d0b73be6b
+[     script:mri_Qbox] Jogador: QuickCrab4741, Identificador #2: steam:11000010f2d6cbf
+[     script:mri_Qbox] Jogador: QuickCrab4741, Identificador #3: license2:dd41a1453828f627eb93e19eff8c77fc8914c17f
+[     script:mri_Qbox] Jogador: QuickCrab4741, Identificador #4: ip:177.74.65.229
+[     script:it-drugs] [it-drugs] [INFO] Getting position for dealer ID	seed_dealer
+[     script:it-drugs] [it-drugs] [INFO] Dealer Position	vec4(-49.424400, 1903.671387, 194.361298, 95.721298)
+[     script:qbx_core] [qbx_core] [INFO] QuickCrab4741 has created a character
+[     script:sd-phone] [sd-phone:banking] banking provider: Renewed-Banking
+[       script:cw-rep] fetching for	1
+[       script:cw-rep] fetching for	1
+[       script:cw-rep] result	{
+[       script:cw-rep]     "mining": 0,
+[       script:cw-rep]     "areaexample": 0,
+[       script:cw-rep]     "trucker": 0,
+[       script:cw-rep]     "crafting": 0,
+[       script:cw-rep]     "taxi": 0,
+[       script:cw-rep]     "searching": 0,
+[       script:cw-rep]     "lockpicking": 0,
+[       script:cw-rep]     "cityworker": 0,
+[       script:cw-rep]     "fishing": 0,
+[       script:cw-rep]     "busdriver": 0,
+[       script:cw-rep]     "cargo": 0,
+[       script:cw-rep]     "cooking": 0,
+[       script:cw-rep]     "hunting": 0,
+[       script:cw-rep]     "hotwiring": 0,
+[       script:cw-rep]     "garbage": 0
+[       script:cw-rep] }
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (20.5920 ms)
+[ citizen-server-impl] sync thread hitch warning: timer interval of 101 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 158 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 172 milliseconds
+[      script:oxmysql] [11.4.1-MariaDB] mri_Qadmin took 293.1034ms to execute a query!
+[      script:oxmysql] SELECT id, citizenid, license, charinfo, job, gang, money, metadata, last_logged_out FROM players WHERE citizenid NOT IN (?) ORDER BY citizenid LIMIT ? OFFSET ? [["M1L93FBI"],99,0]
+[ citizen-server-impl] server thread hitch warning: timer interval of 296 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 295 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 277 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (119.3328 ms)
+[ citizen-server-impl] server thread hitch warning: timer interval of 276 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 231 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 229 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 267 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 119 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 151 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 203 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 187 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 176 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 253 milliseconds
+[ script:ox_inventory] [ox_inventory] [INFO] Saving 1 inventories to the database
+[ script:ox_inventory] [ox_inventory] [INFO] Saved 1/1 players (7.1774 ms)
+[  citizen-server-gui] You can reopen the server GUI using the command svgui.

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "general": {
+    "serverName": "Sparta RP 20",
+    "language": "pt"
+  },
+  "server": {
+    "dataPath": "C:/Users/Administrator/Desktop/mri_server",
+    "cfgPath": "C:/Users/Administrator/Desktop/mri_server/server.cfg",
+    "startupArgs": [],
+    "autoStart": true
+  },
+  "restarter": {
+    "resourceStartingTolerance": 600
+  }
+}

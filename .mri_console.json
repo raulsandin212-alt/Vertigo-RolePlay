@@ -1,0 +1,7 @@
+{
+  "transport": "txadmin",
+  "txUser": "installer",
+  "txPassword": "f53de02834b32c61de6203490654a317",
+  "txPort": 40120,
+  "gamePort": 30120
+}

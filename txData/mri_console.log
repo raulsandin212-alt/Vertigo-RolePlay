@@ -1,0 +1,475 @@
+[38;5;218m[    c-server-monitor] [0m[0m[32m  _______  ______                           
+[38;5;218m[    c-server-monitor] [0m[32m |  ___\ \/ / ___|  ___ _ ____   _____ _ __ 
+[38;5;218m[    c-server-monitor] [0m[32m | |_   \  /\___ \ / _ \ '__\ \ / / _ \ '__|
+[38;5;218m[    c-server-monitor] [0m[32m |  _|  /  \ ___) |  __/ |   \ V /  __/ |   
+[38;5;218m[    c-server-monitor] [0m[32m |_|   /_/\_\____/ \___|_|    \_/ \___|_|   
+[38;5;218m[    c-server-monitor] [0m[32m-------------------------------- [93mtxAdmin[32m ---[0m
+[38;5;218m[    c-server-monitor] [0m[0m
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for monitor
+[16:51:12][tx] Starting txAdmin v8.1.2/b38435/Win...
+[16:51:14][tx] 
+[16:51:14][tx]    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+[16:51:14][tx]    ┃                                    ┃
+[16:51:14][tx]    ┃     All ready! Please access:      ┃
+[16:51:14][tx]    ┃      http://localhost:40120/       ┃
+[16:51:14][tx]    ┃    http://181.214.48.190:40120/    ┃
+[16:51:14][tx]    ┃                                    ┃
+[16:51:14][tx]    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+[16:51:14][tx] 
+[16:51:14][tx] [!] Home-hosting fxserver is not recommended [!]
+[16:51:14][tx] You need to open the fxserver port (usually 30120) on Windows Firewall
+[16:51:14][tx] and set up port forwarding on your router so other players can access it.
+[16:51:14][tx:FXProc][2588] FXServer Started!
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [2588] FXServer Starting - 11/8/2026, 4:51:14 PM       
+║             TXADMIN║ ================================================================
+[38;5;171m[                 cmd] [0m[0mArgument count mismatch (passed 1, wanted 2)
+[38;5;83m[           resources] [0m[0m[32mScanning resources.[0m
+[38;5;83m[           resources] [0m[0m[32mFound 146 resources.[0m
+[38;5;66m[          svadhesive] [0m[0mAuthenticating server license key...
+[38;5;66m[          svadhesive] [0m[0mServer license key authentication succeeded. Welcome!
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for monitor
+[38;5;84m[      script:monitor] [0m[0m[36m[txAdmin][97m Resource v8.1.2 threads and commands set up. All Ready.[97m
+[38;5;83m[           resources] [0m[97mStarted resource monitor
+[38;5;171m[                 cmd] [0m[97mArgument count mismatch (passed 1, wanted 2)
+[38;5;83m[           resources] [0m[97mStarted resource K9addon
+[38;5;83m[           resources] [0m[97mStarted resource cayo-perico-ultimate
+[38;5;83m[           resources] [0m[97mStarted resource dealer_map
+[38;5;83m[           resources] [0m[97mStarted resource fhstrawberrylegionv2
+[38;5;83m[           resources] [0m[97mStarted resource gordela_petshop
+[38;5;83m[           resources] [0m[97mStarted resource gordela_props
+[38;5;171m[resources:gordela_sh] [0m[97m[94mAsset gordela_shells_free/gg_shell_03.ydr uses 24.8 MiB of physical memory.[0m
+[38;5;171m[resources:gordela_sh] [0m[0m[94mAsset gordela_shells_free/gg_shell_04.ydr uses 30.2 MiB of physical memory.[0m
+[38;5;171m[resources:gordela_sh] [0m[0m[91mAsset gordela_shells_free/gg_shells_favela.ytd uses 96.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).[0m
+[38;5;83m[           resources] [0m[0mStarted resource gordela_shells_free (3 warnings)
+[38;5;83m[           resources] [0m[0mStarted resource hospital_map
+[38;5;83m[           resources] [0m[0mStarted resource metro_texture_fix
+[38;5;83m[           resources] [0m[0mStarted resource mri_newage_hospital_map
+[38;5;83m[           resources] [0m[0mStarted resource mri_props
+[38;5;83m[           resources] [0m[0mStarted resource prison_canteen
+[38;5;211m[resources:prison_mai] [0m[0m[94mAsset prison_main/desertos_prison.ytd uses 30.5 MiB of physical memory.[0m
+[38;5;83m[           resources] [0m[0mStarted resource prison_main (1 warning)
+[38;5;83m[           resources] [0m[0mStarted resource prison_meeting
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mapmanager
+[38;5;83m[           resources] [0m[0mStarted resource mapmanager
+[38;5;83m[           resources] [0m[0mStarted resource spawnmanager
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for baseevents
+[38;5;83m[           resources] [0m[0mStarted resource baseevents
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ox_lib
+[38;5;83m[           resources] [0m[0mStarted resource ox_lib
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for oxmysql
+[38;5;83m[           resources] [0m[0mStarted resource oxmysql
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_core
+[38;5;83m[           resources] [0m[0mStarted resource qbx_core
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ox_target
+[38;5;83m[           resources] [0m[0mStarted resource ox_target
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ox_doorlock
+[38;5;83m[           resources] [0m[0mStarted resource ox_doorlock
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ox_inventory
+]0;(0) Sparta RP 20 - txAdmin - txAdmin[38;5;83m[           resources] [0m[0mStarted resource ox_inventory
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_bankrobbery
+[38;5;83m[           resources] [0m[0mStarted resource qbx_bankrobbery
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_binoculars
+[38;5;83m[           resources] [0m[0mStarted resource qbx_binoculars
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_cityhall
+[38;5;83m[           resources] [0m[0mStarted resource qbx_cityhall
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_customs
+[38;5;83m[           resources] [0m[0mStarted resource qbx_customs
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_fireworks
+[38;5;83m[           resources] [0m[0mStarted resource qbx_fireworks
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_garbagejob
+[38;5;83m[           resources] [0m[0mStarted resource qbx_garbagejob
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_houserobbery
+[38;5;83m[           resources] [0m[0mStarted resource qbx_houserobbery
+[38;5;83m[           resources] [0m[0mStarted resource MugShotBase64
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_idcard
+[38;5;83m[           resources] [0m[0mStarted resource qbx_idcard
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_interior
+[38;5;83m[           resources] [0m[0mStarted resource qbx_interior
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_jewelery
+[38;5;83m[           resources] [0m[0mStarted resource qbx_jewelery
+[38;5;83m[           resources] [0m[0mStarted resource qbx_lockpick
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_management
+[38;5;83m[           resources] [0m[0mStarted resource qbx_management
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_mechanicjob
+[38;5;83m[           resources] [0m[0mStarted resource qbx_mechanicjob
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_pawnshop
+[38;5;83m[           resources] [0m[0mStarted resource qbx_pawnshop
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_photomode
+[38;5;83m[           resources] [0m[0mStarted resource qbx_photomode
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_radialmenu
+[38;5;83m[           resources] [0m[0mStarted resource qbx_radialmenu
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_recyclejob
+[38;5;83m[           resources] [0m[0mStarted resource qbx_recyclejob
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_scrapyard
+[38;5;83m[           resources] [0m[0mStarted resource qbx_scrapyard
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_seatbelt
+[38;5;83m[           resources] [0m[0mStarted resource qbx_seatbelt
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_towjob
+[38;5;83m[           resources] [0m[0mStarted resource qbx_towjob
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_truckrobbery
+[38;5;83m[           resources] [0m[0mStarted resource qbx_truckrobbery
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_vehicles
+[38;5;83m[           resources] [0m[0mStarted resource qbx_vehicles
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_vehiclesales
+[38;5;83m[           resources] [0m[0mStarted resource qbx_vehiclesales
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for qbx_vehicleshop
+[38;5;83m[           resources] [0m[0mStarted resource qbx_vehicleshop
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for PolyZone
+[38;5;83m[           resources] [0m[0mStarted resource PolyZone
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for Renewed-Sirensync
+[38;5;83m[           resources] [0m[0mStarted resource Renewed-Sirensync
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for Renewed-Weathersync
+[38;5;83m[           resources] [0m[0mStarted resource Renewed-Weathersync
+[38;5;83m[           resources] [0m[0mStarted resource bob74_ipl
+[38;5;83m[           resources] [0m[0mStarted resource fivem-freecam
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for illenium-appearance
+[38;5;83m[           resources] [0m[0mStarted resource illenium-appearance
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for interact-sound
+[38;5;83m[           resources] [0m[0mStarted resource interact-sound
+[38;5;83m[           resources] [0m[0mStarted resource mhacking
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for rpemotes-reborn
+[38;5;94m[script:rpemotes-rebo] [0m[0m[93m[rpemotes] Loading and caching emote data...[97m
+[38;5;94m[script:rpemotes-rebo] [0m[97m[32m[rpemotes] Loaded custom emotes[97m
+[38;5;94m[script:rpemotes-rebo] [0m[97m[32m[rpemotes] Cached 1628 emotes, 94 shared, 38 expressions, 139 walks[97m
+[38;5;83m[           resources] [0m[97mStarted resource rpemotes-reborn
+[38;5;83m[           resources] [0m[97mStarted resource safecracker
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for screencapture
+[38;5;83m[           resources] [0m[97mStarted resource screencapture
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for ultra-voltlab
+[38;5;83m[           resources] [0m[97mStarted resource ultra-voltlab
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for pma-voice
+[38;5;83m[           resources] [0m[97mStarted resource pma-voice
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for mm_radio
+[38;5;83m[           resources] [0m[97mStarted resource mm_radio
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for sd-computers
+[38;5;128m[ script:sd-computers] [0m[97m[32m[SD-COMPUTERS][97m Framework detected: [93mqb (qbox)[97m
+[38;5;128m[ script:sd-computers] [0m[97m[32m[SD-COMPUTERS][97m Bridge initialised — Framework: [93mqb[97m, Inventory: [93mox_inventory[97m
+[38;5;83m[           resources] [0m[97mStarted resource sd-computers
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for sd-phone
+[38;5;46m[     script:sd-phone] [0m[97m[32m[SD-PHONE][97m Framework detected: [93mqbx[97m
+[38;5;46m[     script:sd-phone] [0m[97m[93m[sd-phone][97m roadphone compat: /TogglePhone is already provided by the qs-smartphone shim, so it was not registered twice.
+[38;5;83m[           resources] [0m[97mStarted resource sd-phone
+[38;5;83m[           resources] [0m[97mStarted resource sd-phone-props
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for sd-tablet
+[38;5;83m[           resources] [0m[97mStarted resource sd-tablet
+[38;5;83m[           resources] [0m[97mStarted resource sd-tablet-props
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for ND_Police
+[38;5;83m[           resources] [0m[97mStarted resource ND_Police
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for Syn_Sit
+[38;5;83m[           resources] [0m[97mStarted resource Syn_Sit
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for angelicxs-CivilianJobs
+[38;5;83m[           resources] [0m[97mStarted resource angelicxs-CivilianJobs
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for ars_ambulancejob
+[38;5;83m[           resources] [0m[97mStarted resource ars_ambulancejob
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for ars_hunting
+[38;5;83m[           resources] [0m[97mStarted resource ars_hunting
+[38;5;83m[           resources] [0m[97mStarted resource cdn-fool
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for cdn-fuel
+[38;5;83m[           resources] [0m[97mStarted resource cdn-fuel
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for cw-rep
+[38;5;83m[           resources] [0m[97mStarted resource cw-rep
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for dom_trucking
+[38;5;83m[           resources] [0m[97mStarted resource dom_trucking
+[38;5;161m[    c-scripting-core] [0m[97mCreating script environments for it-drugs
+[38;5;151m[     script:it-drugs] [0m[97m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;83m[           resources] [0m[0mStarted resource it-drugs
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for jim_bridge
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mox_lib[0m' detected
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mox_target[0m' detected
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mox_inventory[0m' detected
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mqbx_core[0m' detected
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mqb-core[0m' detected
+[38;5;94m[   script:jim_bridge] [0m[0m[35mBridge[0m: '[93mqb-target[0m' detected
+[38;5;83m[           resources] [0m[0mStarted resource jim_bridge
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for jim-mining
+[38;5;83m[           resources] [0m[0mStarted resource jim-mining
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for jim-trains
+[38;5;83m[           resources] [0m[0mStarted resource jim-trains
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for lunar_fishing
+[38;5;83m[           resources] [0m[0mStarted resource lunar_fishing
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for maji-gasdelivery
+[38;5;83m[           resources] [0m[0mStarted resource maji-gasdelivery
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qadmin
+[38;5;126m[   script:mri_Qadmin] [0m[0m[mri_Qadmin] Resource FS bridge carregado.
+[38;5;126m[   script:mri_Qadmin] [0m[0m[mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qadmin
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qbackpack
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qbackpack
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qblackout
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qblackout
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qblips
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qblips
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qbox
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qbox
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qcarkeys
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qcarkeys
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qcarwash
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qcarwash
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qchat
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qchat
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qcrafting
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qcrafting
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qdraw
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qdraw
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qelevators
+]0;(0) Sparta RP 20 - txAdmin - txAdmin[38;5;83m[           resources] [0m[0mStarted resource mri_Qelevators
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qemotes
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qemotes
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qfarm
+[38;5;34m[    script:mri_Qfarm] [0m[0mRecurso mri_Qfarm iniciado. Verificando/criando tabelas...
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qfarm
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qfleecaheist
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qfleecaheist
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qfps
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qfps
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qhud
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qhud
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qjobsystem
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qjobsystem
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qloadscreen
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qloadscreen
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qmarkerplacer
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qmarkerplacer
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qminigames
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qmultichar
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qmultichar
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qnitro
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qnitro
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qobjects
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qobjects
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qpets
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qpets
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qrobnpcs
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qrobnpcs
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qsafezones
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qsafezones
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qspawn
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qspawn
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qstashes
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qstashes
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qstorerobbery
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qstorerobbery
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qvehcontrol
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qvehcontrol
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for mri_Qvinewood
+[38;5;201m[script:mri_Qvinewood] [0m[0m[mri_Qvinewood] Framework found: qbcore
+[38;5;83m[           resources] [0m[0mStarted resource mri_Qvinewood
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for object_gizmo
+[38;5;83m[           resources] [0m[0mStarted resource object_gizmo
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for pickle_prisons
+[38;5;83m[           resources] [0m[0mStarted resource pickle_prisons
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for pickle_waypoints
+[38;5;83m[           resources] [0m[0mStarted resource pickle_waypoints
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ps-banking
+[38;5;83m[           resources] [0m[0mStarted resource ps-banking
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ps-dispatch
+[38;5;83m[           resources] [0m[0mStarted resource ps-dispatch
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ps-housing
+[38;5;83m[           resources] [0m[0mStarted resource ps-housing
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for ps-realtor
+[38;5;83m[           resources] [0m[0mStarted resource ps-realtor
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_cargo
+[38;5;83m[           resources] [0m[0mStarted resource randol_cargo
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_carheist
+[38;5;83m[           resources] [0m[0mStarted resource randol_carheist
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_cityworker
+[38;5;83m[           resources] [0m[0mStarted resource randol_cityworker
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_combatlog
+[38;5;83m[           resources] [0m[0mStarted resource randol_combatlog
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_exporting
+[38;5;83m[           resources] [0m[0mStarted resource randol_exporting
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_ghosthunting
+[38;5;83m[           resources] [0m[0mStarted resource randol_ghosthunting
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for randol_notes
+[38;5;83m[           resources] [0m[0mStarted resource randol_notes
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for rep-talkNPC
+[38;5;83m[           resources] [0m[0mStarted resource rep-talkNPC
+[38;5;161m[    c-scripting-core] [0m[0mCreating script environments for rhd_garage
+[38;5;83m[           resources] [0m[0mStarted resource rhd_garage
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameWorkCache[0m: [94mox[0m_[94minventory[32m InventoryWeight[0m: [93m85000[0m ([93m85.0kg[0m) [0m(0.043s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameWorkCache[0m: [94mox[0m_[94minventory[32m InventorySlots[0m: [93m50 [0m(0.043s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameworkCache[0m: [94mox[0m_[94minventory[32m Loaded [93m514[32m Items [0m(0.011s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameworkCache[0m: [94mqbx[0m_[94mcore[32m Loaded [93m901[32m Vehicles [0m(0.042s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameworkCache[0m: [94mqbx[0m_[94mcore[32m Loaded [93m18[32m Jobs [0m(0.043s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameworkCache[0m: [94mqbx[0m_[94mcore[32m Loaded [93m7[32m Gangs [0m(0.043s)
+[38;5;94m[   script:jim_bridge] [0m[0m[35mFrameworkCache[0m: [32mCache Ready [0m(16.473s)
+[38;5;126m[   script:mri_Qadmin] [0m[0m[mri_Qadmin] Resource index gerado em runtime: 146 resources.
+[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 639 milliseconds
+[38;5;47m[     script:cdn-fuel] [0m[0m
+[38;5;47m[     script:cdn-fuel] [0m[0m[91m----------------------------------------------------------------------------------[0m
+[38;5;47m[     script:cdn-fuel] [0m[0mcdn-fuel (cdn-fuel)'s latest version is: [32m2.1.9!
+[38;5;47m[     script:cdn-fuel] [0m[32m[0mYour current version: [32m2.1.9[0m!
+[38;5;47m[     script:cdn-fuel] [0m[0mIf needed, update from https://github.com/CodineDev/cdn-fuel
+[38;5;47m[     script:cdn-fuel] [0m[0m[91m----------------------------------------------------------------------------------[0m
+[38;5;46m[     script:sd-phone] [0m[0m[32m[SD-PHONE] Loaded locale: pt-br[97m
+[38;5;151m[     script:it-drugs] [0m[97m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;102m[   script:jim-mining] [0m[0m[32mJim[0m-[32mMining [0mv[36m3[0m.[36m0[0m.[36m12[0m - [32mMining Script [32mby [94mJimathy[0m
+[38;5;55m[   script:jim-trains] [0m[0m[32mJim[0m-[32mTrains [0mv[36m1[0m.[36m5[0m - [32mTrain Script [32mby [94mJimathy[0m
+[38;5;42m[      script:oxmysql] [0m[0m[36m[11.4.1-MariaDB] [32mDatabase server connection established![97m
+[38;5;73m[ citizen-server-impl] [0m[97mserver thread hitch warning: timer interval of 215 milliseconds
+[38;5;23m[       script:ox_lib] [0m[97m[93mAn update is available for qbx_management (current version: 1.1.0)
+[38;5;23m[       script:ox_lib] [0m[93mhttps://github.com/Qbox-project/qbx_management/releases/tag/v1.4.0[97m
+[38;5;23m[       script:ox_lib] [0m[97m[93mAn update is available for illenium-appearance (current version: 5.6.1)
+[38;5;23m[       script:ox_lib] [0m[93mhttps://github.com/iLLeniumStudios/illenium-appearance/releases/tag/v5.7.0[97m
+[38;5;151m[     script:it-drugs] [0m[97m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;73m[ citizen-server-impl] [0m[0m[91m-- [server notice: server_metadata_portal][0m
+[38;5;73m[ citizen-server-impl] [0m[0m[32mSERVER METADATA HAS MOVED TO THE CFX PORTAL: sv_projectName, sv_projectDesc, tags, locale, banner_detail and banner_connecting are no longer read from your server config for the server list.[0m
+[38;5;73m[ citizen-server-impl] [0m[0m[32mYour server name, description, tags (max 5), language, banner/profile images and Discord link are now managed at https://portal.cfx.re/ - if these are left blank, your server will be listed as 'Missing server data (must be configured in Portal)'.[0m
+[38;5;73m[ citizen-server-impl] [0m[0mRead more: https://forum.cfx.re/t/5431315
+[38;5;34m[    script:mri_Qfarm] [0m[0mTabela verificada/criada: 1
+[38;5;34m[    script:mri_Qfarm] [0m[0mTodas as tabelas foram verificadas/criadas.
+[38;5;18m[   script:ps-housing] [0m[0mTabela `properties` carregada com sucesso!
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;147m[script:pickle_prison] [0m[0m[32m[pickle_prisons][0m Database table verified/created successfully
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+]0;(0) Sparta RP 20 - txAdmin - txAdmin[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;146m[     script:mri_Qbox] [0m[0m[36m[mri_Qbox] [0m[INFO] [mri_Qbox] veículos: 0 alterados aplicados no qbx_core[0m
+[38;5;42m[      script:oxmysql] [0m[0m[36m[11.4.1-MariaDB] [93mmri_Qblips took 512.1955ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-3038.7099609375,\"y\":585.9000244140625,\"z\":7.90000009536743},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",102][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mmri_Qblips took 515.0182ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":25.70000076293945,\"y\":-1347.300048828125,\"z\":29.48999977111816},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",101][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mmri_Qblips took 518.1683ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":408,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-261.0989074707031,\"y\":-971.8417358398438,\"z\":31.217529296875},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_capture_the_flag.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",51][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93msd-phone took 536.4821ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93m        SELECT COLUMN_NAME AS name FROM information_schema.columns
+[38;5;42m[      script:oxmysql] [0m[93m        WHERE table_schema = DATABASE() AND table_name = ?
+[38;5;42m[      script:oxmysql] [0m[93m     ["phone_racing_tracks"][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mmri_Qelevators took 536.3399ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mSHOW COLUMNS FROM mri_qelevators LIKE 'password' [][97m
+[38;5;183m[script:mri_Qelevator] [0m[97m[93m[INFO] Tabela mri_qelevators verificada
+[38;5;73m[ citizen-server-impl] [0m[93mserver thread hitch warning: timer interval of 533 milliseconds
+[38;5;135m[ script:ox_inventory] [0m[93m[36m[ox_inventory] [0m[INFO] Inventory has loaded 459 items[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;42m[      script:oxmysql] [0m[0m[36m[11.4.1-MariaDB] [93mmri_Qblips took 479.0831ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":-3241.469970703125,\"y\":1001.1400146484375,\"z\":12.82999992370605},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",103][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mit-drugs took 571.8717ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mALTER TABLE drug_plants ADD IF NOT EXISTS owner LONGTEXT DEFAULT NULL;[97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mmri_Qblips took 479.9840ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":1728.6600341796876,\"y\":6414.16015625,\"z\":35.02999877929687},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",104][97m
+[38;5;42m[      script:oxmysql] [0m[97m[36m[11.4.1-MariaDB] [93mmri_Qblips took 479.9569ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mUPDATE mri_Qblips SET data = ? WHERE id = ? ["{\"Sprite\":52,\"scImg\":\"\",\"sRange\":true,\"items\":0,\"coords\":{\"x\":1697.989990234375,\"y\":4924.39990234375,\"z\":42.06000137329101},\"tickb\":false,\"ftimer\":50000,\"SpriteImg\":\"https://docs.fivem.net/blips/radar_crim_holdups.png\",\"scale\":7,\"outline\":false,\"colors\":0,\"hideb\":false,\"alpha\":255,\"bflash\":false,\"sColor\":0}",105][97m
+[38;5;151m[     script:it-drugs] [0m[97m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;183m[script:mri_Qelevator] [0m[0m[32m[SUCCESS] Elevadores carregados com sucesso!
+[38;5;151m[     script:it-drugs] [0m[32m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;84m[     script:qbx_core] [0m[0m[36m[qbx_core] [0m[INFO] Removed invalid groups from player_groups table[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Waiting for Database to be setup[0m
+[38;5;128m[ script:sd-computers] [0m[0m[32m[sd-computers:auto][97m props in the world are not computers on their own (the Automatic tab of the admin panel switches that on)
+[38;5;128m[ script:sd-computers] [0m[97m[32m[sd-computers][97m ready - 4 computers (4 configured, 0 placed)
+[38;5;94m[   script:jim_bridge] [0m[97m[0m'[93mjim_bridge[0m' - [32mYou are running the latest version[0m. [0m([93m2.1.09[0m)
+[38;5;102m[   script:jim-mining] [0m[0m[0m'[93mjim-mining[0m' - [32mYou are running the latest version[0m. ([93m3.0.12[0m)
+[38;5;55m[   script:jim-trains] [0m[0m[0m'[93mjim-trains[0m' - [32mYou are running the latest version[0m. ([93m1.5[0m)
+[38;5;46m[     script:sd-phone] [0m[0m[32m[sd-phone][97m v1.0.7 ready [32m·[97m 42 schemas
+[38;5;46m[     script:sd-phone] [0m[97m[93m[sd-phone][97m no TURN relay set: video calls only connect between players on the same network.
+[38;5;46m[     script:sd-phone] [0m[97m[93m[sd-phone][97m set sd_cf_turn_token_id + sd_cf_turn_api_token (free, see the docs), or WarnAboutTurn = false in configs/phone.lua.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin[16:53:10][tx] Failed to get processes tree usage data.
+[16:53:10][tx] This is probably because the `wmic` command is not available in your system.
+[16:53:10][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin[16:54:10][tx] Failed to get processes tree usage data.
+[16:54:10][tx] This is probably because the `wmic` command is not available in your system.
+[16:54:10][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin[16:55:11][tx] Failed to get processes tree usage data.
+[16:55:11][tx] This is probably because the `wmic` command is not available in your system.
+[16:55:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin[16:56:11][tx] Failed to get processes tree usage data.
+[16:56:11][tx] This is probably because the `wmic` command is not available in your system.
+[16:56:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(0) Sparta RP 20 - txAdmin - txAdmin[38;5;146m[     script:mri_Qbox] [0m[97mJogador: QuickCrab4741, Identificador #1: license:bb2574aadd89a726edc5aaa455cb399d0b73be6b
+[38;5;146m[     script:mri_Qbox] [0m[97mJogador: QuickCrab4741, Identificador #2: steam:11000010f2d6cbf
+[38;5;146m[     script:mri_Qbox] [0m[97mJogador: QuickCrab4741, Identificador #3: license2:dd41a1453828f627eb93e19eff8c77fc8914c17f
+[38;5;146m[     script:mri_Qbox] [0m[97mJogador: QuickCrab4741, Identificador #4: ip:177.74.65.229
+]0;(0) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[16:57:11][tx] Failed to get processes tree usage data.
+[16:57:11][tx] This is probably because the `wmic` command is not available in your system.
+[16:57:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;151m[     script:it-drugs] [0m[97m[36m[it-drugs] [0m[INFO] Getting position for dealer ID	seed_dealer[0m
+[38;5;151m[     script:it-drugs] [0m[0m[36m[it-drugs] [0m[INFO] Dealer Position	vec4(-49.424400, 1903.671387, 194.361298, 95.721298)[0m
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[16:58:11][tx] Failed to get processes tree usage data.
+[16:58:11][tx] This is probably because the `wmic` command is not available in your system.
+[16:58:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;84m[     script:qbx_core] [0m[0m[36m[qbx_core] [0m[INFO] QuickCrab4741 has created a character[0m
+[38;5;46m[     script:sd-phone] [0m[0m[32m[sd-phone:banking][97m banking provider: [93mRenewed-Banking[97m
+[38;5;206m[       script:cw-rep] [0m[97mfetching for	1
+[38;5;206m[       script:cw-rep] [0m[97mfetching for	1
+[38;5;206m[       script:cw-rep] [0m[97mresult	{
+[38;5;206m[       script:cw-rep] [0m[97m    "mining": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "areaexample": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "trucker": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "crafting": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "taxi": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "searching": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "lockpicking": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "cityworker": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "fishing": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "busdriver": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "cargo": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "cooking": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "hunting": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "hotwiring": 0,
+[38;5;206m[       script:cw-rep] [0m[97m    "garbage": 0
+[38;5;206m[       script:cw-rep] [0m[97m}
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[16:59:11][tx] Failed to get processes tree usage data.
+[16:59:11][tx] This is probably because the `wmic` command is not available in your system.
+[16:59:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;135m[ script:ox_inventory] [0m[97m[36m[ox_inventory] [0m[INFO] Saving 1 inventories to the database[0m
+[38;5;135m[ script:ox_inventory] [0m[0m[36m[ox_inventory] [0m[INFO] Saved 1/1 players (20.5920 ms)[0m
+[17:00:11][tx] Failed to get processes tree usage data.
+[17:00:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:00:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[17:01:11][tx] Failed to get processes tree usage data.
+[17:01:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:01:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[17:02:11][tx] Failed to get processes tree usage data.
+[17:02:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:02:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[17:03:11][tx] Failed to get processes tree usage data.
+[17:03:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:03:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0msync thread hitch warning: timer interval of 101 milliseconds
+[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 158 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[17:04:11][tx] Failed to get processes tree usage data.
+[17:04:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:04:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 172 milliseconds
+[38;5;42m[      script:oxmysql] [0m[0m[36m[11.4.1-MariaDB] [93mmri_Qadmin took 293.1034ms to execute a query!
+[38;5;42m[      script:oxmysql] [0m[93mSELECT id, citizenid, license, charinfo, job, gang, money, metadata, last_logged_out FROM players WHERE citizenid NOT IN (?) ORDER BY citizenid LIMIT ? OFFSET ? [["M1L93FBI"],99,0][97m
+[38;5;73m[ citizen-server-impl] [0m[97mserver thread hitch warning: timer interval of 296 milliseconds
+[38;5;73m[ citizen-server-impl] [0m[97mserver thread hitch warning: timer interval of 295 milliseconds
+[38;5;73m[ citizen-server-impl] [0m[97mserver thread hitch warning: timer interval of 277 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;135m[ script:ox_inventory] [0m[97m[36m[ox_inventory] [0m[INFO] Saving 1 inventories to the database[0m
+[38;5;135m[ script:ox_inventory] [0m[0m[36m[ox_inventory] [0m[INFO] Saved 1/1 players (119.3328 ms)[0m
+[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 276 milliseconds
+[17:05:11][tx] Failed to get processes tree usage data.
+[17:05:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:05:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 231 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 229 milliseconds
+[17:06:11][tx] Failed to get processes tree usage data.
+[17:06:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:06:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[17:07:11][tx] Failed to get processes tree usage data.
+[17:07:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:07:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 267 milliseconds
+[17:08:11][tx] Failed to get processes tree usage data.
+[17:08:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:08:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0msync thread hitch warning: timer interval of 119 milliseconds
+[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 151 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 203 milliseconds
+[17:09:11][tx] Failed to get processes tree usage data.
+[17:09:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:09:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 187 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 176 milliseconds
+[38;5;73m[ citizen-server-impl] [0m[0mserver thread hitch warning: timer interval of 253 milliseconds
+]0;(1) Sparta RP 20 - txAdmin - txAdmin[38;5;135m[ script:ox_inventory] [0m[0m[36m[ox_inventory] [0m[INFO] Saving 1 inventories to the database[0m
+[38;5;135m[ script:ox_inventory] [0m[0m[36m[ox_inventory] [0m[INFO] Saved 1/1 players (7.1774 ms)[0m
+[17:10:11][tx] Failed to get processes tree usage data.
+[17:10:11][tx] This is probably because the `wmic` command is not available in your system.
+[17:10:11][tx] If you are on Windows 11 or Windows Server 2025, you can enable it in the "Windows Features" settings.
+]0;(0) Sparta RP 20 - txAdmin - txAdmin[38;5;143m[  citizen-server-gui] [0m[0mYou can reopen the server GUI using the command [94msvgui[0m.
