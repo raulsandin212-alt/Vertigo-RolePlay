@@ -1,12 +1,12 @@
 // Browser-only stand-in for the server config (vite dev and headless prints).
 export const DEV_CONFIG = {
   texts: {
-    title: 'MRI QBOX',
-    subtitle: 'Menos configuração.\nMais criação.',
+    title: 'VERTIGO ROLEPLAY',
+    subtitle: 'Sua história começa aqui.',
     loading: 'CARREGANDO...',
     discord: 'Entre agora!',
   },
-  logo: { file: 'logo.png', width: 70 },
+  logo: { file: 'vertigo_logo.png', width: 160 },
   discordUrl: 'https://discord.mriqbox.com.br',
   overlay: true,
   showHints: true,
