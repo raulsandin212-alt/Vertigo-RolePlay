@@ -1,0 +1,43 @@
+{
+    "reports": {
+        "title": "Reports",
+        "staff_new": "Report #%s from %s: %s",
+        "staff_reply": "Report #%s: new reply from %s",
+        "player_reply": "The staff replied to your report #%s. Open it from F9.",
+        "player_claimed": "A staff member is handling your report #%s.",
+        "player_closed": "Your report #%s was closed."
+    },
+    "hookers": {
+        "invite": "Invite the hooker",
+        "find_secluded": "Go somewhere more secluded",
+        "secluded_failed": "You didn't find a secluded place in time.",
+        "vehicle_unsuitable": "You can't pick up hookers in this vehicle.",
+        "seat_occupied": "The passenger seat must be empty to invite a hooker.",
+        "no_money": "You don't have enough money!",
+        "menu_title": "Available services",
+        "service_oral": "Quick service",
+        "service_sex": "Full service",
+        "decline": "Decline",
+        "price": "$%s",
+        "test_spawned": "Test hooker on the passenger side. Stop the car next to her and honk.",
+        "test_busy": "Finish the current encounter before calling another one.",
+        "test_no_model": "No valid hooker model in the panel."
+    },
+    "weaponthrow": {
+        "keybind": "Throw the weapon",
+        "pickup": "Pick up the weapon",
+        "no_space": "No room in your inventory for the weapon."
+    },
+    "vehicledamage": {
+        "inside_vehicle": "Get out of the vehicle to use the kit.",
+        "no_vehicle": "No vehicle nearby.",
+        "go_to_engine": "Stand by the vehicle engine.",
+        "too_healthy": "The engine is still fine, it needs the advanced kit.",
+        "repairing": "Repairing the vehicle...",
+        "repaired": "Vehicle repaired!",
+        "cleaning": "Cleaning the vehicle...",
+        "cleaned": "Vehicle cleaned!",
+        "canceled": "Canceled.",
+        "driver_required": "Sit in the driver seat to repair."
+    }
+}

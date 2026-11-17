@@ -1,0 +1,62 @@
+fx_version 'cerulean'
+game 'gta5'
+
+name 'mri_Qbox'
+description 'Coleção de módulos da MRI Qbox (menus F9/F10, staff, VIP, combate, veículos e interação) com painel de configuração'
+author 'MRI QBOX Team'
+version '2.25.0'
+
+-- Cada módulo é uma pasta em resources/modules/ com config.lua (registro e
+-- padrões), client.lua e server.lua. O núcleo (resources/core) carrega antes dos
+-- módulos: registra, lê o data/config.json e replica a config.
+shared_scripts {
+    '@ox_lib/init.lua',
+    'resources/core/shared.lua',
+    'resources/modules/**/config.lua',
+}
+
+client_scripts {
+    '@qbx_core/modules/playerdata.lua',
+    'resources/core/client/*.lua',
+    'resources/modules/**/client.lua',
+}
+
+server_scripts {
+    '@oxmysql/lib/MySQL.lua',
+    'resources/core/server/*.lua',
+    'resources/modules/**/server.lua',
+}
+
+ui_page 'html/index.html'
+
+ox_lib 'locale'
+
+files {
+    'html/**/*',
+    'locales/*.json',
+    -- dados que os módulos carregam por require no client
+    'resources/modules/**/recipes.lua',
+    'resources/modules/traffic/*.lua',
+    'resources/modules/traffic/popgroups.xml',
+    -- traffic popgroups written from the panel (traffic/server.lua)
+    'data/popgroups*.xml',
+    'resources/modules/worldmap/emitters.lua',
+    -- MRI items ox_inventory reads on both sides (mri/data.lua)
+    'resources/modules/inventory/base/*.lua',
+}
+
+dependencies {
+    'ox_lib',
+    'oxmysql',
+    'qbx_core',
+}
+
+-- the vehicles module replaces mri_Qvehicles and answers its stock exports under the old name
+provide 'mri_Qvehicles'
+-- the density module replaces qbx_density and answers its SetDensity export
+provide 'qbx_density'
+-- the smallresources modules answer its exports under the old name
+provide 'qbx_smallresources'
+
+lua54 'yes'
+use_experimental_fxv2_oal 'yes'

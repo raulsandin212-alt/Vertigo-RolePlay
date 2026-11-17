@@ -1,0 +1,56 @@
+Mri.module({
+    id = 'vehicledamage',
+    label = 'Dano e falha do motor',
+    category = 'vehicles',
+    description = 'Batida estraga o motor de verdade: o carro perde força, falha aos poucos e morre. Kits de reparo e de limpeza e o /fix do admin. Substitui o qbx_vehiclefailure.',
+    defaults = {
+        enabled = true,
+        damage = 'normal',
+        weaponDamage = 'normal',
+        torqueLoss = true,
+        limpMode = false,
+        explosionGuard = true,
+        preventFlip = true,
+        smoothPedals = true,
+        tireBurst = 'off',
+        mechanicParts = true,
+    },
+    fields = {
+        {
+            key = 'damage',
+            type = 'select',
+            label = 'Dano no motor por batida',
+            options = {
+                { value = 'light', label = 'Leve' },
+                { value = 'normal', label = 'Normal' },
+                { value = 'heavy', label = 'Pesado' },
+            },
+        },
+        {
+            key = 'weaponDamage',
+            type = 'select',
+            label = 'Dano de tiro no carro',
+            options = {
+                { value = 'light', label = 'Leve' },
+                { value = 'normal', label = 'Normal' },
+                { value = 'heavy', label = 'Pesado' },
+            },
+        },
+        { key = 'torqueLoss', type = 'boolean', label = 'Perde força com o motor batido' },
+        { key = 'limpMode', type = 'boolean', label = 'Motor nunca morre de vez', help = 'O carro anda devagar até a oficina' },
+        { key = 'explosionGuard', type = 'boolean', label = 'Tanque não explode por dano' },
+        { key = 'preventFlip', type = 'boolean', label = 'Não desvira pelo controle', help = 'Capotado, só pelo Desvirar veículo' },
+        { key = 'smoothPedals', type = 'boolean', label = 'Pedal suave no controle', help = 'Acelerador e freio progressivos e o carro para sem dar ré' },
+        {
+            key = 'tireBurst',
+            type = 'select',
+            label = 'Pneu fura sozinho rodando',
+            options = {
+                { value = 'off', label = 'Nunca' },
+                { value = 'rare', label = 'Raro (uma vez a cada hora)' },
+                { value = 'often', label = 'Às vezes (a cada 15 minutos)' },
+            },
+        },
+        { key = 'mechanicParts', type = 'boolean', label = 'Batida gasta as peças do mecânico', help = 'Radiador, eixo, embreagem, combustível e freios do qbx_mechanicjob' },
+    },
+})

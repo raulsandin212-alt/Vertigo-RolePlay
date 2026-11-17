@@ -1,0 +1,25 @@
+# Vertigo RolePlay - dados privados e credenciais
+.mri_console.json
+.mri_state.json
+.replxx_history
+.env
+.env.*
+server.cfg
+permissions.cfg
+*.pem
+*.key
+*.p12
+*.pfx
+
+# FiveM: executaveis, temporarios e dados do txAdmin
+/artifacts/
+/txData/
+/cache/
+/logs/
+/db/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.bak

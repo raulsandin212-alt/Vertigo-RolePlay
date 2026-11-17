@@ -1,0 +1,422 @@
+import { useEffect, useRef, useState } from 'react'
+import { ArrowDown, ArrowUp, Film, FolderOpen, Maximize, MonitorPlay, Plus, RotateCcw, Save, Trash2, Type, Upload, Users, Volume2, VolumeX, X } from 'lucide-react'
+import {
+  MriButton,
+  MriCard,
+  MriInput,
+  MriPageHeader,
+  MriSettingField,
+  MriSettingToggle,
+  MriSlider,
+  MriSpinner,
+  MriSwitch,
+  MriTextarea,
+} from '@mriqbox/ui-kit'
+import { isEnvBrowser } from '../lib/assets'
+import { DEV_CONFIG } from '../lib/devConfig'
+import { fetchNui } from '../lib/nui'
+import { uploadFile } from '../lib/upload'
+import { LoadScreen } from '../loadscreen/LoadScreen'
+import { ScaledStage } from '../loadscreen/ScaledStage'
+
+const EMPTY_TRACK = { video: '', useVideoAudio: true, audio: '', title: '', artist: '' }
+const EMPTY_MEMBER = { image: '', name: '' }
+
+function Section({ icon: Icon, title, description, action, children }) {
+  return (
+    <MriCard className="space-y-4 p-4">
+      <div className="flex items-start gap-3">
+        <div className="rounded-md bg-primary/10 p-2 text-primary">
+          <Icon className="h-4 w-4" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-semibold">{title}</p>
+          <p className="text-xs text-muted-foreground">{description}</p>
+        </div>
+        {action}
+      </div>
+      {children}
+    </MriCard>
+  )
+}
+
+function ListActions({ index, length, onMove, onRemove }) {
+  return (
+    <div className="flex items-center gap-1">
+      <MriButton size="icon" variant="ghost" className="h-8 w-8" disabled={index === 0} onClick={() => onMove(index, -1)} aria-label="Subir">
+        <ArrowUp className="h-4 w-4" />
+      </MriButton>
+      <MriButton size="icon" variant="ghost" className="h-8 w-8" disabled={index === length - 1} onClick={() => onMove(index, 1)} aria-label="Descer">
+        <ArrowDown className="h-4 w-4" />
+      </MriButton>
+      <MriButton size="icon" variant="ghost" className="h-8 w-8 text-muted-foreground hover:text-destructive" onClick={() => onRemove(index)} aria-label="Remover">
+        <Trash2 className="h-4 w-4" />
+      </MriButton>
+    </div>
+  )
+}
+
+const UPLOAD_ACCEPT = { video: '.mp4,.webm', audio: '.mp3,.ogg,.wav', logo: '.png,.jpg,.jpeg,.webp,.gif' }
+
+function UploadButton({ kind, onUploaded, onStatus, onDone }) {
+  const inputRef = useRef(null)
+  const [progress, setProgress] = useState(null)
+
+  const onPick = async (e) => {
+    const file = e.target.files?.[0]
+    e.target.value = ''
+    if (!file) return
+    setProgress(0)
+    onStatus(null)
+    try {
+      const name = await uploadFile(file, kind, setProgress)
+      onUploaded(name)
+      onDone?.()
+      onStatus({ type: 'ok', text: `${name} enviado. Clique em Salvar pra valer.` })
+    } catch (err) {
+      onStatus({ type: 'error', text: `Não foi possível enviar: ${err.message}` })
+    }
+    setProgress(null)
+  }
+
+  return (
+    <>
+      <input ref={inputRef} type="file" accept={UPLOAD_ACCEPT[kind]} className="hidden" onChange={onPick} />
+      <MriButton
+        size="sm"
+        variant="outline"
+        className="h-9 shrink-0"
+        disabled={progress !== null || isEnvBrowser()}
+        onClick={() => inputRef.current?.click()}
+      >
+        <Upload className="mr-1.5 h-4 w-4" />
+        {progress !== null ? `${Math.round(progress * 100)}%` : 'Enviar'}
+      </MriButton>
+    </>
+  )
+}
+
+const FILE_GROUPS = [
+  { kind: 'video', label: 'Vídeos' },
+  { kind: 'audio', label: 'Músicas' },
+  { kind: 'logo', label: 'Logos' },
+]
+
+const formatSize = (bytes) => (bytes >= 1048576 ? `${(bytes / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(bytes / 1024))} KB`)
+
+/** Uploaded files with delete; a file the draft or the saved config uses can't be deleted. */
+function FilesSection({ draft, reloadKey, onStatus }) {
+  const [files, setFiles] = useState(null)
+  const [confirming, setConfirming] = useState(null)
+  const [busy, setBusy] = useState(null)
+  const [localKey, setLocalKey] = useState(0)
+
+  useEffect(() => {
+    if (isEnvBrowser()) return
+    fetchNui('listFiles').then((res) => setFiles(res || null))
+  }, [reloadKey, localKey])
+
+  const inDraft = {
+    video: new Set(draft.tracks.map((t) => t.video)),
+    audio: new Set(draft.tracks.map((t) => t.audio)),
+    logo: new Set([draft.logo.file]),
+  }
+
+  const remove = async (kind, name) => {
+    const key = `${kind}/${name}`
+    if (confirming !== key) {
+      setConfirming(key)
+      return
+    }
+    setConfirming(null)
+    setBusy(key)
+    const res = await fetchNui('deleteFile', { kind, name })
+    setBusy(null)
+    if (res?.ok) onStatus({ type: 'ok', text: `${name} apagado. A tela reinicia em alguns segundos para tirar do download.` })
+    else onStatus({ type: 'error', text: `Não foi possível apagar: ${res?.error || 'erro'}` })
+    setLocalKey((k) => k + 1)
+  }
+
+  return (
+    <Section icon={FolderOpen} title="Arquivos" description="O que já foi enviado. Apague o que sobrou de teste; o que está em uso não pode ser apagado.">
+      {!files && <p className="text-xs text-muted-foreground">{isEnvBrowser() ? 'Só no jogo.' : 'Carregando...'}</p>}
+      {files &&
+        FILE_GROUPS.map(({ kind, label }) => (
+          <div key={kind} className="space-y-1.5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              {label} ({files[kind]?.length || 0})
+            </p>
+            {!files[kind]?.length && <p className="text-xs text-muted-foreground">Nenhum arquivo.</p>}
+            {files[kind]?.map((file) => {
+              const key = `${kind}/${file.name}`
+              const used = file.used || inDraft[kind].has(file.name)
+              return (
+                <div key={key} className="flex items-center gap-2 rounded-md border border-border px-2.5 py-1.5">
+                  <span className="min-w-0 flex-1 truncate text-sm" title={file.name}>{file.name}</span>
+                  <span className="shrink-0 text-xs text-muted-foreground">{formatSize(file.size)}</span>
+                  {used ? (
+                    <span className="shrink-0 rounded bg-primary/15 px-1.5 py-0.5 text-[11px] font-semibold text-primary">Em uso</span>
+                  ) : (
+                    <MriButton
+                      size="sm"
+                      variant={confirming === key ? 'destructive' : 'ghost'}
+                      className={`h-7 shrink-0 ${confirming === key ? '' : 'text-muted-foreground hover:text-destructive'}`}
+                      isLoading={busy === key}
+                      onClick={() => remove(kind, file.name)}
+                      onBlur={() => confirming === key && setConfirming(null)}
+                    >
+                      <Trash2 className="mr-1 h-3.5 w-3.5" />
+                      {confirming === key ? 'Confirmar' : 'Apagar'}
+                    </MriButton>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+        ))}
+    </Section>
+  )
+}
+
+const moveItem = (list, index, dir) => {
+  const next = [...list]
+  const [item] = next.splice(index, 1)
+  next.splice(index + dir, 0, item)
+  return next
+}
+
+export function ConfigPanel({ onClose }) {
+  const [defaults, setDefaults] = useState(null)
+  const [saved, setSaved] = useState(null)
+  const [draft, setDraft] = useState(null)
+  const [saving, setSaving] = useState(false)
+  const [status, setStatus] = useState(null)
+  const [sound, setSound] = useState(false)
+  const [filesKey, setFilesKey] = useState(0)
+
+  useEffect(() => {
+    const load = isEnvBrowser() ? Promise.resolve({ config: DEV_CONFIG, defaults: DEV_CONFIG }) : fetchNui('getConfig')
+    load.then((res) => {
+      if (!res) {
+        setStatus({ type: 'error', text: 'Sem permissão para editar a tela de carregamento.' })
+        return
+      }
+      setDefaults(res.defaults)
+      setSaved(res.config)
+      setDraft(res.config)
+    })
+  }, [])
+
+  if (!draft) {
+    return (
+      <div className="flex h-full items-center justify-center text-sm text-muted-foreground">
+        {status ? status.text : <MriSpinner />}
+      </div>
+    )
+  }
+
+  const dirty = JSON.stringify(draft) !== JSON.stringify(saved)
+  const patch = (key, value) => setDraft((d) => ({ ...d, [key]: value }))
+  const patchIn = (key, field, value) => setDraft((d) => ({ ...d, [key]: { ...d[key], [field]: value } }))
+  const setTrack = (index, field, value) => patch('tracks', draft.tracks.map((t, i) => (i === index ? { ...t, [field]: value } : t)))
+  const setMember = (index, field, value) =>
+    patchIn('staff', 'members', draft.staff.members.map((m, i) => (i === index ? { ...m, [field]: value } : m)))
+
+  const save = async () => {
+    setSaving(true)
+    setStatus(null)
+    const res = isEnvBrowser() ? { ok: true, config: draft } : await fetchNui('saveConfig', draft)
+    setSaving(false)
+    if (res?.ok) {
+      setSaved(res.config)
+      setDraft(res.config)
+      setStatus({
+        type: 'ok',
+        text: res.restarted ? 'Salvo. A tela de carregamento reinicia para incluir os arquivos enviados.' : 'Salvo. Vale a partir da próxima conexão.',
+      })
+    } else {
+      setStatus({ type: 'error', text: res?.error ? `Não foi possível salvar: ${res.error}` : 'Não foi possível salvar.' })
+    }
+  }
+
+  return (
+    <div className="flex h-full flex-col">
+      <MriPageHeader
+        title="Tela de carregamento"
+        icon={MonitorPlay}
+        description="O que o jogador vê enquanto conecta. As mudanças valem a partir da próxima conexão."
+        className="shrink-0 border-b border-border px-5 py-4"
+      >
+        <div className="flex items-center gap-2">
+          {status && <span className={`text-xs ${status.type === 'ok' ? 'text-primary' : 'text-destructive'}`}>{status.text}</span>}
+          <MriButton variant="ghost" size="sm" onClick={() => setDraft(defaults)}>
+            <RotateCcw className="mr-1.5 h-4 w-4" /> Padrão
+          </MriButton>
+          <MriButton variant="outline" size="sm" disabled={!dirty} onClick={() => setDraft(saved)}>
+            Descartar
+          </MriButton>
+          <MriButton size="sm" disabled={!dirty} isLoading={saving} onClick={save}>
+            <Save className="mr-1.5 h-4 w-4" /> Salvar
+          </MriButton>
+          <MriButton variant="ghost" size="icon" onClick={onClose} aria-label="Fechar">
+            <X className="h-4 w-4" />
+          </MriButton>
+        </div>
+      </MriPageHeader>
+
+      <div className="grid min-h-0 flex-1 grid-cols-[minmax(380px,1fr)_minmax(0,1.3fr)]">
+        <div className="min-h-0 space-y-4 overflow-y-auto p-5">
+          <Section icon={Type} title="Textos e Discord" description="Título, subtítulo, texto de carregamento e botão do Discord.">
+            <MriSettingField label="Título" description="Quebra de linha vira quebra na tela.">
+              <MriTextarea resize="auto" rows={1} value={draft.texts.title} onChange={(e) => patchIn('texts', 'title', e.target.value)} />
+            </MriSettingField>
+            <MriSettingField label="Subtítulo">
+              <MriTextarea resize="auto" rows={2} value={draft.texts.subtitle} onChange={(e) => patchIn('texts', 'subtitle', e.target.value)} />
+            </MriSettingField>
+            <MriSettingField label="Texto de carregamento" description="Aparece acima da barra, junto da etapa do jogo.">
+              <MriInput value={draft.texts.loading} onChange={(e) => patchIn('texts', 'loading', e.target.value)} />
+            </MriSettingField>
+            <div className="grid grid-cols-[1fr_2fr] gap-3">
+              <MriSettingField label="Botão do Discord">
+                <MriInput value={draft.texts.discord} onChange={(e) => patchIn('texts', 'discord', e.target.value)} />
+              </MriSettingField>
+              <MriSettingField label="Convite" description="Vazio esconde o botão.">
+                <MriInput value={draft.discordUrl} placeholder="https://discord.gg/..." onChange={(e) => patch('discordUrl', e.target.value)} />
+              </MriSettingField>
+            </div>
+          </Section>
+
+          <Section icon={MonitorPlay} title="Visual" description="Logo, escurecimento do vídeo e som.">
+            <MriSettingField label="Logo" description="Envie a imagem pelo botão (até 10 MB) ou use um link. Vazio esconde a logo.">
+              <div className="flex items-center gap-2">
+                <MriInput className="flex-1" value={draft.logo.file} placeholder="logo.png" onChange={(e) => patchIn('logo', 'file', e.target.value)} />
+                <UploadButton kind="logo" onUploaded={(name) => patchIn('logo', 'file', name)} onStatus={setStatus} onDone={() => setFilesKey((k) => k + 1)} />
+              </div>
+            </MriSettingField>
+            <MriSettingField label={`Largura da logo: ${draft.logo.width}px`}>
+              <MriSlider value={draft.logo.width} min={40} max={600} step={10} size="sm" onChange={(v) => patchIn('logo', 'width', v)} />
+            </MriSettingField>
+            <MriSettingField label={`Volume inicial: ${Math.round(draft.volume * 100)}%`}>
+              <MriSlider value={draft.volume} min={0} max={1} step={0.05} size="sm" onChange={(v) => patch('volume', v)} />
+            </MriSettingField>
+            <MriSettingToggle
+              label="Escurecer o vídeo"
+              description="Gradiente atrás dos textos, ajuda a ler sobre vídeo claro."
+              checked={draft.overlay}
+              onCheckedChange={(v) => patch('overlay', v)}
+            />
+            <MriSettingToggle
+              label="Mostrar atalhos"
+              description="Teclas de esconder interface, pausar, volume e faixa."
+              checked={draft.showHints}
+              onCheckedChange={(v) => patch('showHints', v)}
+            />
+          </Section>
+
+          <Section
+            icon={Film}
+            title="Vídeos e músicas"
+            description="Tocam em sequência. Envie o arquivo pelo botão (até 100 MB) ou use um link."
+            action={
+              <MriButton size="sm" variant="outline" onClick={() => patch('tracks', [...draft.tracks, { ...EMPTY_TRACK }])}>
+                <Plus className="mr-1 h-4 w-4" /> Faixa
+              </MriButton>
+            }
+          >
+            {draft.tracks.length === 0 && <p className="text-xs text-muted-foreground">Sem faixa: a tela fica só com a cor de fundo.</p>}
+            {draft.tracks.map((track, i) => (
+              <div key={i} className="space-y-3 rounded-lg border border-border p-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Faixa {i + 1}</span>
+                  <ListActions
+                    index={i}
+                    length={draft.tracks.length}
+                    onMove={(index, dir) => patch('tracks', moveItem(draft.tracks, index, dir))}
+                    onRemove={(index) => patch('tracks', draft.tracks.filter((_, j) => j !== index))}
+                  />
+                </div>
+                <div className="flex items-center gap-2">
+                  <MriInput className="flex-1" value={track.video} placeholder="Vídeo: video.mp4 ou https://..." onChange={(e) => setTrack(i, 'video', e.target.value)} />
+                  <UploadButton kind="video" onUploaded={(name) => setTrack(i, 'video', name)} onStatus={setStatus} onDone={() => setFilesKey((k) => k + 1)} />
+                </div>
+                <div className="flex items-center justify-between gap-3">
+                  <span className="text-sm">Usar o som do vídeo</span>
+                  <MriSwitch size="sm" checked={track.useVideoAudio} onCheckedChange={(v) => setTrack(i, 'useVideoAudio', v)} aria-label="Usar o som do vídeo" />
+                </div>
+                {!track.useVideoAudio && (
+                  <div className="flex items-center gap-2">
+                    <MriInput className="flex-1" value={track.audio} placeholder="Música: musica.mp3 ou https://..." onChange={(e) => setTrack(i, 'audio', e.target.value)} />
+                    <UploadButton kind="audio" onUploaded={(name) => setTrack(i, 'audio', name)} onStatus={setStatus} onDone={() => setFilesKey((k) => k + 1)} />
+                  </div>
+                )}
+                <div className="grid grid-cols-2 gap-3">
+                  <MriInput value={track.title} placeholder="Nome" onChange={(e) => setTrack(i, 'title', e.target.value)} />
+                  <MriInput value={track.artist} placeholder="Artista" onChange={(e) => setTrack(i, 'artist', e.target.value)} />
+                </div>
+              </div>
+            ))}
+          </Section>
+
+          <Section
+            icon={Users}
+            title="Staff"
+            description="Passa um por vez ao lado do Discord. Lista vazia mostra os membros da org MRI no GitHub."
+            action={<MriSwitch checked={draft.staff.enabled} onCheckedChange={(v) => patchIn('staff', 'enabled', v)} aria-label="Mostrar staff" />}
+          >
+            {draft.staff.enabled && (
+              <>
+                {draft.staff.members.map((member, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <MriInput className="flex-1" value={member.name} placeholder="Nome" onChange={(e) => setMember(i, 'name', e.target.value)} />
+                    <MriInput className="flex-1" value={member.image} placeholder="Foto: nome.png ou https://..." onChange={(e) => setMember(i, 'image', e.target.value)} />
+                    <ListActions
+                      index={i}
+                      length={draft.staff.members.length}
+                      onMove={(index, dir) => patchIn('staff', 'members', moveItem(draft.staff.members, index, dir))}
+                      onRemove={(index) => patchIn('staff', 'members', draft.staff.members.filter((_, j) => j !== index))}
+                    />
+                  </div>
+                ))}
+                <MriButton size="sm" variant="outline" onClick={() => patchIn('staff', 'members', [...draft.staff.members, { ...EMPTY_MEMBER }])}>
+                  <Plus className="mr-1 h-4 w-4" /> Membro
+                </MriButton>
+              </>
+            )}
+          </Section>
+
+          <FilesSection draft={draft} reloadKey={filesKey} onStatus={setStatus} />
+        </div>
+
+        <div className="min-h-0 border-l border-border p-5">
+          <div className="mb-2 flex items-center justify-between">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Prévia</p>
+            <div className="flex items-center gap-2">
+              <MriButton size="sm" variant={sound ? 'default' : 'outline'} onClick={() => setSound((v) => !v)}>
+                {sound ? <Volume2 className="mr-1.5 h-4 w-4" /> : <VolumeX className="mr-1.5 h-4 w-4" />}
+                {sound ? 'Ouvindo' : 'Ouvir'}
+              </MriButton>
+              <MriButton
+                size="sm"
+                variant="outline"
+                disabled={isEnvBrowser()}
+                onClick={() => {
+                  // The panel stays mounted while hidden; muting it avoids two copies of the sound.
+                  setSound(false)
+                  fetchNui('openFullscreen', draft)
+                }}
+              >
+                <Maximize className="mr-1.5 h-4 w-4" /> Tela cheia
+              </MriButton>
+            </div>
+          </div>
+          <ScaledStage className="aspect-video w-full rounded-lg border border-border">
+            <LoadScreen config={draft} progress={62} stage="Carregando o mapa" preview sound={sound} />
+          </ScaledStage>
+          <p className="mt-2 text-xs text-muted-foreground">
+            O som toca no volume inicial acima. Arquivo enviado aparece na prévia depois de salvar, quando a tela reinicia.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}

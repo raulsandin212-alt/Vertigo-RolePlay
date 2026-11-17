@@ -1,0 +1,250 @@
+local chatInputActive = false
+local chatHidden = false
+local chatLoaded = false
+
+RegisterNetEvent('chat:addMessage')
+RegisterNetEvent('chat:addSuggestion')
+RegisterNetEvent('chat:addSuggestions')
+RegisterNetEvent('chat:removeSuggestion')
+RegisterNetEvent('chat:clear')
+RegisterNetEvent('chatMessage')
+RegisterNetEvent('__cfx_internal:serverPrint')
+
+-- Adicionar Mensagem
+AddEventHandler('chat:addMessage', function(data)
+  -- Fallback de segurança caso `data` seja string
+  if type(data) == 'string' then
+    data = { args = { data } }
+  end
+  
+  SendNUIMessage({
+    type = 'ON_MESSAGE',
+    message = data
+  })
+end)
+
+-- Fallback para chatMessage antigo
+AddEventHandler('chatMessage', function(author, color, text)
+  local args = { text }
+  if author ~= "" then
+    table.insert(args, 1, author)
+  end
+  SendNUIMessage({
+    type = 'ON_MESSAGE',
+    message = {
+      args = args,
+      color = color
+    }
+  })
+end)
+
+local isClientAdmin = false
+
+RegisterNetEvent('mri_Qchat:client:syncAdminStatus', function(status)
+  isClientAdmin = status
+end)
+
+-- Comando temporário para debug manual:
+RegisterCommand('debugchatadmin', function()
+  isClientAdmin = not isClientAdmin
+  print("[mri_Qchat] Modo visualização do ServerPrint: " .. tostring(isClientAdmin))
+end, false)
+
+-- Server Print hook
+AddEventHandler('__cfx_internal:serverPrint', function(msg)
+  if msg and msg ~= "" then
+    if isClientAdmin then
+      -- Passamos a mensagem original sem gsub para garantir que não é ele quebrando
+      SendNUIMessage({
+        type = 'ON_MESSAGE',
+        message = {
+          args = { '[SERVER]', msg },
+          color = { 255, 255, 255 }
+        }
+      })
+    end
+  end
+end)
+
+-- Adicionar Sugestão
+AddEventHandler('chat:addSuggestion', function(name, help, params)
+  SendNUIMessage({
+    type = 'ON_SUGGESTION_ADD',
+    suggestion = {
+      name = name,
+      help = help,
+      params = params or {}
+    }
+  })
+end)
+
+-- Adicionar Várias Sugestões
+AddEventHandler('chat:addSuggestions', function(suggestions)
+  for _, suggestion in ipairs(suggestions) do
+    SendNUIMessage({
+      type = 'ON_SUGGESTION_ADD',
+      suggestion = suggestion
+    })
+  end
+end)
+
+-- Remover Sugestão
+AddEventHandler('chat:removeSuggestion', function(name)
+  SendNUIMessage({
+    type = 'ON_SUGGESTION_REMOVE',
+    name = name
+  })
+end)
+
+-- Limpar Chat
+AddEventHandler('chat:clear', function()
+  SendNUIMessage({
+    type = 'ON_CLEAR'
+  })
+end)
+
+-- Exports de compatibilidade com o resource `chat` original (ex: o qbx_core
+-- chama exports.chat:addMessage no MOTD). Delegam pros handlers acima.
+--
+-- O `provide 'chat'` sozinho nao basta: exports() registra em mri_Qchat, e
+-- exports.chat continuaria sem achar. Registrar o handler interno
+-- __cfx_export_chat_<nome> e o que faz o export existir sob o nome `chat`
+-- (mesmo padrao do mri_Qappearance com o skinchanger).
+local function chatExport(name, fn)
+  AddEventHandler(('__cfx_export_chat_%s'):format(name), function(setCB)
+    setCB(fn)
+  end)
+end
+
+local function addMessage(data)
+  TriggerEvent('chat:addMessage', data)
+end
+
+local function addSuggestion(name, help, params)
+  TriggerEvent('chat:addSuggestion', name, help, params)
+end
+
+local function addSuggestions(suggestions)
+  TriggerEvent('chat:addSuggestions', suggestions)
+end
+
+local function removeSuggestion(name)
+  TriggerEvent('chat:removeSuggestion', name)
+end
+
+local function clear()
+  TriggerEvent('chat:clear')
+end
+
+-- Sob o nome `chat` (quem chama exports.chat:...).
+chatExport('addMessage', addMessage)
+chatExport('addSuggestion', addSuggestion)
+chatExport('addSuggestions', addSuggestions)
+chatExport('removeSuggestion', removeSuggestion)
+chatExport('clear', clear)
+
+-- E sob o nome proprio (quem chama exports.mri_Qchat:...).
+exports('addMessage', addMessage)
+exports('addSuggestion', addSuggestion)
+exports('addSuggestions', addSuggestions)
+exports('removeSuggestion', removeSuggestion)
+exports('clear', clear)
+
+-- Callbacks NUI
+RegisterNUICallback('chatResult', function(data, cb)
+  chatInputActive = false
+  SetNuiFocus(false)
+
+  if not data.canceled then
+    local id = PlayerId()
+    local sayId = NetworkGetNetworkIdFromEntity(GetPlayerPed(-1))
+
+    if data.message:sub(1, 1) == '/' then
+      ExecuteCommand(data.message:sub(2))
+    else
+      TriggerServerEvent('_chat:messageEntered', GetPlayerName(id), { r, g, b }, data.message)
+    end
+  end
+
+  cb('ok')
+end)
+
+RegisterNUICallback('loaded', function(data, cb)
+  TriggerServerEvent('chat:init')
+  chatLoaded = true
+  
+  -- Envia a cor de destaque (mri:color) assim que a UI carrega
+  SendNUIMessage({
+    action = 'updateAccentColor',
+    accentColor = Config.UIPrimaryColor
+  })
+  SendNUIMessage({
+    action = 'updateBackgroundColor',
+    backgroundColor = GetConvar('mri:backgroundColor', '')
+  })
+
+  cb('ok')
+end)
+
+RegisterNUICallback('getUiConfig', function(_, cb)
+  if GetResourceState('ox_lib') ~= 'started' then return cb(false) end
+  local ok, cfg = pcall(function() return exports.ox_lib:getUiConfig() end)
+  cb(ok and type(cfg) == 'table' and cfg or false)
+end)
+
+RegisterNetEvent('ox_lib:uiConfigChanged', function(cfg)
+  if type(cfg) ~= 'table' then return end
+  SendNUIMessage({ action = 'applyUiConfig', config = cfg })
+end)
+
+RegisterNetEvent('mri_Qchat:client:backgroundColorChanged', function(newColor)
+  SendNUIMessage({ action = 'updateBackgroundColor', backgroundColor = newColor or '' })
+end)
+
+-- Broadcast: convar `mri:color` mudou no server, propaga pra NUI.
+RegisterNetEvent('mri_Qchat:client:accentColorChanged', function(newColor)
+  Config.UIPrimaryColor = newColor
+  SendNUIMessage({
+    action = 'updateAccentColor',
+    accentColor = newColor
+  })
+end)
+
+RegisterCommand('mri_chat', function()
+  if chatInputActive then return end
+  chatInputActive = true
+  SendNUIMessage({ type = 'ON_OPEN' })
+  SetNuiFocus(true, true)
+  if Config.Debug then print("^2[mri_Qchat] Chat aberto.^7") end
+end, false)
+
+RegisterKeyMapping('mri_chat', 'Abrir o chat', 'keyboard', 't')
+
+Citizen.CreateThread(function()
+  SetTextChatEnabled(false)
+
+  while true do
+    Wait(500)
+
+    if chatLoaded then
+      local shouldBeHidden = IsScreenFadedOut() or IsPauseMenuActive()
+
+      if shouldBeHidden ~= chatHidden then
+        chatHidden = shouldBeHidden
+
+        SendNUIMessage({
+          type = 'ON_SCREEN_STATE_CHANGE',
+          shouldHide = shouldBeHidden
+        })
+      end
+    end
+  end
+end)
+
+-- Registro de comando (Fora do Loop!)
+Citizen.CreateThread(function()
+  while not chatLoaded do Wait(100) end
+  RegisterCommand(Config.Commands.clear, function(source, args)
+    TriggerEvent('chat:clear')
+  end, false)
+end)

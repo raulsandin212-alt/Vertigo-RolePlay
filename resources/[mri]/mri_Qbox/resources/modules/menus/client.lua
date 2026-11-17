@@ -1,0 +1,515 @@
+-- Menus F9 (jogador) e F10 (admin), com exports pra outros resources
+-- adicionarem itens (mri_Qfps, mri_Qfarm e outros). Contrato público: não
+-- renomear exports, ids de menu nem keybinds.
+--
+-- Os exports ficam sempre registrados (outros resources chamam sem checar); o
+-- módulo desligado só faz as teclas e o /menu_admin não abrirem nada.
+
+local HasGpsStudio, AbrirMenuWaypoints, AbrirMenuTime, OpenAdminMenu, ManageOptions, MenuJobs
+
+local runTimePlayerMenu = {}
+local managementMenu = {}
+local f10Menu = {}
+
+local function getSpaces(qtd)
+    local result = ''
+    for i = 1, qtd do
+        result = result ..' '
+    end
+    return result
+end
+
+-- Items with a plugin in the Qadmin panel leave the F10, also the ones another resource added when it owns a plugin
+local function withoutAdminPlugins(options)
+    local plugins = GetResourceState('mri_Qadmin') == 'started'
+        and lib.callback.await('mri_Qadmin:server:getPlugins', false) or {}
+    local owners = {}
+    for _, plugin in pairs(plugins) do owners[plugin.resource] = true end
+    local list = {}
+    for _, option in ipairs(options) do
+        local covered = (option.plugin and plugins[option.plugin])
+            or (option.resource and option.resource ~= cache.resource and owners[option.resource])
+        if not covered then
+            local shown = {}
+            for k, v in pairs(option) do shown[k] = v end
+            shown.plugin, shown.resource = nil, nil
+            list[#list + 1] = shown
+        end
+    end
+    return list
+end
+
+local function getPlayerInformation(data)
+    return string.format(
+        '**ID**: %s | **RG**: %s %s **Nome**: %s %s **Coins**: %s',
+        data.source,
+        data.citizenid,
+        getSpaces(130),
+        data.name,
+        getSpaces(130),
+        data.money.coin
+    )
+end
+
+local function addMenuItem(title, icon, description, onSelectFunction, onSelectArg, arrow)
+    return {
+        title = title,
+        icon = icon,
+        description = description,
+        arrow = arrow or false,
+        onSelect = function()
+            if onSelectArg then
+                onSelectFunction(onSelectArg)
+            else
+                onSelectFunction()
+            end
+        end
+    }
+end
+
+local function locateMenuItem(menu, title)
+    for k, v in pairs(menu) do
+        if v.title == title then
+            return k
+        end
+    end
+    return 0
+end
+
+local function locateMenu(menu)
+    if menu == 'f10' then
+        return f10Menu
+    elseif menu == 'management' then
+        return managementMenu
+    elseif menu == 'player' then
+        return runTimePlayerMenu
+    else
+        print(string.format("Menu: '%s' não encontrado."))
+    end
+end
+
+local function addItemToMenu(menu, item)
+    local menuToAdd = locateMenu(menu)
+    if not menuToAdd then
+        return
+    end
+    local index = locateMenuItem(menuToAdd, item.title)
+    if index == 0 then
+        index = #menuToAdd + 1
+    end
+    menuToAdd[index] = addMenuItem(item.title, item.icon, item.description, item.onSelectFunction, item.onSelectArg, item.arrow)
+    -- management items: the F10 hides them when the resource that added one has its own Qadmin plugin
+    if menu == 'management' then menuToAdd[index].resource = GetInvokingResource() or cache.resource end
+end
+
+exports('AddItemToMenu', addItemToMenu)
+
+local function removeItemFromMenu(menu, title)
+    local menuToRemove = locateMenu(menu)
+    local index = locateMenuItem(menuToRemove, title)
+    if index > 0 then
+        menuToRemove[index] = nil
+    end
+end
+
+exports('RemoveItemFromMenu', removeItemFromMenu)
+
+local function addManageMenu(item)
+    if locateMenuItem(managementMenu, item.title) > 0 then
+        removeItemFromMenu('management', item.title)
+    end
+    addItemToMenu('management', item)
+end
+
+exports('AddManageMenu', addManageMenu)
+
+local function removeManageMenu(title)
+    removeItemFromMenu('management', title)
+end
+
+exports('RemoveManageMenu', removeManageMenu)
+
+local function addPlayerMenu(item)
+    if locateMenuItem(runTimePlayerMenu, item.title) > 0 then
+        removeItemFromMenu('player', item.title)
+    end
+    addItemToMenu('player', item)
+end
+
+exports('AddPlayerMenu', addPlayerMenu)
+
+local function removePlayerMenu(title)
+    removeItemFromMenu('player', title)
+end
+
+exports('RemovePlayerMenu', removePlayerMenu)
+
+-- Chefe ou recrutador do grupo, pelo contrato do mri_Qjobsystem (hoje o mri_Qbossmenu). Sem ele, as opções de
+-- gerenciar só não aparecem (o resto do F9 segue funcionando).
+local function canManage(groupType, playerData)
+    if GetResourceState('mri_Qjobsystem') ~= 'started' then return false end
+    local jobsystem = exports.mri_Qjobsystem
+    return jobsystem:CheckPlayerIsbossByJobSystemData(groupType, playerData)
+        or jobsystem:CheckPlayerIrecruiterByJobSystemData(groupType, playerData)
+end
+
+-- Função para abrir o menu do jogador
+local function AbrirMenuJogador()
+    -- Registro do menu "Jogador"
+    local PlayerData = QBX.PlayerData
+
+    local jobData = {
+        label = PlayerData.job.label,
+        grade = PlayerData.job.grade.name
+    }
+    local gangData = {
+        label = PlayerData.gang.label,
+        grade = PlayerData.gang.grade.name
+    }
+
+    local options = {}
+    table.insert(options, addMenuItem('Identificação', 'fas fa-address-card', getPlayerInformation(PlayerData), ExecuteCommand, 'id'))
+    table.insert(options, addMenuItem('Emprego', 'fas fa-briefcase', jobData.label..' | '..jobData.grade, ExecuteCommand, 'job'))
+    if canManage("job", PlayerData) then
+        table.insert(options, addMenuItem('Gerenciar Emprego', 'users', 'Configurações do Emprego.', ExecuteCommand, '+tablet:job'))
+    end
+    table.insert(options, addMenuItem('Gangue', 'gun', gangData.label..' | '..gangData.grade, ExecuteCommand, 'gang'))
+    if canManage("gang", PlayerData) then
+        table.insert(options, addMenuItem('Gerenciar Gangue', 'users', 'Configurações da gangue.', ExecuteCommand, '+tablet:gang'))
+    end
+    table.insert(options, addMenuItem('Ver Reputação', 'book', 'Exibir o nível de reputação do seu personagem.', ExecuteCommand, 'rep'))
+    table.insert(options, addMenuItem('Ver Habilidades', 'fa-solid fa-book-bookmark', 'Exibir o nível de habilidades do seu personagem.', ExecuteCommand, 'skill'))
+    -- mri_Qblips 2.1+ adds its own item through AddPlayerMenu, only for who may open it.
+    if not HasGpsStudio() and GetResourceState('pickle_waypoints') == 'started' then
+        table.insert(options, addMenuItem('Waypoints', 'location-dot', 'Configurações do sistema de waypoints (ponto de referência).', AbrirMenuWaypoints, nil, true))
+    end
+
+    for k, v in pairs(runTimePlayerMenu) do
+        table.insert(options, v)
+    end
+
+    lib.registerContext({
+        id = 'menu_jogador',
+        title = 'Olá '..PlayerData.charinfo.firstname,
+        description = 'Bem-vindo à cidade',
+        options = options
+    })
+
+    -- Exibe o menu do jogador
+    lib.showContext('menu_jogador')
+end
+
+-- Only mri_Qblips 2.1+ has the route and destination panel; the archived v1 runs under the same name.
+function HasGpsStudio()
+    if GetResourceState('mri_Qblips') ~= 'started' then return false end
+    local major, minor = (GetResourceMetadata('mri_Qblips', 'version', 0) or ''):match('^(%d+)%.(%d+)')
+    major, minor = tonumber(major) or 0, tonumber(minor) or 0
+    return major > 2 or (major == 2 and minor >= 1)
+end
+
+function AbrirMenuWaypoints()
+    lib.registerContext({
+        id = 'menu_waypoints',
+        menu = 'menu_jogador',
+        title = 'Gerenciar Waypoints',
+        options = {
+            {
+                title = 'Limpar Marcadores',
+                description = 'Limpar todos os waypoints.',
+                icon = 'trash',
+                onSelect = function()
+                    ExecuteCommand('clearwaypoints')
+                end
+            },
+            {
+                title = 'Configurações',
+                description = 'Configurações do sistema de waypoints (ponto de referência).',
+                icon = 'location-dot',
+                arrow = true,
+                onSelect = function()
+                    ExecuteCommand('waypointsettings')
+                end
+            },
+        }
+    })
+    lib.showContext('menu_waypoints')
+end
+
+function AbrirMenuTime()
+    -- weather resources publish freezeTime as a boolean
+    local frozen = GlobalState.freezeTime == true
+    lib.registerContext({
+        id = 'menu_time',
+        title = 'Gerenciar Horário',
+        menu = 'menu_admin',
+        options = {
+            {
+                title = 'Alterar horário',
+                description = 'Modificar a hora atual do servidor.                                         '
+                ..'*/time [hh] [mm]*',
+                icon = 'clock',
+                onSelect = function()
+                    local input = lib.inputDialog('Alterar horário',{
+                        { type = "number", label = 'Hora', default = 12, min = 0, max = 24},
+                        { type = "number", label = 'Minutos', default = 0, min = 0, max = 59},
+                    })
+
+                    ExecuteCommand('time '..input[1]..' '..input[2])
+                end
+            },
+            {
+                title = 'Escala do tempo',
+                description = 'Modificar durará 1 minuto.                                                       '
+                ..'**Valor atual: '..GlobalState.timeScale..'**                                                                 '
+                ..'*/timescale [ms]*',
+                icon = 'stopwatch',
+                onSelect = function()
+                    local input = lib.inputDialog('Escala do tempo',{
+                        { type = "number", label = 'Modificar', description = 'Quanto será 1 minuto no jogo (Ex.: 3000, a cada 3 segundos irá passar 1 minuto no relógio do jogo)', default = 3000, min = 3000},
+                    })
+
+                    ExecuteCommand('timescale '..input[1])
+                end
+            },
+            {
+                title = 'Congelar/Descongelar',
+                description = 'Congele ou descongele o tempo.                                                                '
+                ..'**Valor atual: '..(frozen and 'congelado' or 'correndo')..'**                                                                   '
+                ..'*/freezetime [1 ou 0]*',
+                icon = 'snowflake',
+                onSelect = function()
+                    ExecuteCommand('freezetime '..(frozen and '0' or '1'))
+                end
+            },
+
+        }
+    })
+
+    lib.showContext('menu_time')
+end
+
+function OpenAdminMenu()
+    -- Menu admin (F10)
+    local options = {
+        {
+            title = 'Abrir Painel',
+            description = 'Painel da Administração do Servidor',
+            icon = 'fa-solid fa-user-tie',
+            onSelect = function()
+                ExecuteCommand('adm')
+            end
+        },
+        {
+            title = 'Customizar Veículo',
+            description = 'Tune seu veículo atual',
+            icon = 'palette',
+            onSelect = function()
+                ExecuteCommand('customs')
+            end
+        },
+        {
+            title = 'Relógio',
+            plugin = 'weather',
+            description = 'Altere o horário do servidor',
+            icon = 'clock',
+            arrow = true,
+            onSelect = function()
+                AbrirMenuTime()
+            end
+        },
+        {
+            title = 'Clima',
+            plugin = 'weather',
+            description = 'Gerenciar o clima do Servidor',
+            icon = 'cloud',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('weather')
+            end
+        },
+    }
+
+    -- the old Gerenciamento list lives in the F10 itself; what has a Qadmin plugin drops out below
+    for _, v in ipairs(ManageOptions()) do
+        options[#options + 1] = v
+    end
+
+    for _, v in pairs(f10Menu) do
+        options[#options+1] = v
+    end
+
+    options = withoutAdminPlugins(options)
+
+    lib.registerContext({
+        id = 'menu_admin',
+        title = 'Administração',
+        description = 'Gerenciamento do servidor',
+        options = options
+    })
+
+    lib.showContext('menu_admin')
+end
+
+function ManageOptions()
+    local options = {
+        {
+            title = 'Portas',
+            plugin = 'doorlock',
+            description = 'Crie ou gerencie as trancas de portas e portões do servidor.',
+            icon = 'door-closed',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('doorlock')
+            end
+        },
+        {
+            title = 'Blips',
+            plugin = 'blips',
+            description = 'Crie ou gerencie todos os blips, você pode copiar as configurações de um já criado.  ',
+            icon = 'location-dot',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('blip')
+            end
+        },
+        {
+            title = 'Baús',
+            plugin = 'stashes',
+            description = 'Crie ou gerencie os baús do servidor, você pode restringir por permissões ou senha.',
+            icon = 'box',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('bau')
+            end
+        },
+        {
+            title = 'Props',
+            plugin = 'mapeditor',
+            description = 'Crie ou gerencie os props criados do servidor, você pode editar e criar cenários.',
+            icon = 'tree',
+            arrow = true,
+            onSelect = function()
+                if GetResourceState('mri_Qmapeditor') == 'started' then return ExecuteCommand('mapeditor') end
+                -- mri_Qobjects 1.0+ renamed the command; the public 0.x keeps the old one
+                local version = GetResourceMetadata('mri_Qobjects', 'version', 0) or ''
+                ExecuteCommand(version:match('^0%.') and 'objectspawner' or 'adminobjects')
+            end
+        },
+        {
+            title = 'Elevador',
+            plugin = 'elevators',
+            description = 'Crie ou gerencie os elevadores criados, você pode criar quantos andares forem necessários.',
+            icon = 'elevator',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('elevador')
+            end
+        },
+        {
+            title = 'Garagens',
+            plugin = 'garage',
+            description = 'Crie ou gerencie as garagens criadas do servidor, você pode definir todas as opções in game.',
+            icon = 'warehouse',
+            arrow = true,
+            onSelect = function()
+                -- mri_Qgarage (supporter) replaces rhd_garage from the common base
+                ExecuteCommand(GetResourceState('mri_Qgarage') == 'started' and 'admingarage' or 'garagelist')
+            end
+        },
+        {
+            title = 'Grupos',
+            plugin = 'bossmenu',
+            description = 'Crie ou gerencie grupos, trabalhos e facções (Jobs e Gangs) in game.',
+            icon = 'briefcase',
+            arrow = true,
+            onSelect = function()
+                MenuJobs()
+            end
+        }
+    }
+
+    -- mri_Qnpc is supporter-only, so the common base doesn't have it
+    if GetResourceState('mri_Qnpc') == 'started' then
+        table.insert(options, 4, {
+            title = 'NPC',
+            plugin = 'npcs',
+            description = 'Crie ou gerencie os NPCs do servidor, você pode colocar animações nos NPCs.',
+            icon = 'users-gear',
+            arrow = true,
+            onSelect = function()
+                ExecuteCommand('npc')
+            end
+        })
+    end
+
+    -- Verificar se o resource 'mri_Qvinewood' foi iniciado
+    if GetResourceState('mri_Qvinewood') == 'started' then
+        options[#options + 1] = {
+            title = 'Vinewood',
+            description = 'Edite a sua placa de vinewood in game!',
+            icon = 'fa-solid fa-cogs',
+            onSelect = function()
+                ExecuteCommand('vinewood')
+            end
+        }
+    end
+
+    for _,v in pairs(managementMenu) do
+        options[#options + 1] = v
+    end
+
+    return options
+end
+
+function MenuJobs()
+    lib.registerContext({
+        id = 'menu_jobs',
+        menu = 'menu_admin',
+        title = 'Gerenciar Grupos',
+        options = {
+            {
+                title = 'Criar novo grupo',
+                description = 'Crie um job ou gang',
+                icon = 'square-plus',
+                arrow = true,
+                onSelect = function()
+                    ExecuteCommand('createjob')
+                end
+            },
+            {
+                title = 'Ver lista',
+                description = 'Veja todos grupos criados.',
+                icon = 'list',
+                arrow = true,
+                onSelect = function()
+                    ExecuteCommand('open_jobs')
+                end
+            },
+        }
+    })
+    lib.showContext('menu_jobs')
+end
+
+-- Tecla e callback ficam registrados (o FiveM não remove tecla); desligado, não abrem.
+lib.callback.register('AbrirMenuAdmin', function()
+    if Mri.enabled('menus') then OpenAdminMenu() end
+end)
+
+-- Keybinds
+lib.addKeybind({
+    name = 'menu_jogador_keybind',
+    description = 'Pressione F9 para abrir o menu do jogador',
+    defaultKey = 'F9',
+    onPressed = function()
+        if Mri.enabled('menus') then AbrirMenuJogador() end
+    end
+})
+
+lib.addKeybind({
+    name = 'menu_admin_keybind',
+    description = 'Pressione F10 para abrir o menu de admin',
+    defaultKey = 'F10',
+    onPressed = function()
+        if Mri.enabled('menus') then ExecuteCommand('menu_admin') end
+    end
+})

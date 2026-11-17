@@ -1,0 +1,43 @@
+{
+    "reports": {
+        "title": "Reports",
+        "staff_new": "Report #%s de %s: %s",
+        "staff_reply": "Report #%s: nova resposta de %s",
+        "player_reply": "A staff respondeu seu report #%s. Abra pelo F9.",
+        "player_claimed": "Um staff está atendendo seu report #%s.",
+        "player_closed": "Seu report #%s foi fechado."
+    },
+    "hookers": {
+        "invite": "Chamar a prostituta",
+        "find_secluded": "Vá para um lugar mais isolado",
+        "secluded_failed": "Você não achou um lugar isolado a tempo.",
+        "vehicle_unsuitable": "Você não pode pegar prostitutas neste veículo.",
+        "seat_occupied": "O banco do passageiro precisa estar vazio para chamar uma prostituta.",
+        "no_money": "Você não tem dinheiro suficiente!",
+        "menu_title": "Serviços disponíveis",
+        "service_oral": "Serviço rápido",
+        "service_sex": "Serviço completo",
+        "decline": "Dispensar",
+        "price": "$%s",
+        "test_spawned": "Prostituta de teste do lado do passageiro. Pare o carro perto dela e buzine.",
+        "test_busy": "Termine o encontro atual antes de chamar outra.",
+        "test_no_model": "Nenhum modelo de prostituta válido no painel."
+    },
+    "weaponthrow": {
+        "keybind": "Arremessar a arma",
+        "pickup": "Pegar a arma",
+        "no_space": "Sem espaço no inventário para a arma."
+    },
+    "vehicledamage": {
+        "inside_vehicle": "Saia do veículo para usar o kit.",
+        "no_vehicle": "Nenhum veículo por perto.",
+        "go_to_engine": "Fique do lado do motor do veículo.",
+        "too_healthy": "O motor ainda está bom, precisa do kit avançado.",
+        "repairing": "Consertando o veículo...",
+        "repaired": "Veículo consertado!",
+        "cleaning": "Limpando o veículo...",
+        "cleaned": "Veículo limpo!",
+        "canceled": "Cancelado.",
+        "driver_required": "Sente no banco do motorista para consertar."
+    }
+}

@@ -1,0 +1,524 @@
+if GetResourceState('qb-core') == "missing" then return end
+
+QBCore = exports['qb-core']:GetCoreObject()
+local isServer = IsDuplicityVersion()
+
+-- GetCoreObject e uma copia: acompanha os veiculos cadastrados/editados em runtime no qbx_core
+local function onVehicleUpdate(model, vehicle)
+    QBCore.Shared.Vehicles[model] = vehicle
+end
+
+if isServer then
+    AddEventHandler('qbx_core:server:onVehicleUpdate', onVehicleUpdate)
+else
+    RegisterNetEvent('qbx_core:client:onVehicleUpdate', onVehicleUpdate)
+end
+
+fw = {
+    player = {
+        name = "Unkown Players",
+        money = {
+            cash = 0,
+            bank = 0
+        },
+        job = {
+            name = "none",
+            grade = 0
+        },
+        gang = {
+            name = "none",
+            grade = 0
+        }
+    },
+    qb = true,
+    playerLoaded = false
+}
+
+--- Get Money
+---@param type string
+---@return integer
+function fw.gm(type)
+    return fw.player.money?[type] or 0
+end
+
+---@return string
+function fw.gn()
+    return fw.player.name
+end
+
+--- Get Vehicle Name
+---@param model string
+function fw.gvn(model)
+    local vd = QBCore.Shared.Vehicles[model]
+    local makename = GetMakeNameFromVehicleModel(model)
+    local displayname = GetDisplayNameFromVehicleModel(model)
+
+    local vm = vd?.brand or makename
+    local vn = vd?.name or displayname
+    return ("%s %s"):format(vm, vn)
+end
+
+local function setPlayerData(PlayerData)
+    local Charinfo = PlayerData.charinfo
+    local Job = PlayerData.job
+    local Gang = PlayerData.gang
+
+    fw.player.name = Charinfo.firstname .. " " .. Charinfo.lastname
+    fw.player.money = PlayerData.money
+
+    fw.player.job = {
+        name = Job.name,
+        grade = Job.grade.level
+    }
+    fw.player.gang = {
+        name = Gang.name,
+        grade = Gang.grade.level
+    }
+end
+
+if not isServer then
+    RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+        setPlayerData(QBCore.Functions.GetPlayerData())
+        fw.playerLoaded = true
+    end)
+
+    RegisterNetEvent('QBCore:Player:SetPlayerData', setPlayerData)
+
+    -- OnPlayerLoaded does not fire again when this resource restarts mid-session
+    if LocalPlayer.state.isLoggedIn then
+        setPlayerData(QBCore.Functions.GetPlayerData())
+        fw.playerLoaded = true
+    end
+end
+
+if isServer then
+    --- Get Player
+    ---@param src number
+    ---@return table | boolean
+    function fw.gp(src)
+        local p = QBCore.Functions.GetPlayer(tonumber(src))
+        return p and p.PlayerData or false
+    end
+
+    --- Get Identifier
+    ---@param src number
+    ---@param withLicense boolean?
+    ---@return string | boolean
+    ---@return string | boolean
+    function fw.gi(src, withLicense)
+        local pData = fw.gp(src)
+        if not pData then return false, false end
+        return pData.citizenid or false, withLicense and pData.license or false
+    end
+
+    --- Get Player By Identifier
+    ---@param identifier string
+    ---@return table | boolean
+    function fw.gpbi(identifier)
+        local p = QBCore.Functions.GetPlayerByCitizenId(identifier)
+        return p and p.PlayerData or false
+    end
+
+    --- Player Remove Money
+    ---@param src number playerid
+    ---@param type string cash | bank
+    ---@param amount number amount of money
+    ---@return boolean
+    function fw.rm(src, type, amount)
+        local p = QBCore.Functions.GetPlayer(src)
+        if not p then return false end
+        return p.Functions.RemoveMoney(type, amount, '')
+    end
+
+    --- Get Player Name
+    ---@param src number
+    ---@return string
+    function fw.gn(src)
+        local pData = fw.gp(src)
+        local charinfo = pData and pData.charinfo or {}
+        return next(charinfo) and ("%s %s"):format(charinfo.firstname, charinfo.lastname) or "Unkown Players"
+    end
+
+    --- Get Shared Vehicle
+    ---@param model string
+    ---@return table
+    function fw.gsv(model)
+        return QBCore.Shared.Vehicles[model] or {}
+    end
+
+    --- Get Vehicle Mods & Deformation By Plate
+    ---@param plate any
+    function fw.gmdbp(plate)
+        local results = MySQL.single.await("SELECT mods, deformation FROM player_vehicles WHERE plate = ? OR fakeplate = ?", {plate, plate})
+        if not results then return {prop = {}, deformation = {},} end
+        return {prop = json.decode(results.mods), deformation = json.decode(results.deformation)}
+    end
+
+    --- Update Vehicle State
+    ---@param plate string
+    ---@param state number
+    ---@param garage string
+    ---@return boolean
+    function fw.uvs(plate, state, garage)
+        local Update = MySQL.update.await("UPDATE player_vehicles SET state = ?, garage = ? WHERE plate = ? OR fakeplate = ?", {state, garage, plate, plate})
+        return Update > 0
+    end
+
+    --- Update Vehicle State Police Impound
+    ---@param plate string
+    ---@param state number
+    ---@return boolean
+    function fw.uvspi(plate, state)
+        local update = MySQL.update.await([[
+            UPDATE
+                player_vehicles SET state = ? WHERE plate = ? OR fakeplate = ?
+        ]], {state, plate, plate})
+        return update > 0
+    end
+
+    --- Swap Vehicle Garage
+    ---@param newgarage string
+    ---@param plate string
+    ---@return boolean
+    function fw.svg(newgarage, plate)
+        local update = MySQL.update.await("UPDATE player_vehicles SET garage = ? WHERE plate = ? OR fakeplate = ?", {newgarage, plate, plate})
+        return update > 0
+    end
+
+    --- Update Vehicle Owner
+    ---@param plate string
+    ---@param oldOwnerId table
+    ---@param newOwnerId table
+    function fw.uvo(oldOwnerId, newOwnerId, plate)
+        local mp = fw.gp(oldOwnerId)
+        local tp = fw.gp(newOwnerId)
+        if not mp then return end
+        if not tp then return false, locale("notify.error.player_offline", newOwnerId) end
+
+        local update = MySQL.update.await("UPDATE player_vehicles SET license = ?, citizenid = ? WHERE citizenid = ? AND (plate = ? OR fakeplate = ?)", {
+            tp.license,
+            tp.citizenid,
+            mp.citizenid,
+            plate,
+            plate
+        })
+        return update > 0
+    end
+
+    ---- Get Vehicle Owner By Plate
+    ---@param src number
+    ---@param plate string
+    ---@param filter {onlyOwner: boolean}
+    ---@param pleaseUpdate {vehicle_name:string, mods: table, deformation: table, fuel: number, engine: number, body: number}
+    ---@return table | boolean
+    function fw.gvobp(src, plate, filter, pleaseUpdate)
+        local identifier = fw.gi(src)
+        if not identifier then return false end
+
+        local format = [[
+            SELECT
+                pv.vehicle,
+                p.charinfo
+            FROM player_vehicles pv LEFT JOIN players p ON pv.citizenid = p.citizenid
+                WHERE
+                    pv.plate = ? OR pv.fakeplate = ?
+        ]]
+        local value = {plate, plate}
+
+        if filter and filter.onlyOwner then
+            format = [[
+                SELECT
+                    pv.vehicle,
+                    p.charinfo
+                FROM player_vehicles pv LEFT JOIN players p ON pv.citizenid = p.citizenid
+                    WHERE
+                        (pv.plate = ? OR pv.fakeplate = ?) AND pv.citizenid = ?
+            ]]
+            value = {plate, plate, identifier}
+        end
+
+        local results = MySQL.single.await(format, value)
+        if not results then return false end
+        local charinfo = json.decode(results.charinfo)
+        local ownername = ("%s %s"):format(charinfo.firstname, charinfo.lastname)
+
+        if pleaseUpdate then
+            MySQL.update([[
+                UPDATE
+                    player_vehicles
+                        SET
+                    vehicle_name = ?, mods = ?, fuel = ?, engine = ?, body = ?, deformation = ? WHERE plate = ? OR fakeplate = ?
+            ]], {
+                pleaseUpdate.vehicle_name,
+                json.encode(pleaseUpdate.mods),
+                math.floor(pleaseUpdate.fuel),
+                math.floor(pleaseUpdate.engine),
+                math.floor(pleaseUpdate.body),
+                json.encode(pleaseUpdate.deformation),
+                plate,
+                plate
+            })
+        end
+
+        return {
+            vehmodel = results.vehicle,
+            ownername = ownername
+        }
+    end
+
+    --- Get Player Vehicle By Plate
+    ---@param plate string
+    ---@return table
+    function fw.gpvbp(plate)
+        local results = MySQL.single.await([[
+            SELECT
+                pv.citizenid,
+                pv.vehicle,
+                pv.vehicle_name,
+                pv.mods,
+                pv.plate,
+                pv.fakeplate,
+                pv.garage,
+                pv.fuel,
+                pv.engine,
+                pv.body,
+                pv.state,
+                pv.depotprice,
+                pv.balance,
+                p.charinfo
+            FROM player_vehicles pv LEFT JOIN players p ON pv.citizenid = p.citizenid WHERE pv.plate = ? OR pv.fakeplate = ?
+        ]], {plate, plate})
+
+        local vehicles = {}
+        if results then
+            local v = results
+            local charinfo = json.decode(v.charinfo)
+            local mods = json.decode(v.mods)
+            vehicles = {
+                owner = {
+                    name = ("%s %s"):format(charinfo.firstname, charinfo.lastname),
+                    citizenid = v.citizenid,
+                },
+                vehicle_name = v.vehicle_name,
+                mods = mods,
+                vehicle = v.vehicle,
+                model = joaat(v.vehicle),
+                plate = v.plate,
+                fakeplate = v.fakeplate,
+                garage = v.garage,
+                fuel = v.fuel,
+                engine = v.engine,
+                body = v.body,
+                state = v.state,
+                depotprice = v.depotprice,
+                balance = v.balance
+            }
+        end
+
+        return vehicles
+    end
+
+    --- Get Player Vehicles By Garage
+    ---@param src string
+    ---@param garage string
+    ---@param filter {impound: boolean, shared: boolean}
+    function fw.gpvbg(src, garage, filter)
+        local Identifier = fw.gi(src)
+        if not Identifier then return {} end
+        local format, value
+        if Config.VehiclesInAllGarages then
+            format = [[
+                SELECT
+                    vehicle,
+                    vehicle_name,
+                    mods,
+                    state,
+                    depotprice,
+                    plate,
+                    fakeplate,
+                    fuel,
+                    engine,
+                    body,
+                    deformation
+                FROM player_vehicles WHERE citizenid = ? 
+            ]]
+
+            value = {Identifier}
+        else
+            format = [[
+                SELECT
+                    vehicle,
+                    vehicle_name,
+                    mods,
+                    state,
+                    depotprice,
+                    plate,
+                    fakeplate,
+                    fuel,
+                    engine,
+                    body,
+                    deformation
+                FROM player_vehicles WHERE citizenid = ? AND garage = ? AND state = ?
+            ]]
+
+            value = {Identifier, garage, 1}
+        end
+        if filter and not Config.VehiclesInAllGarages then
+            if not filter.impound then
+                if filter.shared then
+                    format = [[
+                        SELECT
+                            pv.vehicle,
+                            pv.vehicle_name,
+                            pv.mods,
+                            pv.state,
+                            pv.depotprice,
+                            pv.plate,
+                            pv.fakeplate,
+                            pv.fuel,
+                            pv.engine,
+                            pv.body,
+                            pv.deformation,
+                            p.charinfo
+                        FROM player_vehicles pv LEFT JOIN players p ON p.citizenid = pv.citizenid WHERE pv.garage = ? AND pv.state = ?
+                    ]]
+                    value = {garage, 1}
+                end
+            else
+                format = [[
+                    SELECT
+                        vehicle,
+                        vehicle_name,
+                        mods,
+                        state,
+                        depotprice,
+                        plate,
+                        fakeplate,
+                        fuel,
+                        engine,
+                        body,
+                        deformation FROM player_vehicles WHERE citizenid = ? AND state = 0
+                ]]
+                value = {Identifier}
+            end
+        end
+
+        local vehicles = {}
+        local results = MySQL.query.await(format, value)
+
+        if results and #results > 0 then
+            for i=1, #results do
+                local data = results[i]
+                local mods = json.decode(data.mods)
+                local deformation = json.decode(data.deformation)
+                local state = data.state
+                local model = data.vehicle
+                local plate = data.plate
+                local depotprice = data.depotprice
+                local fakeplate = data.fakeplate
+
+                vehicles[#vehicles+1] = {
+                    vehicle = mods,
+                    vehicle_name = data.vehicle_name,
+                    fuel = data.fuel or 100,
+                    engine = data.engine,
+                    body = data.body,
+                    state = state,
+                    model = model,
+                    plate = plate,
+                    fakeplate = fakeplate,
+                    depotprice = depotprice,
+                    deformation = deformation
+                }
+
+                if filter.shared then
+                    local charinfo = json.decode(data.charinfo)
+                    local ownername = ("%s %s"):format(charinfo.firstname, charinfo.lastname)
+                    vehicles[#vehicles].owner = ownername
+                end
+            end
+        end
+        return vehicles
+    end
+
+    --- Get Vehicles For Phone
+    ---@param src any
+    ---@return table
+    function fw.gvfp(src)
+        local citizenid = fw.gi(src)
+        if not citizenid then return end
+
+        local results = MySQL.query.await([[
+                SELECT
+                    vehicle,
+                    plate,
+                    garage,
+                    fuel,
+                    engine,
+                    body,
+                    state,
+                    paymentsleft
+                FROM player_vehicles WHERE citizenid = ?
+        ]], {citizenid})
+
+        local vehicles = {}
+        if results and results[1] then
+            local worldPlates
+            for i=1, #results do
+                local v = results[i]
+                local plate = utils.string.trim(v.plate)
+                local vd = QBCore.Shared.Vehicles[v.vehicle]
+                local brand = vd?.brand
+                local name = vd?.name
+                local defaultname = brand and ("%s %s"):format(brand, name)
+                local customName = CNV[plate] and CNV[plate].name
+                local vehname = customName or defaultname
+
+                local stateText = locale('status.in')
+
+                if v.state == 0 then
+                    worldPlates = worldPlates or vehFuncS.getWorldPlates()
+                    stateText = worldPlates[plate] and locale('status.out') or locale('status.insurance')
+                elseif v.state == 2 then
+                    stateText = locale('status.confiscated')
+                end
+
+                local inInsurance = v.state == 0
+                local inPoliceImpound = v.state == 2
+
+                local engine = v.engine > 1000 and 1000 or v.engine
+                local body = v.body > 1000 and 1000 or v.body
+
+                vehicles[#vehicles+1] = {
+                    fullname = vehname,
+                    brand = brand or '',
+                    model = name or '',
+                    plate = plate,
+                    garage = v.garage,
+                    state = stateText,
+                    fuel = v.fuel,
+                    engine = engine,
+                    body = body,
+                    paymentsleft = v.paymentsleft,
+                    disableTracking = inInsurance or inPoliceImpound,
+                }
+            end
+        end
+        return vehicles
+    end
+
+    --- Insert new vehicle to database
+    ---@param vehicle table
+    function fw.inv(vehicle)
+        MySQL.insert('INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, state) VALUES (?, ?, ?, ?, ?, ?, ?)', {
+            vehicle.license,
+            vehicle.citizenid,
+            vehicle.model,
+            joaat(vehicle.model),
+            json.encode(vehicle.props),
+            vehicle.plate,
+            0
+        })
+    end
+
+end

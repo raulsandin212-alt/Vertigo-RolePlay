@@ -1,0 +1,63 @@
+{
+    "Webhooks": {
+        "bans": "",
+        "system": "",
+        "players": "",
+        "money": "",
+        "vehicles": "",
+        "server": "",
+        "chat": "",
+        "Fallback": "",
+        "permissions": "",
+        "inventory": ""
+    },
+    "Fivemanage": {
+        "Dataset": "",
+        "Mirror": false,
+        "Token": "",
+        "Enabled": false
+    },
+    "MaxMemory": 500,
+    "DBEnabled": true,
+    "ResourceEntries": [],
+    "ForwardEvent": "",
+    "ResourceMode": "blacklist",
+    "Categories": [
+        {
+            "id": "players",
+            "label": "👤 Players"
+        },
+        {
+            "id": "bans",
+            "label": "🔨 Bans"
+        },
+        {
+            "id": "inventory",
+            "label": "🎒 Inventário"
+        },
+        {
+            "id": "vehicles",
+            "label": "🚗 Veículos"
+        },
+        {
+            "id": "money",
+            "label": "💰 Dinheiro"
+        },
+        {
+            "id": "server",
+            "label": "⚙️ Servidor"
+        },
+        {
+            "id": "permissions",
+            "label": "🛡️ Permissões"
+        },
+        {
+            "id": "chat",
+            "label": "💬 Chat"
+        },
+        {
+            "id": "system",
+            "label": "🖥️ Sistema"
+        }
+    ]
+}
